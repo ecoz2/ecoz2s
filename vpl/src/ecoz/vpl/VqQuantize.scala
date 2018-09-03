@@ -3,6 +3,7 @@ package ecoz.vpl
 import java.io.File
 
 import ecoz.config.Config
+import ecoz.config.Config.dir
 import ecoz.rpt.magenta
 import ecoz.symbol.SymbolSequences
 
@@ -12,11 +13,14 @@ object VqQuantize {
   def usage(error: String = ""): Unit = {
     println(s"""$error
        |
-       | vq.quantize -
+       | vq.quantize - Vector quantization
        |
-       | vq.quantize ..
+       | vq.quantize [options] <predictor> ...
        |
-       | TODO
+       | Options:
+       |   -cb <codebook>    Codebook to be used
+       |
+       | Sequences are generated under ${dir.sequences}/.
      """.stripMargin)
       sys.exit()
   }

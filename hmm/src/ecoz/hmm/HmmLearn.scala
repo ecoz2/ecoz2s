@@ -87,7 +87,6 @@ object HmmLearn {
     val sequences = seqFilenames map { filename ⇒
       SymbolSequences.load(new File(filename))
     }
-    println(s"loaded ${sequences.length} sequences as training set")
 
     val classNameOpt2: Option[String] = classNameOpt orElse {
       sequences.map(_.classNameOpt).find(_.isDefined).flatten
@@ -111,15 +110,6 @@ object HmmLearn {
       maxRefinements,
       valAuto
     ).learn()
-
-    saveHmm(className, hmm)
-  }
-
-  def saveHmm(className: String, hmm: Hmm): Hmm = {
-    val hmmFilename = s"$className.hmm"
-    val hmmFile = new File(Config.dir.hmms, hmmFilename)
-    Hmms.save(hmm, hmmFile)
-    hmm
   }
 }
 
@@ -334,10 +324,12 @@ class HmmLearn(className: String,
       println(s"CHANGE = " + magenta(change.toString()))
       PROld = PR
 
+      saveHmm(className, hmm)
+
       continue = change > valAuto || r < maxRefinements
     }
 
-    println(s"Trained HMM after $r refinements: $hmm")
+    println(s"Trained HMM after $r refinements.")
 
     hmm
   }
@@ -352,5 +344,12 @@ class HmmLearn(className: String,
     }
     println("   Product = %s\n" format PR)
     PR
+  }
+
+  def saveHmm(className: String, hmm: Hmm): Hmm = {
+    val hmmFilename = s"$className.hmm"
+    val hmmFile = new File(Config.dir.hmms, hmmFilename)
+    Hmms.save(hmm, hmmFile)
+    hmm
   }
 }

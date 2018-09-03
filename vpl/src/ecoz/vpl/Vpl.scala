@@ -16,7 +16,6 @@ object Vpl {
        | vpl -classes <className> ...
        | vpl -signals <wav-file> ...
        |
-       | Signal files are read from ${dir.signals}.
        | Predictor files are generated under ${dir.predictors}.
        | These files are processed by vq.learn for codebook generation
        | and by vq.quantize for quantization.
@@ -47,16 +46,24 @@ object Vpl {
 
     val classAndWavFiles: List[(String, List[File])] = if (classNames.nonEmpty) {
       classNames map { className ⇒
-        val classDir = new File(dir.signals, className)
+        val classDir = new File(className)
         (className, classDir.listFiles().toList)
       }
     }
     else {
-      val names = wavFilenames map { fn ⇒ new File(dir.signals, fn) }
+      // get parent's name as className, eg:
+      // if fn == ".../.../foo/bar.wav', then className = foo
+      val names = wavFilenames map { fn ⇒ new File(fn) }
       val groups = names.groupBy { n ⇒
         val path = n.getPath
-        val slash = path.indexOf('/')
-        if (slash >= 0) path.substring(0, slash) else ""
+        val slash = path.lastIndexOf('/')
+        if (slash >= 0) {
+          val slashPrev = path.lastIndexOf('/', slash - 1)
+          if (slashPrev >= 0)
+            path.substring(slashPrev + 1, slash)
+          else ""
+        }
+        else ""
       }
       groups.toList
     }

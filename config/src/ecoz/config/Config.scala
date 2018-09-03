@@ -29,5 +29,5 @@ object Config {
     val offsetLengthMs = 15
   }
 
-  val maxCodebookSize = 256
+  val maxCodebookSize = 1024
 }
