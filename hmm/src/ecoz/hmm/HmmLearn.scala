@@ -9,20 +9,26 @@ import ecoz.rpt.magenta
 import ecoz.symbol.{SymbolSequence, SymbolSequences}
 
 object HmmLearn {
+  private val defaultN = 5
+  private val default_ε = BigDecimal(1e-5)
+  private val defaultType = HmmType.default
+  private val defaultMaxRefinements = -1
+  private val defaultValAuto = BigDecimal(0.3)
 
   def usage(error: String = ""): Unit = {
     println(s"""$error
        |
-       | hmm.learn - Trains an HMM according to given training symbols sequences
+       | hmm.learn - Trains an HMM
        |
        | hmm.learn [options] <sequence> ...
        |
        | Options:
-       |   -w className           taken from first sequence
-       |   -N #                   number of states
-       |   -t <type>
-       |   -e epsilon             value for epsilon restriction on B
-       |   -I #                   num refinements
+       |   -w className      name for the hmm (taken from first sequence)
+       |   -N #              number of states  ($defaultN)
+       |   -t <type>         hmm type ($defaultType)
+       |   -e epsilon        value for epsilon restriction on B ($default_ε)
+       |   -R #              max number of refinements ($defaultMaxRefinements)
+       |   -a <auto>         threshold to complete training ($defaultValAuto)
        |
        | Trained HMM is generated under ${dir.hmms}/.
      """.stripMargin)
@@ -30,13 +36,13 @@ object HmmLearn {
   }
 
   def main(args: List[String]): Unit = {
+    var N = defaultN
+    var ε = default_ε
+    var typ = defaultType
+    var maxRefinements = defaultMaxRefinements
+    var valAuto = defaultValAuto
     var classNameOpt: Option[String] = None
-    var N = 5
-    var ε = BigDecimal(1e-5)
-    var typ = HmmType.default
     var seqFilenames = List[String]()
-    var maxRefinements = -1
-    var valAuto = BigDecimal(0.3)
 
     def processArgs(opts: List[String]): Unit = {
       opts match {
@@ -150,7 +156,7 @@ class HmmLearn(className: String,
   hmm.adjustB(ε)
 
   //sequences foreach SymbolSequences.showSequence
-  println(s"Initial HMM: $hmm")
+  //println(s"Initial HMM: $hmm")
 
   def learn(): Hmm = {
 
