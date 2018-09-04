@@ -11,36 +11,38 @@ class HmmClassifier(hmms: List[Hmm],
   private val classNames = collection.mutable.HashSet[String]()
   classNames ++= hmms.map(_.classNameOpt.get)
 
-  private val bySeqName = collection.mutable.HashMap[String, List[List[BigDecimal]]]()
+  private val bySeqName = collection.mutable.HashMap[String, List[List[(Hmm,BigDecimal)]]]()
 
-  def addSequence(seq: SymbolSequence, seqName: String): Unit = {
+  /**
+    * Performs classification of the given sequence,
+    * @param seq          Sequence
+    * @param seqName      Sequence's associated class name
+    * @return             Ranked list of models with associated probabilities
+    *                     (sorted in descending probability).
+    */
+  def classifySequence(seq: SymbolSequence, seqName: String): List[(Hmm,BigDecimal)] = {
     classNames += seqName
     val list = bySeqName.getOrElseUpdate(seqName, List.empty)
-    val probs = hmms map { hmm ⇒
-      hmm.probability(seq)
-    }
-    bySeqName.update(seqName, probs :: list)
+    val hmmsAndProbs = hmms map { hmm ⇒ (hmm, hmm.probability(seq)) }
+    val sortedByProb = hmmsAndProbs.sortBy(-_._2)
+    bySeqName.update(seqName, sortedByProb :: list)
+    sortedByProb
   }
 
   def reportResults(): Unit = {
     val cm = new ConfusionMatrix(classNames.toSet)
     bySeqName foreach { case (seqName, instances) ⇒
       //println(s"${quoted(seqName)} ${instances.length} instances")
-      instances foreach { instance ⇒
-        // sort in decreasing probability:
-        val sortedByDist = instance.zipWithIndex.sortBy(-_._1)
-
+      instances foreach { sortedByProb ⇒
         if (showRanked) {
           println(s":: seqName=$seqName:")
-          sortedByDist foreach { case (prob, index) ⇒
-            val hmm = hmms(index)
+          sortedByProb foreach { case (hmm, prob) ⇒
             val pStr = "%s prob =" format quoted(hmm.classNameOpt.get)
             printf(s"  %20s %s\n", pStr, prob)
           }
         }
 
-        val winner = sortedByDist.head
-        val hmm = hmms(winner._2)
+        val hmm = sortedByProb.head._1
         cm.setWinner(seqName, hmm.classNameOpt.get)
       }
     }

@@ -4,6 +4,7 @@ import java.io.File
 
 import ecoz.rpt._
 import ecoz.symbol.SymbolSequences
+import fansi.Str
 
 object HmmClassify {
 
@@ -90,13 +91,29 @@ object HmmClassify {
 
       seq.classNameOpt match {
         case Some(className) ⇒
-          classifier.addSequence(seq, className)
+          val hmmAndProbs = classifier.classifySequence(seq, className)
+          val dot = coloredDot(className, hmmAndProbs)
+          print(dot.toString())
+          Console.flush()
 
         case None ⇒
           warn(s"Unnamed sequence ignored: $seqFilename")
       }
     }
+    println()
 
     classifier.reportResults()
   }
+
+  private def coloredDot(seqName: String, hmmAndProbs: List[(Hmm,BigDecimal)]): Str = {
+    val rank = hmmAndProbs.zipWithIndex.find(_._1._1.classNameOpt.contains(seqName))
+      .map(_._2).getOrElse(colors.length -1)
+    colors(rank)(".")
+  }
+
+  private val colors = List(
+    fansi.Color.LightGreen,
+    fansi.Color.Yellow,
+    fansi.Color.Red,
+  )
 }
