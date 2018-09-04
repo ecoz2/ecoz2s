@@ -1,3 +1,7 @@
+2018-09-04
+
+- adjustments/clarifications related with codebook's `raas`
+
 2018-09-03
 
 - implement hmm.learn and hmm.classify.

@@ -5,24 +5,51 @@ import java.io._
 import ecoz.config.Config.lpc.P
 import ecoz.symbol.SymbolSequence
 
+/**
+  * A codebook is mainly defined (and saved) in terms of reflection vectors.
+  * But here we also maintain the corresponding autocorrelation vectors ("raas")
+  * of the predictor coefficient vectors corresponding to those reflections.
+  * NOTE: Use `updateEntryWith` exclusively for any updates to this codebook.
+  */
 case class Codebook(
                     reflections: Array[Array[Float]],
                     classNameOpt: Option[String] = None
                    ) {
+  require(reflections.nonEmpty)
+
   val size: Int = reflections.length
 
-  lazy val raas: Array[Array[Float]] = reflex_a_raas()
+  val P: Int = reflections.head.length - 1
 
-  def reflex_a_raas(): Array[Array[Float]] = {
+  val raas: Array[Array[Float]] = {
+    val vectors = Array.ofDim[Float](size, P + 1)
     val lpc = new Lpc()
-    val numVectors = reflections.length
-    val Pplus1 = reflections.head.length
-
-    val vectors = Array.ofDim[Float](numVectors, Pplus1)
     reflections.zipWithIndex foreach { case (rc, index) ⇒
-      vectors(index) = lpc.lpca_rc(rc)
+      val a = lpc.lpca_rc(rc)
+      updateRaa(a, vectors(index))
     }
     vectors
+  }
+
+  def updateEntryWith(index: Int, lpcaResult: LpcaResult): Unit = {
+    require(lpcaResult.rc.length == P + 1)
+
+    // set reflection vector:
+    Array.copy(lpcaResult.rc, 0, reflections(index), 0, P + 1)
+
+    // set autocorrelation vector:
+    // TODO just copy lpcaResult.r as it should be that already
+    updateRaa(lpcaResult.a, raas(index))
+  }
+
+  private def updateRaa(a: Array[Float], raa: Array[Float]): Unit = {
+    for (n ← 0 to P) {
+      var sum = 0F
+      for (k ← 0 to P - n) {
+        sum += a(k) * a(k + n)
+      }
+      raa(n) = sum
+    }
   }
 
   def quantize(predictor: Predictor): SymbolSequence = {

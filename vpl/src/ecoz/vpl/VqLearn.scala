@@ -105,8 +105,8 @@ class VqLearn(prefix: String,
 
   private val report = new Report(prefix, totVectors, ε)
 
-  var codebook: Codebook = _
-  var codebookFile: File = _
+  private var codebook: Codebook = _
+  private var codebookFile: File = _
 
   object Cells {
     var cells: Array[Array[Float]] = _
@@ -280,10 +280,10 @@ class VqLearn(prefix: String,
       val cardd = Cells.cardd(i)
       val cell = Cells.cells(i)
 
-//      if (cardd == 0) {
-//        println(s"  CELL $i: cardinality=$cardd  codebook.size=${codebook.size}")
-//        //println(s"cell:"); pprint.pprintln(cell)
-//      }
+      // if (cardd == 0) {
+      //   println(s"  CELL $i: cardinality=$cardd  codebook.size=${codebook.size}")
+      //   //println(s"cell:"); pprint.pprintln(cell)
+      // }
 
       if (cardd > 0) {
         for (k ← 0 to P) {
@@ -292,21 +292,7 @@ class VqLearn(prefix: String,
 
         val lpcaResult = lpc.lpca_r(cell)
 
-        // TODO copy over, or pass as argument to lpca_r ...
-        // for now, just a direct assignment (ignoring previous reflections(i))
-        codebook.reflections(i) = lpcaResult.rc
-
-        val pred = lpcaResult.a
-        // pred has the prediction coefficients;
-        // get corresponding autocorrelation as entry in codebook:
-        val raa = codebook.raas(i)
-        for (n ← 0 to P) {
-          var sum = 0F
-          for (k ← 0 to P - n) {
-            sum += pred(k) * pred(k + n)
-          }
-          raa(n) = sum
-        }
+        codebook.updateEntryWith(i, lpcaResult)
 
         // normalize accumulated autocorrelation sequence by gain
         // in this cell for the sigma ratio calculation:
