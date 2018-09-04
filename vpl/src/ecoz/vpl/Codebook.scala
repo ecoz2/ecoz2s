@@ -105,6 +105,10 @@ object Codebooks {
     Codebook(reflections, classNameOpt)
   }
 
+  def showCodebooks(filenames: List[String]): Unit = {
+    filenames foreach showCodebook
+  }
+
   def showCodebook(filename: String): Unit = {
     val codebook = load(new File(filename))
     println(s"\n$filename:")

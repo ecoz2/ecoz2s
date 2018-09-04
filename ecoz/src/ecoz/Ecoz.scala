@@ -53,8 +53,8 @@ object Ecoz {
       case "vq.learn" :: rest ⇒
         VqLearn.main(rest)
 
-      case "cb.show" :: rest :: Nil ⇒
-        Codebooks.showCodebook(rest)
+      case "cb.show" :: rest ⇒
+        Codebooks.showCodebooks(rest)
 
       case "vq.quantize" :: rest ⇒
         VqQuantize.main(rest)
