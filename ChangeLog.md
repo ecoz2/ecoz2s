@@ -1,5 +1,6 @@
 2018-09-04
 
+- good preliminary results
 - hmm.classify: show progress with colored dots depending on ranked models
 - adjustments/clarifications related with codebook's `raas`
 
