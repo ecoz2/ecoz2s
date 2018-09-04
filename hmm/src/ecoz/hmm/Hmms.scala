@@ -62,39 +62,65 @@ object Hmms {
   def save(hmm: Hmm, file: File): Unit = {
     val s = new PrintWriter(file)
 
-    val classNameStr = "%-64s" format hmm.classNameOpt.getOrElse("")
-    s.println(classNameStr.take(64))
+    s.println("HMM")
+    s.println("className=" + hmm.classNameOpt.getOrElse(""))
 
-    s.println(hmm.N)
-    s.println(hmm.M)
+    s.println("N=" + hmm.N)
+    s.println("M=" + hmm.M)
 
+    s.println("pi=")
     hmm.pi foreach writeValue
+
+    s.println("A=")
     hmm.A foreach { _ foreach writeValue }
+
+    s.println("B=")
     hmm.B foreach { _ foreach writeValue }
 
     s.close()
     println(s"hmm saved: $file")
 
     def writeValue(v: BigDecimal): Unit = {
-      s.println(v.toString())
+      val str0 = v.toString()
+      val str = if (str0.indexOf('E') < 0) {
+        // remove any trailing insignificant zeroes:
+        val pointPos = str0.lastIndexOf('.')
+        if (pointPos >= 0) str0.replaceFirst("0+$", "")
+        else str0
+      }
+      else {
+        // haven't seen such issue with representation having exponent ('E')
+        str0
+      }
+
+      s.println(str)
     }
   }
 
   def load(file: File): Hmm = {
     val s = new BufferedReader(new InputStreamReader(new FileInputStream(file)))
 
-    def readInt(): Int = s.readLine().trim.toInt
+    def read(prefix: String): String = {
+      val line = s.readLine()
+      assert(line.startsWith(prefix), s"line='$line'  prefix='$prefix'")
+      line.substring(prefix.length).trim
+    }
 
     def readValue(): BigDecimal = BigDecimal(s.readLine())
 
-    val className = s.readLine().trim
+    read("HMM")
+
+    val className = read("className=")
     val classNameOpt = if (className.nonEmpty) Some(className) else None
 
-    val N = readInt()
-    val M = readInt()
+    val N = read("N=").toInt
+    val M = read("M=").toInt
 
+    read("pi=")
     val pi = Array.fill[BigDecimal](N)(readValue())
+    read("A=")
     val A = Array.fill[BigDecimal](N, N)(readValue())
+    read("B=")
     val B = Array.fill[BigDecimal](N, M)(readValue())
     s.close()
 
