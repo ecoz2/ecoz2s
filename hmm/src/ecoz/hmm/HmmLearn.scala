@@ -145,6 +145,12 @@ class HmmLearn(className: String,
   hmm.estimateB(sequences)
   hmm.adjustB(ε)
 
+  private val hmmFile = {
+    val hmmDir = new File(Config.dir.hmms, s"N%d__M%d" format (hmm.N, hmm.M))
+    hmmDir.mkdirs()
+    new File(hmmDir, s"$className.hmm")
+  }
+
   //sequences foreach SymbolSequences.showSequence
   //println(s"Initial HMM: $hmm")
 
@@ -324,7 +330,7 @@ class HmmLearn(className: String,
       println(s"CHANGE = " + magenta(change.toString()))
       PROld = PR
 
-      saveHmm(className, hmm)
+      Hmms.save(hmm, hmmFile)
 
       continue = change > valAuto || r < maxRefinements
     }
@@ -344,12 +350,5 @@ class HmmLearn(className: String,
     }
     println("   Product = %s\n" format PR)
     PR
-  }
-
-  def saveHmm(className: String, hmm: Hmm): Hmm = {
-    val hmmFilename = s"$className.hmm"
-    val hmmFile = new File(Config.dir.hmms, hmmFilename)
-    Hmms.save(hmm, hmmFile)
-    hmm
   }
 }
