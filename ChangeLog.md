@@ -1,10 +1,8 @@
-2018-09-02
+2018-09-03
 
-- implement hmm.classify
-- initial hmm.learn
-
-2018-09-01
-
+- implement hmm.learn and hmm.classify.
+  Good initial results
+- initial
 - implement vq.classify
 - capture class name in codebook generation
 

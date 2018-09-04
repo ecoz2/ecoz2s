@@ -1,14 +1,15 @@
 package ecoz.hmm
 
 import ecoz.rpt.ConfusionMatrix
+import ecoz.rpt.quoted
 import ecoz.symbol.SymbolSequence
 
-class HmmClassifier(hmms: List[Hmm]) {
+class HmmClassifier(hmms: List[Hmm],
+                    showRanked: Boolean = false
+                   ) {
 
   private val classNames = collection.mutable.HashSet[String]()
   classNames ++= hmms.map(_.classNameOpt.get)
-
-  type Distortion = Float
 
   private val bySeqName = collection.mutable.HashMap[String, List[List[BigDecimal]]]()
 
@@ -26,7 +27,18 @@ class HmmClassifier(hmms: List[Hmm]) {
     bySeqName foreach { case (seqName, instances) ⇒
       //println(s"${quoted(seqName)} ${instances.length} instances")
       instances foreach { instance ⇒
-        val sortedByDist = instance.zipWithIndex.sortBy(_._2)
+        // sort in decreasing probability:
+        val sortedByDist = instance.zipWithIndex.sortBy(-_._1)
+
+        if (showRanked) {
+          println(s":: seqName=$seqName:")
+          sortedByDist foreach { case (prob, index) ⇒
+            val hmm = hmms(index)
+            val pStr = "%s prob =" format quoted(hmm.classNameOpt.get)
+            printf(s"  %20s %s\n", pStr, prob)
+          }
+        }
+
         val winner = sortedByDist.head
         val hmm = hmms(winner._2)
         cm.setWinner(seqName, hmm.classNameOpt.get)

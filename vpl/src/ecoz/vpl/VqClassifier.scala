@@ -7,9 +7,7 @@ class VqClassifier(codebooks: List[Codebook]) {
   private val classNames = collection.mutable.HashSet[String]()
   classNames ++= codebooks.map(_.classNameOpt.get)
 
-  type Distortion = Float
-
-  private val byPrdName = collection.mutable.HashMap[String, List[List[Distortion]]]()
+  private val byPrdName = collection.mutable.HashMap[String, List[List[Float]]]()
 
   def addPredictor(predictor: Predictor, prdName: String): Unit = {
     classNames += prdName

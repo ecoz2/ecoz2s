@@ -104,7 +104,7 @@ object HmmLearn {
       usage(s"Error: ${nonM.length} non conformant sequences wrt to 1st one, M != $M")
     }
 
-    val hmm = new HmmLearn(
+    new HmmLearn(
       className, N, M, typ, ε,
       sequences,
       maxRefinements,

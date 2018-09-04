@@ -14,6 +14,9 @@ object HmmClassify {
        |
        | hmm.classify -hmm <hmm> ... -seq <sequence> ...
        |
+       | Options:
+       |   -sr            show ranked models per sequence
+       |
        | Classifies each sequence according to given models.
      """.stripMargin)
       sys.exit()
@@ -22,6 +25,7 @@ object HmmClassify {
   def main(args: List[String]): Unit = {
     var hmmFilenames = List[String]()
     var seqFilenames = List[String]()
+    var showRanked = false
 
     def processArgs(opts: List[String]): Unit = {
       opts match {
@@ -34,6 +38,10 @@ object HmmClassify {
           val (seqs, rest2) = rest.span(!_.startsWith("-"))
           seqFilenames = seqs
           processArgs(rest2)
+
+        case "-sr" :: rest ⇒
+          showRanked = true
+          processArgs(rest)
 
         case opt :: _ ⇒
           usage(s"unrecognized option or missing arguments: $opt")
@@ -75,7 +83,7 @@ object HmmClassify {
          |sequences : ${seqFilenames.length}
        """.stripMargin)
 
-    val classifier = new HmmClassifier(hmms)
+    val classifier = new HmmClassifier(hmms, showRanked)
 
     seqFilenames foreach { seqFilename ⇒
       val seq = SymbolSequences.load(new File(seqFilename))
