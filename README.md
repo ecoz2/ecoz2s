@@ -44,7 +44,7 @@ The selection extractions get created under `../data/signals/`.
 
 ## hmm based classification
 
-    $ mill ecoz.run hmm.classify -hmm  ../data/hmms/N10__M1024/*.hmm -seq ../data/sequences/*/*
+    $ mill ecoz.run hmm.classify -hmm  ../data/hmms/N10__M1024/*.hmm -seq ../data/sequences/M1024/*/*
     hmms      : 6: "trill", "purr", "gurgle", "grunts", "groan", "bark"
     sequences : 48
 

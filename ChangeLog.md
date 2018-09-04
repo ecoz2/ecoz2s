@@ -1,5 +1,6 @@
 2018-09-04
 
+- put quantized sequences under `sequences/M%d/`
 - put trained HMM models under `hmms/N%d__M%d/`
 - remove trailing insignificant zeroes when saving hmm model.
   The default BigDecimal.toString method generates representations with

@@ -73,10 +73,13 @@ object VqQuantize {
 
       val seqFilename = prdFile.getName.replaceFirst("\\.[^.]*$", ".seq")
 
-      val className = predictor.classNameOpt.getOrElse("UNKNOWN")
-      val seqDir = new File(Config.dir.sequences, className)
-      seqDir.mkdirs()
-      val seqFile = new File(seqDir, seqFilename)
+      val seqFile = {
+        val baseDir = new File(Config.dir.sequences, s"M%d" format sequence.M)
+        val className = predictor.classNameOpt.getOrElse("UNKNOWN")
+        val seqDir = new File(baseDir, className)
+        seqDir.mkdirs()
+        new File(seqDir, seqFilename)
+      }
 
       SymbolSequences.save(sequence, seqFile)
     }
