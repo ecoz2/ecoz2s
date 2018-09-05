@@ -28,7 +28,10 @@ The selection extractions get created under `../data/signals/`.
 
 ## linear predictor generation
 
-    $ for class in bark groan grunts gurgle purr trill; do mill ecoz.run vpl -signals ../data/signals/$class/*wav; done
+    $ mill ecoz.run vpl -classes ../data/signals/*
+
+**NOTE** look out for occasional 'non positive prediction error' warnings
+(two seen so far). Remove the corresponding predictor files.
 
 ## codebook generation
 
@@ -40,11 +43,11 @@ The selection extractions get created under `../data/signals/`.
 
 ## hmm training
 
-    $ for class in trill purr gurgle grunts groan bark; do mill ecoz.run hmm.learn -N 10 -a 0.005  ../data/sequences/M1024/$class/*; done
+    $ for class in trill purr gurgle grunts groan bark; do mill ecoz.run hmm.learn -N 10 -a 0.005  ../data/sequences/M128/$class/*; done
 
 ## hmm based classification
 
-    $ mill ecoz.run hmm.classify -hmm  ../data/hmms/N10__M1024/*.hmm -seq ../data/sequences/M1024/*/*
+    $ mill ecoz.run hmm.classify -hmm  ../data/hmms/N10__M128/*.hmm -seq ../data/sequences/M128/{trill,purr,gurgle,grunts,groan,bark}/*
     hmms      : 6: "trill", "purr", "gurgle", "grunts", "groan", "bark"
     sequences : 48
 

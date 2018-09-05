@@ -1,5 +1,6 @@
 2018-09-05
 
+- readme: update instructions of basic "closed" test
 - vpl: use simple name in given className path.
   This facilitates running like this:
   `mill ecoz.run vpl -classes ../data/signals/*`
