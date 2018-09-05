@@ -1,3 +1,9 @@
+2018-09-05
+
+- vpl: use simple name in given className path.
+  This facilitates running like this:
+  `mill ecoz.run vpl -classes ../data/signals/*`
+
 2018-09-04
 
 - put predictor files under `predictors/P%d/`

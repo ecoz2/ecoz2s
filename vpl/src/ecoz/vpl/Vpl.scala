@@ -47,7 +47,7 @@ object Vpl {
     val classAndWavFiles: List[(String, List[File])] = if (classNames.nonEmpty) {
       classNames map { className ⇒
         val classDir = new File(className)
-        (className, classDir.listFiles().toList)
+        (classDir.getName, classDir.listFiles().toList)
       }
     }
     else {
@@ -75,7 +75,7 @@ object Vpl {
     def processFile(className: String, wavFile: File): Unit = {
       var signal = Signals.load(wavFile)
 
-      println(s"Processing: $wavFile")
+      println(s"\nProcessing: $wavFile")
       //println(s" Samples : ${signal.x.length}")
       //println(s" Mean: ${signal.mean}")
 
