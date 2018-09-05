@@ -13,7 +13,7 @@ case class LpcaResult(r: Array[Float],  // autocorrelation
 case class LpcaException(msg: String) extends Exception(msg)
 
 
-class Lpc(P: Int = lpc.P,
+class Lpc(val P: Int = lpc.P,
           winLenMs: Int = lpc.windowLengthMs,
           offsetLenMs: Int = lpc.offsetLengthMs,
          ) {

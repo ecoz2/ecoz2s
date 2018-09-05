@@ -32,15 +32,15 @@ The selection extractions get created under `../data/signals/`.
 
 ## codebook generation
 
-    $ mill ecoz.run vq.learn -e 0.0005  ../data/predictors/*/*.prd
+    $ mill ecoz.run vq.learn -e 0.0005  ../data/predictors/P36/*/*.prd
 
 ## quantization
 
-    $ mill ecoz.run vq.quantize -cb ../data/codebooks/eps_0.0005__1024.cbook ../data/predictors/*/*.prd
+    $ mill ecoz.run vq.quantize -cb ../data/codebooks/eps_0.0005__0128.cbook ../data/predictors/P36/*/*.prd
 
 ## hmm training
 
-    $ for class in trill purr gurgle grunts groan bark; do mill ecoz.run hmm.learn -N 10 -a 0.005  ../data/sequences/$class/*; done
+    $ for class in trill purr gurgle grunts groan bark; do mill ecoz.run hmm.learn -N 10 -a 0.005  ../data/sequences/M1024/$class/*; done
 
 ## hmm based classification
 

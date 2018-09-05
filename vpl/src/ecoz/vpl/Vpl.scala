@@ -100,10 +100,14 @@ object Vpl {
         vectors = results.map(_.r).toArray,
         classNameOpt = Some(className)
       )
-      val dirPrd = new File(dir.predictors, className)
-      dirPrd.mkdirs()
-      val prdFilename = wavFile.getName.replaceFirst("\\.[^.]*$", ".prd")
-      val prdFile = new File(dirPrd, prdFilename)
+
+      val prdFile = {
+        val baseDir = new File(dir.predictors, s"P%d" format lpc.P)
+        val dirPrd = new File(baseDir, className)
+        dirPrd.mkdirs()
+        val prdFilename = wavFile.getName.replaceFirst("\\.[^.]*$", ".prd")
+        new File(dirPrd, prdFilename)
+      }
       Predictors.save(predictor, prdFile)
       println(s" saved $prdFile")
     }
