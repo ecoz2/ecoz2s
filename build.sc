@@ -2,11 +2,7 @@ import mill._
 import mill.scalalib._
 
 object ecoz extends BaseModule {
-  override def moduleDeps = Seq(hmm)
   override def mainClass = Some("ecoz.Ecoz")
-}
-
-object hmm extends BaseModule {
   override def moduleDeps = Seq(vpl, rpt)
 }
 
