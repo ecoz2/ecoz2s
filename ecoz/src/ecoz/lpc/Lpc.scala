@@ -3,6 +3,7 @@ package ecoz.lpc
 import java.io.File
 
 import ecoz.config.Config.dir
+import ecoz.rpt.warn
 import ecoz.signal.Signals
 
 
@@ -13,10 +14,14 @@ object Lpc {
        |
        | lpc - LP coding
        |
-       | lpc -classes <className> ...
+       | lpc -classes [-split s] <className> ...
        | lpc -signals <wav-file> ...
        |
        | Predictor files are generated under ${dir.predictors}.
+       | The -split option allows to put the generated predictors into
+       | two different training and test subsets (with given approx ratio s):
+       | Training under ${dir.predictors}/TRAIN/ and testing under
+       | ${dir.predictors}/TEST/.
        | These files are processed by vq.learn for codebook generation
        | and by vq.quantize for quantization.
      """.stripMargin)
@@ -25,9 +30,15 @@ object Lpc {
 
   def main(args: Array[String]): Unit = {
     var classNames: List[String] = List.empty
+    var split = 0F
     var wavFilenames: List[String] = List.empty
 
     def processArgs(opts: List[String]): Unit = opts match {
+      case "-classes" :: "-split" :: s :: classes ⇒
+        split = s.toFloat
+        require(0F < split && split < 1F)
+        classNames = classes
+
       case "-classes" :: c1 :: moreClasses ⇒
         classNames = c1 :: moreClasses
 
@@ -69,10 +80,39 @@ object Lpc {
     }
 
     classAndWavFiles foreach { case (className, wavFiles) ⇒
-      wavFiles foreach { processFile(className, _) }
+      processFiles(className, wavFiles)
     }
 
-    def processFile(className: String, wavFile: File): Unit = {
+    def processFiles(className: String, wavFiles: List[File]): Unit = {
+      val optPredictors = wavFiles map { getPredictor(className, _) }
+
+      val predictors = optPredictors.flatten
+
+      predictors foreach { case (wavFile, predictor) ⇒
+        val destDir = {
+          if (split > 0F){
+            if (math.random() <= split) {
+              new File(dir.predictors, s"TRAIN")
+            }
+            else {
+              new File(dir.predictors, s"TEST")
+            }
+          }
+          else dir.predictors
+        }
+        val prdFile = {
+          val baseDir = new File(destDir, s"P%d" format lpa.P)
+          val dirPrd = new File(baseDir, className)
+          dirPrd.mkdirs()
+          val prdFilename = wavFile.getName.replaceFirst("\\.[^.]*$", ".prd")
+          new File(dirPrd, prdFilename)
+        }
+        Predictors.save(predictor, prdFile)
+        println(s" saved $prdFile")
+      }
+    }
+
+    def getPredictor(className: String, wavFile: File): Option[(File, Predictor)] = {
       var signal = Signals.load(wavFile)
 
       println(s"\nProcessing: $wavFile")
@@ -88,28 +128,19 @@ object Lpc {
       signal = signal.preemphasis
       //println(s" Mean after preemphasis: ${signal.mean}")
 
-      val results = try lpa.onSignal(signal)
+      try {
+        val results = lpa.onSignal(signal)
+        // note: we save the autocorrelations `.r` as predictor file
+        Some((wavFile, Predictor(
+          vectors = results.map(_.r).toArray,
+          classNameOpt = Some(className)
+        )))
+      }
       catch {
         case e: LpaException ⇒
-          println(s"problem with lpa.onSignal: ${e.getMessage}")
-          return
+          warn(s"problem with lpa.onSignal: ${e.getMessage}")
+          None
       }
-
-      // note: we save the autocorrelations `.r` as predictor file
-      val predictor = Predictor(
-        vectors = results.map(_.r).toArray,
-        classNameOpt = Some(className)
-      )
-
-      val prdFile = {
-        val baseDir = new File(dir.predictors, s"P%d" format lpa.P)
-        val dirPrd = new File(baseDir, className)
-        dirPrd.mkdirs()
-        val prdFilename = wavFile.getName.replaceFirst("\\.[^.]*$", ".prd")
-        new File(dirPrd, prdFilename)
-      }
-      Predictors.save(predictor, prdFile)
-      println(s" saved $prdFile")
     }
   }
 

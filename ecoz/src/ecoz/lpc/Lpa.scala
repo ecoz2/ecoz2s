@@ -10,7 +10,7 @@ case class LpaResult(r: Array[Float],  // autocorrelation
                      pe: Float         // prediction error
                      )
 
-case class LpaException(msg: String) extends Exception(msg)
+case class LpaException(msg: String, cause: Throwable = null) extends Exception(msg, cause)
 
 /**
   * Linear Prediction Analysis
@@ -75,7 +75,7 @@ class Lpa(val P: Int = lpa.P,
       }
       catch {
         case e: LpaException ⇒
-          println(s"problem with section t=$t: " + e.getMessage)
+          throw LpaException(s"problem with section t=$t: " + e.getMessage, e)
       }
     }
 
@@ -155,8 +155,8 @@ class Lpa(val P: Int = lpa.P,
       // new prediction error:
       pe *= (1F - akk*akk)
       if (pe <= 0F) {
-        warn(s"lpca_r: non positive prediction error: pe=$pe  akk=$akk\n r=${r.toList}")
-        //throw LpaException(s"lpca_r: non positive prediction error: $pe\n r=${r.toList}")
+        //warn(s"lpca_r: non positive prediction error: pe=$pe  akk=$akk\n r=${r.toList}")
+        throw LpaException(s"lpca_r: non positive prediction error: $pe\n r=${r.toList}")
       }
     }
     LpaResult(r = r, rc = rc, a = a, pe = pe)
