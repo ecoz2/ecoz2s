@@ -1,5 +1,6 @@
 2018-09-06
 
+- update readme and move exercise description to ex1.md
 - refact: move Vq* elements to ecoz.vq package
 - refact: some general renaming
   (eg., "lpa" for analysis, "lpc" for actual coding)
