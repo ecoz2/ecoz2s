@@ -1,4 +1,4 @@
-package ecoz.selXtor
+package ecoz.signal
 
 import java.io.File
 
@@ -7,7 +7,7 @@ import de.sciss.synth.io._
 import ecoz.config.Config.dir
 
 
-object SelXtor {
+object SignalExtractor {
 
   def main(args: Array[String]): Unit = {
     if (args.length < 2) {

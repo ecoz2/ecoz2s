@@ -9,7 +9,7 @@ Captured in `config/src/ecoz/config/Config.scala`.
 
 The extracted selections get created under `../data/signals/`.
 
-    $ mill selXtor.run ../data/HBSe_20151207T070326.wav ../data/20151207T070326.txt --all
+    $ mill ecoz.run sig.xtor ../data/HBSe_20151207T070326.wav ../data/20151207T070326.txt --all
 
     $ ls ../data/signals
     _                          bark (D)                   groan + purr               gurgle + trill             purr

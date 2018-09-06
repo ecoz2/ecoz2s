@@ -1,6 +1,6 @@
 package ecoz
 
-import ecoz.selXtor.SelXtor
+import ecoz.signal.SignalExtractor
 import ecoz.signal.Signals
 import ecoz.vpl._
 import ecoz.hmm._
@@ -15,7 +15,7 @@ object Ecoz {
        |
        | Usage:
        |
-       |   ecoz selxtor ...
+       |   ecoz sig.xtor ...
        |   ecoz sig.show ...
        |   ecoz prd.show ...
        |   ecoz vpl ...
@@ -35,8 +35,8 @@ object Ecoz {
 
   def main(args: Array[String]): Unit = {
     args.toList match {
-      case "selxtor" :: rest ⇒
-        SelXtor.main(rest.toArray)
+      case "sig.xtor" :: rest ⇒
+        SignalExtractor.main(rest.toArray)
 
       case "sig.show" :: wavFilenames ⇒
         Signals.showSignals(wavFilenames)

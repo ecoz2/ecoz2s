@@ -2,7 +2,7 @@ import mill._
 import mill.scalalib._
 
 object ecoz extends BaseModule {
-  override def moduleDeps = Seq(selXtor, hmm)
+  override def moduleDeps = Seq(hmm)
   override def mainClass = Some("ecoz.Ecoz")
 }
 
@@ -19,11 +19,6 @@ object rpt extends BaseModule
 
 object signal extends BaseModule {
   override def moduleDeps = Seq(config)
-}
-
-object selXtor extends BaseModule {
-  override def moduleDeps = Seq(config)
-  override def mainClass = Some("ecoz.selXtor.SelXtor")
 }
 
 object config extends BaseModule
