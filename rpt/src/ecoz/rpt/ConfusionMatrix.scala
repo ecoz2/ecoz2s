@@ -19,28 +19,28 @@ class ConfusionMatrix(classNames: Set[String]) {
 
     val quotedNames = sortedNames map quoted
 
-    val colWidth = quotedNames.map(_.length).max
+    val firstColWidth = quotedNames.map(_.length).max
 
     val corner = "actual \\ predicted"
-    val leftWidth = math.max(corner.length, colWidth)
+    val leftWidth = math.max(corner.length, firstColWidth)
     val colSep = "  "
 
     val cols = collection.mutable.ArrayBuffer[String]()
     cols += w(corner, leftWidth)
-    cols ++= quotedNames.map(w(_, colWidth))
-    cols += w("tests", colWidth)
-    cols += w("correct", colWidth)
-    cols += w("percent", colWidth)
+    cols ++= quotedNames.map(n ⇒ w(n, n.length))
+    cols += w("tests", "tests".length)
+    cols += w("correct", "correct".length)
+    cols += w("percent", "percent".length)
 
     println(" " + cols.mkString(colSep))
 
     def lines(): Unit = {
       cols.clear()
       cols += div(leftWidth)
-      cols ++= sortedNames.map(_ ⇒ div(colWidth, "="))
-      cols += div(colWidth)
-      cols += div(colWidth)
-      cols += div(colWidth)
+      cols ++= quotedNames.map(n ⇒ div(n.length, "="))
+      cols += div("tests".length)
+      cols += div("correct".length)
+      cols += div("percent".length)
       println(" " + cols.mkString(colSep))
     }
 
@@ -51,7 +51,7 @@ class ConfusionMatrix(classNames: Set[String]) {
 
     for (i ← matrix.indices) {
       val colVals = matrix(i).zipWithIndex map { case (n, j) ⇒
-        val str = w(n, colWidth)
+        val str = w(n, quotedNames(j).length)
         if (i == j) {
           if (n > 0) green(str).toString()
           else       str
@@ -73,9 +73,9 @@ class ConfusionMatrix(classNames: Set[String]) {
       cols.clear()
       cols += w(quoted(sortedNames(i)), leftWidth)
       cols ++= colVals
-      cols += w(tests, colWidth)
-      cols += w(correct, colWidth)
-      cols += w(percent, colWidth)
+      cols += w(tests, "tests".length)
+      cols += w(correct, "correct".length)
+      cols += w(percent, "percent".length)
 
       println(s" ${cols.mkString(colSep)}\n")
     }
@@ -90,19 +90,17 @@ class ConfusionMatrix(classNames: Set[String]) {
       for (i ← matrix.indices) {
         if (i != j) colVal += matrix(i)(j)
       }
-      cols += (if (colVal > 0)
-        red(w(colVal, colWidth)).toString()
-      else
-        w(colVal, colWidth))
+      val x = w(colVal, quotedNames(j).length)
+      cols += (if (colVal > 0) red(x).toString() else x)
     }
 
     val totalPercent = if (totalTests > 0 )
       "%.2f%%" format 100F * totalCorrect / totalTests
     else ""
 
-    cols += w(totalTests, colWidth)
-    cols += w(totalCorrect, colWidth)
-    cols += w(totalPercent, colWidth)
+    cols += w(totalTests, "tests".length)
+    cols += w(totalCorrect, "correct".length)
+    cols += w(totalPercent, "percent".length)
 
     println(" " + cols.mkString(colSep))
   }
