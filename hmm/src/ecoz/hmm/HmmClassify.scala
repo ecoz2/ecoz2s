@@ -114,7 +114,7 @@ object HmmClassify {
   private def coloredDot(seqName: String, hmmAndProbs: List[(Hmm,BigDecimal)]): Str = {
     val rank = hmmAndProbs.zipWithIndex.find(_._1._1.classNameOpt.contains(seqName))
       .map(_._2).getOrElse(colors.length -1)
-    colors(rank)("*")
+    colors(math.min(rank, colors.length -1))("*")
   }
 
   private val colors = List(
