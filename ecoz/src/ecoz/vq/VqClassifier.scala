@@ -1,5 +1,6 @@
-package ecoz.lpc
+package ecoz.vq
 
+import ecoz.lpc.Predictor
 import ecoz.rpt.ConfusionMatrix
 
 class VqClassifier(codebooks: List[Codebook]) {

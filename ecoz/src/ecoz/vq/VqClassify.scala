@@ -1,7 +1,8 @@
-package ecoz.lpc
+package ecoz.vq
 
 import java.io.File
 
+import ecoz.lpc.Predictors
 import ecoz.rpt._
 
 object VqClassify {

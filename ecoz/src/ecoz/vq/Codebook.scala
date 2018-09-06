@@ -1,8 +1,9 @@
-package ecoz.lpc
+package ecoz.vq
 
 import java.io._
 
 import ecoz.config.Config.lpa.P
+import ecoz.lpc.{Lpa, LpaResult, Predictor}
 import ecoz.symbol.SymbolSequence
 
 /**

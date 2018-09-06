@@ -1,10 +1,11 @@
-package ecoz.lpc
+package ecoz.vq
 
 import java.io.File
 
 import ecoz.config.Config
 import ecoz.config.Config.dir
 import ecoz.config.Config.lpa.P
+import ecoz.lpc._
 import ecoz.rpt._
 
 

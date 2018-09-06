@@ -1,9 +1,10 @@
-package ecoz.lpc
+package ecoz.vq
 
 import java.io.File
 
 import ecoz.config.Config
 import ecoz.config.Config.dir
+import ecoz.lpc.Predictors
 import ecoz.rpt.magenta
 import ecoz.symbol.SymbolSequences
 

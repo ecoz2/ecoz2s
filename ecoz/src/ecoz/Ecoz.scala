@@ -1,10 +1,10 @@
 package ecoz
 
-import ecoz.signal.SignalExtractor
-import ecoz.signal.Signals
-import ecoz.lpc._
 import ecoz.hmm._
+import ecoz.lpc._
+import ecoz.signal.{SignalExtractor, Signals}
 import ecoz.symbol.SymbolSequences
+import ecoz.vq.{Codebooks, VqClassify, VqLearn, VqQuantize}
 
 object Ecoz {
 
