@@ -30,7 +30,7 @@ The extracted selections get created under `../data/signals/`.
 
 Generate predictor vectors for all signals:
 
-    $ mill ecoz.run vpl -classes ../data/signals/*
+    $ mill ecoz.run lpc -classes ../data/signals/*
 
 **NOTE** look out for occasional 'non positive prediction error' warnings
 (I've seen 2 of them so far). Remove the corresponding predictor files.

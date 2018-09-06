@@ -1,4 +1,4 @@
-package ecoz.vpl
+package ecoz.lpc
 
 import java.io.File
 
@@ -6,15 +6,15 @@ import ecoz.config.Config.dir
 import ecoz.signal.Signals
 
 
-object Vpl {
+object Lpc {
 
   def usage(error: String = ""): Unit = {
     println(s"""$error
        |
-       | vpl - LPC analysis.
+       | lpc - LP coding
        |
-       | vpl -classes <className> ...
-       | vpl -signals <wav-file> ...
+       | lpc -classes <className> ...
+       | lpc -signals <wav-file> ...
        |
        | Predictor files are generated under ${dir.predictors}.
        | These files are processed by vq.learn for codebook generation
@@ -42,7 +42,7 @@ object Vpl {
     }
     processArgs(args.toList)
 
-    val lpc = new Lpc()
+    val lpa = new Lpa()
 
     val classAndWavFiles: List[(String, List[File])] = if (classNames.nonEmpty) {
       classNames map { className ⇒
@@ -88,10 +88,10 @@ object Vpl {
       signal = signal.preemphasis
       //println(s" Mean after preemphasis: ${signal.mean}")
 
-      val results = try lpc.lpcvector(signal)
+      val results = try lpa.onSignal(signal)
       catch {
-        case e: LpcaException ⇒
-          println(s"problem with lpcvector: ${e.getMessage}")
+        case e: LpaException ⇒
+          println(s"problem with lpa.onSignal: ${e.getMessage}")
           return
       }
 
@@ -102,7 +102,7 @@ object Vpl {
       )
 
       val prdFile = {
-        val baseDir = new File(dir.predictors, s"P%d" format lpc.P)
+        val baseDir = new File(dir.predictors, s"P%d" format lpa.P)
         val dirPrd = new File(baseDir, className)
         dirPrd.mkdirs()
         val prdFilename = wavFile.getName.replaceFirst("\\.[^.]*$", ".prd")
@@ -113,16 +113,16 @@ object Vpl {
     }
   }
 
-  def lpcSignals(wavFilenames: List[String]): Unit = {
-    val lpc = new Lpc()
+  def lpaOnSignals(wavFilenames: List[String]): Unit = {
+    val lpa = new Lpa()
     wavFilenames foreach lpcSignal
 
     def lpcSignal(wavFilename: String): Unit = {
       val signal = Signals.load(new File(wavFilename))
       println(s"\n$wavFilename:")
       try {
-        val results = lpc.lpcvector(signal)
-        println(s"LPA predictor vectors ${results.length}: ")
+        val results = lpa.onSignal(signal)
+        println(s"LPC predictor vectors ${results.length}: ")
         results foreach { res ⇒
           println("  r = " + res.rc.mkString("[", ", ", "]"))
           println(" rc = " + res.rc.mkString("[", ", ", "]"))
@@ -132,8 +132,8 @@ object Vpl {
         }
       }
       catch {
-        case e: LpcaException ⇒
-          println(s"problem with lpcvector: ${e.getMessage}")
+        case e: LpaException ⇒
+          println(s"problem with lpa.onSignal: ${e.getMessage}")
       }
     }
   }

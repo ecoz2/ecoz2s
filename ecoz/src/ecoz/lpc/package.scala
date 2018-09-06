@@ -1,8 +1,8 @@
 package ecoz
 
-import ecoz.config.Config.lpc.P
+import ecoz.config.Config.lpa.P
 
-package object vpl {
+package object lpc {
   /**
     * Likelihood ratio measure as defined in Juang et al (1982) (except no -1 here).
     *

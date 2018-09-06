@@ -1,8 +1,8 @@
-package ecoz.vpl
+package ecoz.lpc
 
 import java.io._
 
-import ecoz.config.Config.lpc.P
+import ecoz.config.Config.lpa.P
 import ecoz.symbol.SymbolSequence
 
 /**
@@ -23,23 +23,23 @@ case class Codebook(
 
   val raas: Array[Array[Float]] = {
     val vectors = Array.ofDim[Float](size, P + 1)
-    val lpc = new Lpc()
+    val lpa = new Lpa()
     reflections.zipWithIndex foreach { case (rc, index) ⇒
-      val a = lpc.lpca_rc(rc)
+      val a = lpa.lpca_rc(rc)
       updateRaa(a, vectors(index))
     }
     vectors
   }
 
-  def updateEntryWith(index: Int, lpcaResult: LpcaResult): Unit = {
-    require(lpcaResult.rc.length == P + 1)
+  def updateEntryWith(index: Int, lpaResult: LpaResult): Unit = {
+    require(lpaResult.rc.length == P + 1)
 
     // set reflection vector:
-    Array.copy(lpcaResult.rc, 0, reflections(index), 0, P + 1)
+    Array.copy(lpaResult.rc, 0, reflections(index), 0, P + 1)
 
     // set autocorrelation vector:
-    // TODO just copy lpcaResult.r as it should be that already
-    updateRaa(lpcaResult.a, raas(index))
+    // TODO just copy lpaResult.r as it should be that already
+    updateRaa(lpaResult.a, raas(index))
   }
 
   private def updateRaa(a: Array[Float], raa: Array[Float]): Unit = {

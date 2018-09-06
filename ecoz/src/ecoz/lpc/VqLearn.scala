@@ -1,10 +1,10 @@
-package ecoz.vpl
+package ecoz.lpc
 
 import java.io.File
 
 import ecoz.config.Config
 import ecoz.config.Config.dir
-import ecoz.config.Config.lpc.P
+import ecoz.config.Config.lpa.P
 import ecoz.rpt._
 
 
@@ -99,7 +99,7 @@ class VqLearn(prefix: String,
 
   private val ε = epsilonStr.toFloat
 
-  private val lpc = new Lpc()
+  private val lpa = new Lpa()
 
   private val totVectors = trainingSet.length
 
@@ -290,15 +290,15 @@ class VqLearn(prefix: String,
           cell(k) /= cardd
         }
 
-        val lpcaResult = lpc.lpca_r(cell)
+        val lpaResult = lpa.lpca_r(cell)
 
-        codebook.updateEntryWith(i, lpcaResult)
+        codebook.updateEntryWith(i, lpaResult)
 
         // normalize accumulated autocorrelation sequence by gain
         // in this cell for the sigma ratio calculation:
-        if (lpcaResult.pe != 0F) {
+        if (lpaResult.pe != 0F) {
           for (k ← 0 to P) {
-            cell(k) /= lpcaResult.pe
+            cell(k) /= lpaResult.pe
           }
         }
       }

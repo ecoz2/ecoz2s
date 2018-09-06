@@ -2,7 +2,7 @@ package ecoz
 
 import ecoz.signal.SignalExtractor
 import ecoz.signal.Signals
-import ecoz.vpl._
+import ecoz.lpc._
 import ecoz.hmm._
 import ecoz.symbol.SymbolSequences
 
@@ -17,8 +17,9 @@ object Ecoz {
        |
        |   ecoz sig.xtor ...
        |   ecoz sig.show ...
+       |   ecoz lpa ...
+       |   ecoz lpc ...
        |   ecoz prd.show ...
-       |   ecoz vpl ...
        |   ecoz vq.learn ...
        |   ecoz cb.show ...
        |   ecoz vq.quantize ...
@@ -41,14 +42,14 @@ object Ecoz {
       case "sig.show" :: wavFilenames ⇒
         Signals.showSignals(wavFilenames)
 
-      case "lpc" :: wavFilenames ⇒
-        Vpl.lpcSignals(wavFilenames)
+      case "lpa" :: wavFilenames ⇒
+        Lpc.lpaOnSignals(wavFilenames)
+
+      case "lpc" :: rest ⇒
+        Lpc.main(rest.toArray)
 
       case "prd.show" :: prdFilenames ⇒
-        Vpl.showPredictors(prdFilenames)
-
-      case "vpl" :: rest ⇒
-        Vpl.main(rest.toArray)
+        Lpc.showPredictors(prdFilenames)
 
       case "vq.learn" :: rest ⇒
         VqLearn.main(rest)

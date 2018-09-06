@@ -18,7 +18,7 @@ object Config {
     hmms.mkdirs()
   }
 
-  object lpc {
+  object lpa {
     //  P ≈ f_s / 1000 + γ  (Parsons, p. 164)
     // So, in the order of 32+ for f_s=32K
 

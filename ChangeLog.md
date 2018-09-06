@@ -1,3 +1,8 @@
+2018-09-06
+
+- refact: some general renaming
+  (eg., "lpa" for analysis, "lpc" for actual coding)
+
 2018-09-05
 
 - hmm.classify: -sr option now with argument to indicate number of highest
@@ -14,9 +19,9 @@
   given sequences.
 
 - readme: update instructions of basic "closed" test
-- vpl: use simple name in given className path.
+- lpc: use simple name in given className path.
   This facilitates running like this:
-  `mill ecoz.run vpl -classes ../data/signals/*`
+  `mill ecoz.run lpc -classes ../data/signals/*`
 
 2018-09-04
 
@@ -52,8 +57,8 @@
 - more on initial vq.learn implementation;
   dealing with empty cells.
 
-        mill ecoz.run vpl -classes "groan + purr" "descending shriek" "descending moan" "ascending shriek" _
-        mill ecoz.run vpl -classes bark groan grunts gurgle purr trill "purr (D)" "modulated cry" "gurgle?" "gurgle + descending shriek"
+        mill ecoz.run lpc -classes "groan + purr" "descending shriek" "descending moan" "ascending shriek" _
+        mill ecoz.run lpc -classes bark groan grunts gurgle purr trill "purr (D)" "modulated cry" "gurgle?" "gurgle + descending shriek"
 
         mill ecoz.run vq.learn -p prefijo ../data/predictors/*/*.prd
 

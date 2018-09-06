@@ -1,29 +1,31 @@
-package ecoz.vpl
+package ecoz.lpc
 
-import ecoz.config.Config.lpc
+import ecoz.config.Config.lpa
 import ecoz.rpt.warn
 import ecoz.signal.Signal
 
-case class LpcaResult(r: Array[Float],  // autocorrelation
-                      rc: Array[Float], // reflection coefficients
-                      a: Array[Float],  // predictor coefficients
-                      pe: Float         // prediction error
+case class LpaResult(r: Array[Float],  // autocorrelation
+                     rc: Array[Float], // reflection coefficients
+                     a: Array[Float],  // predictor coefficients
+                     pe: Float         // prediction error
                      )
 
-case class LpcaException(msg: String) extends Exception(msg)
+case class LpaException(msg: String) extends Exception(msg)
 
-
-class Lpc(val P: Int = lpc.P,
-          winLenMs: Int = lpc.windowLengthMs,
-          offsetLenMs: Int = lpc.offsetLengthMs,
+/**
+  * Linear Prediction Analysis
+  */
+class Lpa(val P: Int = lpa.P,
+          winLenMs: Int = lpa.windowLengthMs,
+          offsetLenMs: Int = lpa.offsetLengthMs,
          ) {
 
-  def lpcvector(signal: Signal): List[LpcaResult] = {
+  def onSignal(signal: Signal): List[LpaResult] = {
     val R = signal.sampleRate
     val winLen = ( (winLenMs * R) / 1000 ).toInt
 
     if (winLen > signal.x.length) {
-      throw LpcaException("signal is too short")
+      throw LpaException("signal is too short")
     }
 
     val offsetLen = ( (offsetLenMs * R) / 1000 ).toInt
@@ -37,16 +39,16 @@ class Lpc(val P: Int = lpc.P,
       else t
     }
 
-    println(s" lpcvector: T = $T")
+    println(s" lpa.onSignal: T = $T")
 
     val hamm = hamming(winLen)
 
     // section under analysis
     val section = new Array[Float](winLen)
 
-    val results = collection.mutable.MutableList[LpcaResult]()
+    val results = collection.mutable.MutableList[LpaResult]()
 
-    // perform LPC analysis to each section:
+    // perform LPA to each section:
     for (t ← 0 until T) {
       // println(s"analysing section: t = $t")
       var p = t * offsetLen
@@ -58,21 +60,21 @@ class Lpc(val P: Int = lpc.P,
       }
 
       try {
-        val lpcaResult = lpca(section)
+        val lpaResult = lpca(section)
         // gain normalize autocorrelation:
-        if (lpcaResult.pe != 0F) {
-          val r = lpcaResult.r
+        if (lpaResult.pe != 0F) {
+          val r = lpaResult.r
           for (n ← r.indices) {
-            r(n) /= lpcaResult.pe
+            r(n) /= lpaResult.pe
           }
         }
         else {
           println("No prediction error!")
         }
-        results += lpcaResult
+        results += lpaResult
       }
       catch {
-        case e: LpcaException ⇒
+        case e: LpaException ⇒
           println(s"problem with section t=$t: " + e.getMessage)
       }
     }
@@ -86,7 +88,7 @@ class Lpc(val P: Int = lpc.P,
     * using Levinson (Durbin) recursion.
     * (Parsons, 1987)
     */
-  def lpca(x: Array[Float]): LpcaResult = {
+  def lpca(x: Array[Float]): LpaResult = {
 
     val N = x.length
 
@@ -112,11 +114,11 @@ class Lpc(val P: Int = lpc.P,
     *
     * @param r   autocorrelation
     */
-  def lpca_r(r: Array[Float]): LpcaResult = {
+  def lpca_r(r: Array[Float]): LpaResult = {
 
     val r0 = r(0)
     if (r0 == 0F) {
-      throw LpcaException("lpca_r: signal power is zero")
+      throw LpaException("lpca_r: signal power is zero")
     }
 
     // compute prediction coefficients and reflection coefficients
@@ -154,10 +156,10 @@ class Lpc(val P: Int = lpc.P,
       pe *= (1F - akk*akk)
       if (pe <= 0F) {
         warn(s"lpca_r: non positive prediction error: pe=$pe  akk=$akk\n r=${r.toList}")
-        //throw LpcaException(s"lpca_r: non positive prediction error: $pe\n r=${r.toList}")
+        //throw LpaException(s"lpca_r: non positive prediction error: $pe\n r=${r.toList}")
       }
     }
-    LpcaResult(r = r, rc = rc, a = a, pe = pe)
+    LpaResult(r = r, rc = rc, a = a, pe = pe)
   }
 
   /**
