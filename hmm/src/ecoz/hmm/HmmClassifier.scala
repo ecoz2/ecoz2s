@@ -5,7 +5,7 @@ import ecoz.rpt.quoted
 import ecoz.symbol.SymbolSequence
 
 class HmmClassifier(hmms: List[Hmm],
-                    \                    showRanked: Int = 0
+                    showRanked: Int = 0
                    ) {
 
   private val classNames = collection.mutable.HashSet[String]()
