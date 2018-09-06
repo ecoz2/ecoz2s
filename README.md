@@ -15,7 +15,7 @@ As a convenience:
 
     $ alias ecoz='java -jar ./out/ecoz/assembly/dest/out.jar'
 
-The main program launches as number of possible commands:
+A number of possible commands can be run through the main program:
 
     $ ecoz
      ecoz - main program.
@@ -53,5 +53,5 @@ Call a particular command with no arguments to get usage details, eg:
 
 ### History
 
-This project is a direct translation of my C implementation done as
-part of my BS thesis completed in 1993.
+This project is a direct translation of a C implementation I did as part
+of my BS thesis on isolated word speech recognition completed in 1993.
