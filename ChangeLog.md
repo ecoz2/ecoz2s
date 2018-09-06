@@ -16,14 +16,14 @@
 
 - hmm.classify: ignore sequences with no hmm model for associated class.
   This allows to run, for example:
-  `mill ecoz.run hmm.classify -hmm  ../data/hmms/N10__M128/*.hmm -seq ../data/sequences/M128/*/*`
+  `ecoz hmm.classify -hmm  ../data/hmms/N10__M128/*.hmm -seq ../data/sequences/M128/*/*`
   when there may not be hmm models for all class names indicated in the
   given sequences.
 
 - readme: update instructions of basic "closed" test
 - lpc: use simple name in given className path.
   This facilitates running like this:
-  `mill ecoz.run lpc -classes ../data/signals/*`
+  `ecoz lpc -classes ../data/signals/*`
 
 2018-09-04
 
@@ -59,10 +59,10 @@
 - more on initial vq.learn implementation;
   dealing with empty cells.
 
-        mill ecoz.run lpc -classes "groan + purr" "descending shriek" "descending moan" "ascending shriek" _
-        mill ecoz.run lpc -classes bark groan grunts gurgle purr trill "purr (D)" "modulated cry" "gurgle?" "gurgle + descending shriek"
+        ecoz lpc -classes "groan + purr" "descending shriek" "descending moan" "ascending shriek" _
+        ecoz lpc -classes bark groan grunts gurgle purr trill "purr (D)" "modulated cry" "gurgle?" "gurgle + descending shriek"
 
-        mill ecoz.run vq.learn -p prefijo ../data/predictors/*/*.prd
+        ecoz vq.learn -p prefijo ../data/predictors/*/*.prd
 
 
 2018-08-29
