@@ -1,25 +1,8 @@
 import mill._
 import mill.scalalib._
 
-object ecoz extends BaseModule {
+object ecoz extends ScalaModule {
   override def mainClass = Some("ecoz.Ecoz")
-  override def moduleDeps = Seq(vpl, rpt)
-}
-
-object vpl extends BaseModule {
-  override def moduleDeps = Seq(signal, rpt)
-  override def mainClass = Some("ecoz.vpl.Vpl")
-}
-
-object rpt extends BaseModule
-
-object signal extends BaseModule {
-  override def moduleDeps = Seq(config)
-}
-
-object config extends BaseModule
-
-trait BaseModule extends ScalaModule {
   def scalaVersion = "2.12.4"
 
   override def ivyDeps = Agg(
