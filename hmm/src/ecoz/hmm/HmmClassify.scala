@@ -16,7 +16,7 @@ object HmmClassify {
        | hmm.classify -hmm <hmm> ... -seq <sequence> ...
        |
        | Options:
-       |   -sr            show ranked models per sequence
+       |   -sr <n>     Show n most probable models per unrecognized sequence
        |
        | Classifies each sequence according to given models.
      """.stripMargin)
@@ -26,7 +26,7 @@ object HmmClassify {
   def main(args: List[String]): Unit = {
     var hmmFilenames = List[String]()
     var seqFilenames = List[String]()
-    var showRanked = false
+    var showRanked = 0
 
     def processArgs(opts: List[String]): Unit = {
       opts match {
@@ -40,8 +40,8 @@ object HmmClassify {
           seqFilenames = seqs
           processArgs(rest2)
 
-        case "-sr" :: rest ⇒
-          showRanked = true
+        case "-sr" :: num :: rest ⇒
+          showRanked = num.toInt
           processArgs(rest)
 
         case opt :: _ ⇒
@@ -52,10 +52,10 @@ object HmmClassify {
     }
     processArgs(args)
     if (hmmFilenames.isEmpty) {
-      usage("indicate hmm(s)")
+      usage("Indicate the hmm model(s)")
     }
     if (seqFilenames.isEmpty) {
-      usage("indicate sequence files to be recognized")
+      usage("Indicate the sequence files to be classified")
     }
 
     // load hmms right away, but process sequences one by one:

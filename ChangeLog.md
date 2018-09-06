@@ -1,5 +1,8 @@
 2018-09-05
 
+- hmm.classify: -sr option now with argument to indicate number of highest
+  ranked models to show (with probabilities) for each unrecognized sequence
+
 - first complete HMM exercise with separation of training and test sequences
 
 - more condensed confusion matrix by using indices to class names

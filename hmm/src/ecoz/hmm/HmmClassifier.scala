@@ -5,7 +5,7 @@ import ecoz.rpt.quoted
 import ecoz.symbol.SymbolSequence
 
 class HmmClassifier(hmms: List[Hmm],
-                    showRanked: Boolean = false
+                    \                    showRanked: Int = 0
                    ) {
 
   private val classNames = collection.mutable.HashSet[String]()
@@ -31,21 +31,24 @@ class HmmClassifier(hmms: List[Hmm],
 
   def reportResults(): Unit = {
     val cm = new ConfusionMatrix(classNames.toSet)
-    bySeqName foreach { case (seqName, instances) ⇒
-      //println(s"${quoted(seqName)} ${instances.length} instances")
-      instances foreach { sortedByProb ⇒
-        if (showRanked) {
-          println(s":: seqName=$seqName:")
-          sortedByProb foreach { case (hmm, prob) ⇒
-            val pStr = "%s prob =" format quoted(hmm.classNameOpt.get)
-            printf(s"  %20s %s\n", pStr, prob)
-          }
-        }
 
-        val hmm = sortedByProb.head._1
-        cm.setWinner(seqName, hmm.classNameOpt.get)
+    bySeqName foreach { case (seqName, instances) ⇒
+      instances foreach { sortedByProb ⇒
+        val hmmWinner = sortedByProb.head._1
+        val hmmName = hmmWinner.classNameOpt.get
+        cm.setWinner(seqName, hmmName)
+
+        if (seqName != hmmName && showRanked > 0) {
+          printf(s"  %24s sequence:\n", quoted(seqName))
+          sortedByProb.take(showRanked) foreach { case (hmm, prob) ⇒
+            val pStr = "%s" format quoted(hmm.classNameOpt.get)
+            printf(s"  %24s prob = %s\n", pStr, prob)
+          }
+          println()
+        }
       }
     }
+
     cm.show()
   }
 }
