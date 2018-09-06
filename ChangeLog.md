@@ -1,5 +1,7 @@
 2018-09-05
 
+- more condensed confusion matrix by using indices to class names
+
 - hmm.classify: ignore sequences with no hmm model for associated class.
   This allows to run, for example:
   `mill ecoz.run hmm.classify -hmm  ../data/hmms/N10__M128/*.hmm -seq ../data/sequences/M128/*/*`

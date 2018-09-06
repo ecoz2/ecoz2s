@@ -17,7 +17,16 @@ class ConfusionMatrix(classNames: Set[String]) {
   def show(): Unit = {
     println("Confusion matrix:")
 
-    val quotedNames = sortedNames map quoted
+    def formatIndex(i: Int): String = {
+      if (sortedNames.length <= 99) "[%02d]" format i
+      else "[%03d]" format i
+    }
+
+    val colHeaders = sortedNames.indices map formatIndex
+
+    val quotedNames = colHeaders.zipWithIndex map { case (colHeader, i) ⇒
+      quoted(sortedNames(i)) + " " + colHeader
+    }
 
     val firstColWidth = quotedNames.map(_.length).max
 
@@ -27,7 +36,7 @@ class ConfusionMatrix(classNames: Set[String]) {
 
     val cols = collection.mutable.ArrayBuffer[String]()
     cols += w(corner, leftWidth)
-    cols ++= quotedNames.map(n ⇒ w(n, n.length))
+    cols ++= colHeaders.map(n ⇒ w(n, n.length))
     cols += w("tests", "tests".length)
     cols += w("correct", "correct".length)
     cols += w("percent", "percent".length)
@@ -37,7 +46,7 @@ class ConfusionMatrix(classNames: Set[String]) {
     def lines(): Unit = {
       cols.clear()
       cols += div(leftWidth)
-      cols ++= quotedNames.map(n ⇒ div(n.length, "="))
+      cols ++= colHeaders.map(n ⇒ div(n.length, "="))
       cols += div("tests".length)
       cols += div("correct".length)
       cols += div("percent".length)
@@ -51,7 +60,7 @@ class ConfusionMatrix(classNames: Set[String]) {
 
     for (i ← matrix.indices) {
       val colVals = matrix(i).zipWithIndex map { case (n, j) ⇒
-        val str = w(n, quotedNames(j).length)
+        val str = w(n, colHeaders(j).length)
         if (i == j) {
           if (n > 0) green(str).toString()
           else       str
@@ -71,7 +80,7 @@ class ConfusionMatrix(classNames: Set[String]) {
       totalCorrect += correct
 
       cols.clear()
-      cols += w(quoted(sortedNames(i)), leftWidth)
+      cols += w(quotedNames(i), leftWidth)
       cols ++= colVals
       cols += w(tests, "tests".length)
       cols += w(correct, "correct".length)
@@ -90,7 +99,7 @@ class ConfusionMatrix(classNames: Set[String]) {
       for (i ← matrix.indices) {
         if (i != j) colVal += matrix(i)(j)
       }
-      val x = w(colVal, quotedNames(j).length)
+      val x = w(colVal, colHeaders(j).length)
       cols += (if (colVal > 0) red(x).toString() else x)
     }
 
