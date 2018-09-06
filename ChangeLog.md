@@ -1,5 +1,7 @@
 2018-09-05
 
+- first complete HMM exercise with separation of training and test sequences
+
 - more condensed confusion matrix by using indices to class names
 
 - hmm.classify: ignore sequences with no hmm model for associated class.
