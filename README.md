@@ -46,7 +46,7 @@ Call a particular command with no arguments to get usage details, eg:
      lpc -classes <className> ...
      lpc -signals <wav-file> ...
 
-     Predictor files are generated under ../data/predictors.
+     Predictor files are generated under data/predictors.
      These files are processed by vq.learn for codebook generation
      and by vq.quantize for quantization.
 

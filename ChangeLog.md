@@ -1,5 +1,7 @@
 2018-09-06
 
+- refer to `data/` (instead of `../data/`) as base data directory
+
 - update readme and move exercise description to ex1.md
 - refact: move Vq* elements to ecoz.vq package
 - refact: some general renaming
@@ -16,14 +18,14 @@
 
 - hmm.classify: ignore sequences with no hmm model for associated class.
   This allows to run, for example:
-  `ecoz hmm.classify -hmm  ../data/hmms/N10__M128/*.hmm -seq ../data/sequences/M128/*/*`
+  `ecoz hmm.classify -hmm  data/hmms/N10__M128/*.hmm -seq data/sequences/M128/*/*`
   when there may not be hmm models for all class names indicated in the
   given sequences.
 
 - readme: update instructions of basic "closed" test
 - lpc: use simple name in given className path.
   This facilitates running like this:
-  `ecoz lpc -classes ../data/signals/*`
+  `ecoz lpc -classes data/signals/*`
 
 2018-09-04
 
@@ -62,7 +64,7 @@
         ecoz lpc -classes "groan + purr" "descending shriek" "descending moan" "ascending shriek" _
         ecoz lpc -classes bark groan grunts gurgle purr trill "purr (D)" "modulated cry" "gurgle?" "gurgle + descending shriek"
 
-        ecoz vq.learn -p prefijo ../data/predictors/*/*.prd
+        ecoz vq.learn -p prefijo data/predictors/*/*.prd
 
 
 2018-08-29

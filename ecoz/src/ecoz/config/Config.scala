@@ -4,7 +4,7 @@ import java.io.File
 
 object Config {
   object dir {
-    val workspace = new File("../data")
+    val workspace = new File("data")
     val signals = new File(workspace, "signals")
     val predictors = new File(workspace, "predictors")
     val codebooks = new File(workspace, "codebooks")
