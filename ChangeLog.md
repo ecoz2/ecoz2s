@@ -1,5 +1,8 @@
 2018-09-06
 
+- some adjustments while starting exercise with 10 sound files
+    - sig.xtor: ignore selections with empty description
+
 - refer to `data/` (instead of `../data/`) as base data directory
 
 - update readme and move exercise description to ex1.md

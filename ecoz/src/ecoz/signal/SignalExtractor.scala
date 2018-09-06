@@ -10,14 +10,13 @@ import ecoz.config.Config.dir
 object SignalExtractor {
 
   def main(args: Array[String]): Unit = {
-    if (args.length < 2) {
-      println("USAGE: <wav-file> <selection-file> description ...")
+    if (args.length != 2) {
+      println("USAGE: ecoz sig.xtor <wav-file> <selection-file>")
       return
     }
 
     val wavFile = new File(args(0))
     val selectionFile = new File(args(1))
-    val descriptions = args.drop(2)
 
     val wavFileSimpleName = wavFile.getName.replaceFirst("\\.[^.]*$", "")
 
@@ -43,18 +42,8 @@ object SignalExtractor {
           selByDescription(description).length))
     }
 
-    if (descriptions.nonEmpty) {
-      val actualDescriptions = if (descriptions.contains("--all")) {
-        allSortedDescriptions
-      }
-      else descriptions.toList
-
-      actualDescriptions foreach { description ⇒
-        selByDescription.get(description) foreach extractSelections
-      }
-    }
-    else {
-      println("USAGE: <wav-file> <selection-file> description ...")
+    allSortedDescriptions foreach { description ⇒
+      selByDescription.get(description) foreach extractSelections
     }
 
     in.close()
@@ -63,13 +52,16 @@ object SignalExtractor {
       val bufSize = 8192  // perform operations in blocks of this size
       val buf = in.buffer(bufSize)
 
-      selections foreach extractSelection
+      // ignore selections with empty description
+      val withDescription = selections filter (_.description.nonEmpty)
+
+      withDescription foreach extractSelection
 
       def extractSelection(s: Selection): Unit = {
         //print("extractSelection: s="); pprint.pprintln(s)
 
-        val outputDirName = if (s.description.trim.isEmpty) "_"
-        else s.description.trim.replaceAll("""/|\\""", "_")
+        // replace slash, back-slash and space with '_':
+        val outputDirName = s.description.replaceAll("""/|\\| """, "_")
         val outputDir = new File(dir.signals, outputDirName)
         outputDir.mkdirs()
 
@@ -90,24 +82,25 @@ object SignalExtractor {
         }
         out.close()
 
-        println(f"Selection extracted: $outFile")
-
+        // println(f"Selection extracted: $outFile")
       }
 
       def position(timeSecs: Float): Long = (timeSecs / samplePeriod).toLong
     }
   }
 
-
   def readSelections(selectionPath: File): Seq[Selection] = {
     val reader = CSVReader.open(selectionPath)(new TSVFormat {})
     val allLines = reader.all
     val headerCols = allLines.head
-    print("Header: ")
-    pprint.pprintln(headerCols)
+    //print("Header: "); pprint.pprintln(headerCols)
     val begTimeIndex = headerCols.indexOf("Begin Time (s)")
     val endTimeIndex = headerCols.indexOf("End Time (s)")
-    val descriptionIndex = headerCols.indexOf("Description (Dunlop & Fournet)")
+    val descriptionIndex = headerCols.indexWhere(_.startsWith("Description"))
+
+    require(begTimeIndex >= 0, s"""expected column: "Begin Time (s)" """)
+    require(endTimeIndex >= 0, s"""expected column: "End Time (s)" """)
+    require(descriptionIndex >= 0, s"""expected column starting with: "Description" """)
 
     allLines.drop(1) map { columns ⇒
       val begTime = columns(begTimeIndex).toFloat
@@ -115,7 +108,7 @@ object SignalExtractor {
       val description = columns(descriptionIndex).trim
       //pprint.pprintln(columns)
       Selection(begTime, endTime, description)
-    }
+    } filter(_.description.nonEmpty)
   }
 }
 
