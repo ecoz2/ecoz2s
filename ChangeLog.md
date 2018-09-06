@@ -1,5 +1,11 @@
 2018-09-05
 
+- hmm.classify: ignore sequences with no hmm model for associated class.
+  This allows to run, for example:
+  `mill ecoz.run hmm.classify -hmm  ../data/hmms/N10__M128/*.hmm -seq ../data/sequences/M128/*/*`
+  when there may not be hmm models for all class names indicated in the
+  given sequences.
+
 - readme: update instructions of basic "closed" test
 - vpl: use simple name in given className path.
   This facilitates running like this:

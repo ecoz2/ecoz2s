@@ -91,9 +91,15 @@ object HmmClassify {
 
       seq.classNameOpt match {
         case Some(className) ⇒
-          val hmmAndProbs = classifier.classifySequence(seq, className)
-          val dot = coloredDot(className, hmmAndProbs)
-          print(dot.toString())
+          if (hmmNames.contains(className)) {
+            val hmmAndProbs = classifier.classifySequence(seq, className)
+            val dot = coloredDot(className, hmmAndProbs)
+            print(dot.toString())
+          }
+          else {
+            // just a different mark for ignored sequence
+            print(fansi.Color.LightGray("-"))
+          }
           Console.flush()
 
         case None ⇒
@@ -108,7 +114,7 @@ object HmmClassify {
   private def coloredDot(seqName: String, hmmAndProbs: List[(Hmm,BigDecimal)]): Str = {
     val rank = hmmAndProbs.zipWithIndex.find(_._1._1.classNameOpt.contains(seqName))
       .map(_._2).getOrElse(colors.length -1)
-    colors(rank)(".")
+    colors(rank)("*")
   }
 
   private val colors = List(
