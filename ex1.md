@@ -3,8 +3,8 @@ Although only using provided frame selections from a single file
 (`HBSe_20151207T070326.wav`), it has served as a basis for the new
 implementation in terms of testing and preparations for future exercises.
 
-NOTE: At this point, data file structure as well as indication of some
-of the core parameters (eg., order of linear prediction) are still preliminary.
+NOTE: At this point, data file structure and indication of some of the
+core parameters (eg., order of linear prediction) are still preliminary.
 
 ## Base configuration
 
@@ -14,7 +14,7 @@ Captured in `config/src/ecoz/config/Config.scala`.
 
 The extracted selections get created under `data/signals/`.
 
-    $ ecoz sig.xtor data/HBSe_20151207T070326.wav data/20151207T070326.txt --all
+    $ ecoz sig.xtor data/songs/HBSe_20151207T070326.wav data/songs/selections/20151207T070326.txt --all
 
     $ ls data/signals
     _                          bark (D)                   groan + purr               gurgle + trill             purr
