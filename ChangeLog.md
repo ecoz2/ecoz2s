@@ -1,6 +1,8 @@
 2018-09-06
 
 - some adjustments while starting exercise with 10 sound files
+    - vq.quantize follows the TRAIN/TEST destination pattern depending on
+      whether the input predictor files have 'TRAIN/' or 'TEST/' in their paths
     - new -split option for lpc command, which allows to put the
       generated predictors into two different training and test subsets.
     - sig.xtor: ignore selections with empty description

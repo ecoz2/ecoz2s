@@ -2,7 +2,6 @@ package ecoz.vq
 
 import java.io.File
 
-import ecoz.config.Config
 import ecoz.config.Config.dir
 import ecoz.lpc.Predictors
 import ecoz.rpt.magenta
@@ -72,10 +71,20 @@ object VqQuantize {
       numSeqs += 1
       println(s"\n$prdFilename:\n  " + sequence)
 
+      val destDir = {
+        if (prdFilename.contains("TRAIN/")) {
+          new File(dir.sequences, s"TRAIN")
+        }
+        else if (prdFilename.contains("TEST/")) {
+          new File(dir.sequences, s"TEST")
+        }
+        else dir.sequences
+      }
+
       val seqFilename = prdFile.getName.replaceFirst("\\.[^.]*$", ".seq")
 
       val seqFile = {
-        val baseDir = new File(Config.dir.sequences, s"M%d" format sequence.M)
+        val baseDir = new File(destDir, s"M%d" format sequence.M)
         val className = predictor.classNameOpt.getOrElse("UNKNOWN")
         val seqDir = new File(baseDir, className)
         seqDir.mkdirs()
