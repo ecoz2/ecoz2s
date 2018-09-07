@@ -11,6 +11,9 @@ import ecoz.rpt._
 
 object VqLearn {
 
+  private val defaultEpsilonStr = "0.005"
+  private val defaultTakeT = Int.MaxValue
+
   def usage(error: String = ""): Unit = {
     println(s"""$error
        |
@@ -21,7 +24,8 @@ object VqLearn {
        | Options:
        |   -w className
        |   -p prefix
-       |   -e epsilon
+       |   -e epsilon        ($defaultEpsilonStr)
+       |   -take #           take up this # of vectors from each predictor ($defaultTakeT)
        |
        | Predictor files are read from ${dir.predictors}/.
        | Codebooks are generated under ${dir.codebooks}/.
@@ -33,7 +37,8 @@ object VqLearn {
   def main(args: List[String]): Unit = {
     var classNameOpt: Option[String] = None
     var prefixOpt: Option[String] = None
-    var epsilonStr = "0.005"
+    var epsilonStr = defaultEpsilonStr
+    var takeT = defaultTakeT
     var prdFilenames = List[String]()
 
     def processArgs(opts: List[String]): Unit = {
@@ -48,6 +53,11 @@ object VqLearn {
 
         case "-e" :: eps :: rest ⇒
           epsilonStr = eps
+          processArgs(rest)
+
+        case "-take" :: num :: rest ⇒
+          takeT = num.toInt
+          require(takeT > 0, "-take expects positive number")
           processArgs(rest)
 
         case opt :: _ if opt.startsWith("-") ⇒
@@ -72,19 +82,20 @@ object VqLearn {
          |prefix      : "$prefix"
          |epsilon     : $epsilonStr
          |predictors  : ${prdFilenames.length}
+         |takeT       : $takeT
        """.stripMargin)
 
-    val trainingSet = loadTrainingSet(prdFilenames)
+    val trainingSet = loadTrainingSet(prdFilenames, takeT)
     println(s"loaded ${trainingSet.length} vectors as training set")
 
     new VqLearn(prefix, epsilonStr, trainingSet, classNameOpt).learn()
   }
 
-  def loadTrainingSet(prdFilenames: List[String]): Array[Array[Float]] = {
+  def loadTrainingSet(prdFilenames: List[String], takeT: Int): Array[Array[Float]] = {
     val allVectors = collection.mutable.MutableList[Array[Float]]()
     prdFilenames foreach { prdFilename ⇒
       val predictor = Predictors.load(new File(prdFilename))
-      predictor.vectors foreach { vector ⇒
+      predictor.vectors.take(takeT) foreach { vector ⇒
         allVectors += vector
       }
     }
