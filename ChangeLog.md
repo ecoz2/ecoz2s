@@ -1,7 +1,7 @@
 2018-09-07
 
 - hmm.classify: show marker for corresponding model when using -sr option
-- ex2.md: second exercise with the 10 labelled song files.
+- ex2: second exercise with the 10 labelled song files.
 
 2018-09-06
 
@@ -17,7 +17,7 @@
 
 - refer to `data/` (instead of `../data/`) as base data directory
 
-- update readme and move exercise description to exercises/ex1.md
+- update readme and move exercise description to exercises/ex1/
 - refact: move Vq* elements to ecoz.vq package
 - refact: some general renaming
   (eg., "lpa" for analysis, "lpc" for actual coding)
