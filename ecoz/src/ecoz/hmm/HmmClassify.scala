@@ -95,12 +95,9 @@ object HmmClassify {
             val hmmAndProbs = classifier.classifySequence(seq, className)
             val dot = coloredDot(className, hmmAndProbs)
             print(dot.toString())
+            Console.flush()
           }
-          else {
-            // just a different mark for ignored sequence
-            print(fansi.Color.LightGray("-"))
-          }
-          Console.flush()
+          // else: ignore sequence with no model for its class
 
         case None ⇒
           warn(s"Unnamed sequence ignored: $seqFilename")
@@ -114,12 +111,21 @@ object HmmClassify {
   private def coloredDot(seqName: String, hmmAndProbs: List[(Hmm,BigDecimal)]): Str = {
     val rank = hmmAndProbs.zipWithIndex.find(_._1._1.classNameOpt.contains(seqName))
       .map(_._2).getOrElse(colors.length -1)
-    colors(math.min(rank, colors.length -1))("*")
+    val mark = if (rank < 10) rank.toString else "x"
+    val color = colors(math.min(rank, colors.length -1))
+    color(mark)
   }
 
   private val colors = List(
     fansi.Color.LightGreen,
+    fansi.Color.LightYellow,
+    fansi.Color.LightYellow,
     fansi.Color.Yellow,
-    fansi.Color.Red,
+    fansi.Color.Yellow,
+    fansi.Color.LightGray,
+    fansi.Color.LightGray,
+    fansi.Color.DarkGray,
+    fansi.Color.DarkGray,
+    fansi.Color.DarkGray,
   )
 }

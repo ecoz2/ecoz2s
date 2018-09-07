@@ -1,6 +1,9 @@
 2018-09-06
 
 - some adjustments while starting exercise with 10 sound files
+    - hmm.classify: use digit as a marker to show ranking during progress
+      (starting with '0' as correct classification, and using 'x' when
+      ranking is >= 10)
     - vq.quantize follows the TRAIN/TEST destination pattern depending on
       whether the input predictor files have 'TRAIN/' or 'TEST/' in their paths
     - new -split option for lpc command, which allows to put the
