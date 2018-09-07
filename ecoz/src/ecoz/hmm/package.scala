@@ -1,5 +1,7 @@
 package ecoz
 
+import fansi.Attr
+
 package object hmm {
 
   def cascadeDistribution(size: Int, from: Int, len: Int): Array[BigDecimal] = {
@@ -45,4 +47,36 @@ package object hmm {
   }
 
   private val random = scala.util.Random
+
+  def coloredRankMarker(rank: Int, width: Int = 1): String = {
+    require(rank >= 0)
+    val marker = if (width > 1) {
+      s"%0${width}d" format rank
+    }
+    else {
+      if (rank < 10) rank.toString else "x"
+    }
+    colors(math.min(rank, colors.length -1))(marker).toString()
+  }
+
+  def rankMark(rank: Int): String = {
+    if (rank < 10) rank.toString else "x"
+  }
+
+  def rankColor(rank: Int): Attr = {
+    colors(math.min(rank, colors.length -1))
+  }
+
+  private val colors = List(
+    fansi.Color.LightGreen,
+    fansi.Color.LightYellow,
+    fansi.Color.LightYellow,
+    fansi.Color.Yellow,
+    fansi.Color.Yellow,
+    fansi.Color.LightGray,
+    fansi.Color.LightGray,
+    fansi.Color.DarkGray,
+    fansi.Color.DarkGray,
+    fansi.Color.DarkGray,
+  )
 }

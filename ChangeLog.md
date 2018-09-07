@@ -1,6 +1,9 @@
-2018-09-06
+2018-09-07
 
+- hmm.classify: show marker for corresponding model when using -sr option
 - ex2.md: second exercise with the 10 labelled song files.
+
+2018-09-06
 
 - some adjustments while starting exercise with 10 sound files
     - hmm.classify: use digit as a marker to show ranking during progress

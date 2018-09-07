@@ -4,7 +4,6 @@ import java.io.File
 
 import ecoz.rpt._
 import ecoz.symbol.SymbolSequences
-import fansi.Str
 
 object HmmClassify {
 
@@ -93,8 +92,7 @@ object HmmClassify {
         case Some(className) ⇒
           if (hmmNames.contains(className)) {
             val hmmAndProbs = classifier.classifySequence(seq, className)
-            val dot = coloredDot(className, hmmAndProbs)
-            print(dot.toString())
+            print(coloredDot(className, hmmAndProbs))
             Console.flush()
           }
           // else: ignore sequence with no model for its class
@@ -108,24 +106,9 @@ object HmmClassify {
     classifier.reportResults()
   }
 
-  private def coloredDot(seqName: String, hmmAndProbs: List[(Hmm,BigDecimal)]): Str = {
+  private def coloredDot(seqName: String, hmmAndProbs: List[(Hmm,BigDecimal)]): String = {
     val rank = hmmAndProbs.zipWithIndex.find(_._1._1.classNameOpt.contains(seqName))
-      .map(_._2).getOrElse(colors.length -1)
-    val mark = if (rank < 10) rank.toString else "x"
-    val color = colors(math.min(rank, colors.length -1))
-    color(mark)
+      .map(_._2).getOrElse(Int.MaxValue)
+    coloredRankMarker(rank)
   }
-
-  private val colors = List(
-    fansi.Color.LightGreen,
-    fansi.Color.LightYellow,
-    fansi.Color.LightYellow,
-    fansi.Color.Yellow,
-    fansi.Color.Yellow,
-    fansi.Color.LightGray,
-    fansi.Color.LightGray,
-    fansi.Color.DarkGray,
-    fansi.Color.DarkGray,
-    fansi.Color.DarkGray,
-  )
 }
