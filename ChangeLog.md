@@ -1,5 +1,7 @@
 2018-09-06
 
+- ex2.md: second exercise with the 10 labelled song files.
+
 - some adjustments while starting exercise with 10 sound files
     - hmm.classify: use digit as a marker to show ranking during progress
       (starting with '0' as correct classification, and using 'x' when
@@ -12,7 +14,7 @@
 
 - refer to `data/` (instead of `../data/`) as base data directory
 
-- update readme and move exercise description to ex1.md
+- update readme and move exercise description to exercises/ex1.md
 - refact: move Vq* elements to ecoz.vq package
 - refact: some general renaming
   (eg., "lpa" for analysis, "lpc" for actual coding)
