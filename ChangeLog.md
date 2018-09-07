@@ -1,9 +1,10 @@
 2018-09-07
 
+- ex2: a second exercise with 24 classes from the 10 labelled song files
+
 - vp.learn: add -take option (for T max number of symbols)
 - lpc: add -minpc and -take options
 - hmm.classify: show marker for corresponding model when using -sr option
-- ex2: second exercise with the 10 labelled song files.
 
 2018-09-06
 
