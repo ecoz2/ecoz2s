@@ -3,24 +3,38 @@ package ecoz.lpc
 import java.io.File
 
 import ecoz.config.Config.dir
+import ecoz.rpt
 import ecoz.rpt.warn
 import ecoz.signal.Signals
+
+import scala.util.Random
 
 
 object Lpc {
 
+  private val default_split = 0F
+  private val default_minpc = 0
+  private val default_takeN = Int.MaxValue
+
   def usage(error: String = ""): Unit = {
     println(s"""$error
        |
-       | lpc - LP coding
+       | lpc - Linear Prediction Coding
        |
-       | lpc -classes [-split s] <className> ...
+       | lpc [-minpc #] [-take #] [-split s] -classes <className> ...
        | lpc -signals <wav-file> ...
        |
        | Predictor files are generated under ${dir.predictors}.
-       | The -split option allows to put the generated predictors into
-       | two different training and test subsets (with given approx ratio s):
-       | Training under ${dir.predictors}/TRAIN/ and testing under
+       |
+       | -minpc #     only process a class if it has at least this number
+       |              of signals ($default_minpc)
+       |
+       | -take #      but only take (randomly) at most this number of signals ($default_takeN)
+       |
+       | -split s     put the generated predictors into two different training
+       |              and test subsets (with given approx ratio s) ($default_split)
+       |
+       | Training predictors go under ${dir.predictors}/TRAIN/ and testing under
        | ${dir.predictors}/TEST/.
        | These files are processed by vq.learn for codebook generation
        | and by vq.quantize for quantization.
@@ -28,16 +42,31 @@ object Lpc {
       sys.exit()
   }
 
+  private val destDirTrain = new File(dir.predictors, s"TRAIN")
+  private val destDirTest = new File(dir.predictors, s"TEST")
+
   def main(args: Array[String]): Unit = {
     var classNames: List[String] = List.empty
-    var split = 0F
+    var split = default_split
+    var minpc = default_minpc
+    var takeN = default_takeN
     var wavFilenames: List[String] = List.empty
 
     def processArgs(opts: List[String]): Unit = opts match {
-      case "-classes" :: "-split" :: s :: classes ⇒
+      case "-split" :: s :: rest ⇒
         split = s.toFloat
         require(0F < split && split < 1F)
-        classNames = classes
+        processArgs(rest)
+
+      case "-minpc" :: s :: rest ⇒
+        minpc = s.toInt
+        require(minpc > 0)
+        processArgs(rest)
+
+      case "-take" :: s :: rest ⇒
+        takeN = s.toInt
+        require(takeN > 0)
+        processArgs(rest)
 
       case "-classes" :: c1 :: moreClasses ⇒
         classNames = c1 :: moreClasses
@@ -52,6 +81,9 @@ object Lpc {
         usage()
     }
     processArgs(args.toList)
+
+    // just in case -take has been indicated
+    wavFilenames = Random.shuffle(wavFilenames)
 
     val lpa = new Lpa()
 
@@ -80,7 +112,12 @@ object Lpc {
     }
 
     classAndWavFiles foreach { case (className, wavFiles) ⇒
-      processFiles(className, wavFiles)
+      if (minpc <= wavFiles.length) {
+        processFiles(className, wavFiles.take(takeN))
+      }
+      else {
+        println(rpt.lightGray(s"\n${rpt.quoted(className)}: insufficient #signals ${wavFiles.length}"))
+      }
     }
 
     def processFiles(className: String, wavFiles: List[File]): Unit = {
@@ -88,18 +125,22 @@ object Lpc {
 
       val predictors = optPredictors.flatten
 
-      predictors foreach { case (wavFile, predictor) ⇒
-        val destDir = {
-          if (split > 0F){
-            if (math.random() <= split) {
-              new File(dir.predictors, s"TRAIN")
-            }
-            else {
-              new File(dir.predictors, s"TEST")
-            }
-          }
-          else dir.predictors
-        }
+      if (split > 0F) {
+        val numTrain = math.round(split * predictors.length)
+        val shuffled = Random.shuffle(predictors)
+        val (train, test) = shuffled.splitAt(numTrain)
+
+        println(s"${rpt.quoted(className)} split: training=${train.length}  test=${test.length}")
+
+        train foreach { save(_, destDirTrain) }
+        test  foreach { save(_, destDirTest) }
+      }
+      else {
+        predictors foreach { save(_, dir.predictors) }
+      }
+
+      def save(wp: (File, Predictor), destDir: File): Unit = {
+        val (wavFile, predictor) = wp
         val prdFile = {
           val baseDir = new File(destDir, s"P%d" format lpa.P)
           val dirPrd = new File(baseDir, className)

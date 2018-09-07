@@ -1,5 +1,6 @@
 2018-09-07
 
+- lpc: add -minpc and -take options
 - hmm.classify: show marker for corresponding model when using -sr option
 - ex2: second exercise with the 10 labelled song files.
 

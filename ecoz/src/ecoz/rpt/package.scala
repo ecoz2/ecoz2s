@@ -19,4 +19,6 @@ package object rpt {
   def magenta(s: Any): Str = fansi.Color.LightMagenta(s.toString)
 
   def lightBlue(s: Any): Str = fansi.Color.LightBlue(s.toString)
+
+  def lightGray(s: Any): Str = fansi.Color.LightGray(s.toString)
 }
