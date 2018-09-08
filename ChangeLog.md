@@ -1,5 +1,6 @@
 2018-09-07
 
+- hmm.learn: save model every minute (not upon every refinement)
 - some compiler flags for optimization
 - hmm.learn: allocate various matrices only once
 - hmm: check env var RANDOM_SEED to set seed for random values, which

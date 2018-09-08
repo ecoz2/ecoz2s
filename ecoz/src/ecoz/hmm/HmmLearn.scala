@@ -327,6 +327,10 @@ class HmmLearn(className: String,
 
     var PROld = productProbability("Initial sequence probabilities:", hmm)
 
+    // save model every ~minute
+    val savePeriodMs = 60*1000
+    var saveBaseMs = System.currentTimeMillis()
+
     var continue = true
     var r = 0
     while (continue) {
@@ -340,13 +344,19 @@ class HmmLearn(className: String,
       println(s"CHANGE = " + magenta(change.toString()))
       PROld = PR
 
-      Hmms.save(hmm, hmmFile)
-
       continue = change > valAuto || r < maxRefinements
+
+      if (continue) {
+        val currMs = System.currentTimeMillis()
+        if (currMs - saveBaseMs > savePeriodMs) {
+          saveBaseMs = currMs
+          Hmms.save(hmm, hmmFile)
+        }
+      }
     }
 
+    Hmms.save(hmm, hmmFile)
     println(s"Trained HMM after $r refinements.")
-
     hmm
   }
 
