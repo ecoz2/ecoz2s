@@ -26,7 +26,7 @@ class HmmClassifier(hmms: List[Hmm],
     val hmmsAndProbs = hmms map { hmm ⇒ (hmm, hmm.probability(seq)) }
     val sortedByProb = hmmsAndProbs.sortBy(-_._2)
     bySeqName.update(seqName, (seq, sortedByProb) :: list)
-    sortedByProb map (e ⇒ (e._1, e._2))
+    sortedByProb
   }
 
   def reportResults(): Unit = {
@@ -39,9 +39,15 @@ class HmmClassifier(hmms: List[Hmm],
         cm.setWinner(seqName, hmmWinnerName)
 
         if (seqName != hmmWinnerName && showRanked > 0) {
+
+          // only show until corresponding model
+          val respHmmIndex = sortedByProb.indexWhere(_._1.classNameOpt.contains(seqName))
+          val take = 1 + math.min(respHmmIndex, showRanked)
+          val reportList = sortedByProb.zipWithIndex.take(take)
+
           println()
           printf(s"  %-24s sequence (T=%d):\n", quoted(seqName), seq.T)
-          sortedByProb.zipWithIndex.take(showRanked) foreach { case ((hmm, prob), rank) ⇒
+          reportList foreach { case ((hmm, prob), rank) ⇒
             val hmmNameStr = "%s" format quoted(hmm.classNameOpt.get)
 
             val (asterisk, probStr) = if (hmm.classNameOpt.contains(seqName))

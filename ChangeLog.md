@@ -1,5 +1,6 @@
 2018-09-07
 
+- hmm.classify -sr #: only show until corresponding model
 - fix mistake in extracting description column
   repeating ex2..
 
