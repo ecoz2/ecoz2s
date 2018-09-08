@@ -16,24 +16,29 @@ case class Hmm(
     val T = seq.T
     val alpha = Array.ofDim[BigDecimal](T, N)
 
-    for (i ← 0 until N) {
+    var i = 0
+    while (i < N) {
       alpha(0)(i) = pi(i) * B(i)(O(0))
+      i += 1
     }
 
-    for (t ← 1 until T) {
-      for (j ← 0 until N) {
+    var t = 1
+    while (t < T) {
+      var j = 0
+      while (j < N) {
         var sum = BigDecimal(0)
-        for (i ← 0 until N) {
+        i = 0
+        while (i < N) {
           sum += alpha(t - 1)(i) * A(i)(j)
+          i += 1
         }
         alpha(t)(j) = B(j)(O(t)) * sum
+        j += 1
       }
+      t += 1
     }
-    var prob = BigDecimal(0)
-    for (i ← 0 until N) {
-      prob += alpha(T - 1)(i)
-    }
-    prob
+
+    alpha(T - 1).sum
   }
 
   def genQopt(seq: SymbolSequence): (Array[Int], BigDecimal) = {
@@ -43,40 +48,52 @@ case class Hmm(
     val delta = Array.fill[BigDecimal](T, N)(0)
     val psi   = Array.fill[Int](T, N)(0)
 
-    for (i ← 0 until N) {
+    var i = 0
+    while (i < N) {
       delta(0)(i) = pi(i) * B(i)(O(0))
       psi(0)(i) = 0
+      i += 1
     }
 
     var argMax = 0
 
-    for (t ← 1 until T) {
-      for (j ← 0 until N) {
+    var t = 1
+    while (t < T) {
+      var j = 0
+      while (j < N) {
         var deltaA = BigDecimal(0)
-        for (i ← 0 until N) {
+        i = 0
+        while (i < N) {
           val deltaAcomp = delta(t - 1)(i) * A(i)(j)
           if ( deltaAcomp > deltaA ) {
             deltaA = deltaAcomp
             argMax = i
           }
+          i += 1
         }
         delta(t)(j) = B(j)(O(t)) * deltaA
         psi(t)(j) = argMax
+        j += 1
       }
+      t += 1
     }
 
     var prob = BigDecimal(0)
-    for (i ← 0 until N) {
+    i = 0
+    while (i < N) {
       if (delta(T - 1)(i) > prob) {
         prob = delta(T - 1)(i)
         argMax = i
       }
+      i += 1
     }
 
     val Qopt = new Array[Int](T)
     Qopt(T - 1) = argMax
-    for (t ← T - 2 to 0 by -1) {
+    t = T - 2
+    while (t >= 0) {
       Qopt(t) = psi(t + 1)(Qopt(t + 1))
+      t -= 1
     }
 
     (Qopt, prob)
@@ -93,10 +110,13 @@ case class Hmm(
 
       val (qOpt, _) = genQopt(seq)
 
-      for (t ← 0 until T) {
+      var t = 0
+      while (t < T) {
         B2 ( qOpt(t) ) ( O(t) ) += 1
 
         vec_est ( qOpt(t) ) += 1
+
+        t += 1
       }
     }
 
@@ -104,29 +124,37 @@ case class Hmm(
 
     val one = BigDecimal(1)
 
-    for (j ← 0 until N) {
+    var j = 0
+    while (j < N) {
       if (vec_est(j) == 0) {
         // no symbols emitted by state j.
         // set uniform distribution:
-        for (k ← 0 until M) {
+        var k = 0
+        while (k < M) {
           B(j)(k) = one / M
+          k += 1
         }
       }
       else {
-        for (k ← 0 until M) {
+        var k = 0
+        while (k < M) {
           B(j)(k) = B2(j)(k) / vec_est(j)
+          k += 1
         }
       }
+      j += 1
     }
   }
 
   def adjustB(ε: BigDecimal): Unit = {
     require(ε > 0)
-    for (j ← 0 until N) {
+    var j = 0
+    while (j < N) {
       var defect = BigDecimal(0)
       var excess = BigDecimal(0)
 
-      for (k ← 0 until M) {
+      var k = 0
+      while (k < M) {
         val Bjk = B(j)(k)
         if (Bjk < ε) {
           defect += ε - Bjk
@@ -135,12 +163,16 @@ case class Hmm(
         else {
           excess += Bjk - ε
         }
+        k += 1
       }
       // now, all B(j)(k) >= ε.
       // Reestablish normalized distribution:
-      for (k ← 0 until M) {
+      k = 0
+      while (k < M) {
         B(j)(k) -= ((B(j)(k) - ε) / excess) * defect
+        k += 1
       }
+      j += 1
     }
   }
 

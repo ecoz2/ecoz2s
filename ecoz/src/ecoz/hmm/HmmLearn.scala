@@ -206,52 +206,76 @@ class HmmLearn(className: String,
         val T = seq.T
 
         // Alpha:
-        for (i ← 0 until N) {
+        var i = 0
+        while (i < N) {
           alpha(0)(i) = pi(i) * B(i)(O(0))
+          i += 1
         }
-        for (t ← 1 until T) {
-          for (j ← 0 until N) {
+        var t = 1
+        while (t < T) {
+          var j = 0
+          while (j < N) {
             var sum = BigDecimal(0)
-            for (i ← 0 until N) {
+            i = 0
+            while (i < N) {
               sum += alpha(t - 1)(i) * A(i)(j)
+              i += 1
             }
             alpha(t)(j) = sum * B(j)(O(t))
+            j += 1
           }
+          t += 1
         }
 
         // Beta:
-        for (i ← 0 until N) {
+        i = 0
+        while (i < N) {
           beta(T - 1)(i) = BigDecimal(1)
+          i += 1
         }
-        for (t ← T - 2 to 0 by -1) {
-          for (i ← 0 until N) {
+        t = T - 2
+        while (t >= 0) {
+          i = 0
+          while (i < N) {
             var sum = BigDecimal(0)
-            for (j ← 0 until N) {
+            var j = 0
+            while (j < N) {
               sum += A(i)(j) * B(j)(O(t + 1)) * beta(t + 1)(j)
+              j += 1
             }
             beta(t)(i) = sum
+            i += 1
           }
+          t -= 1
         }
 
         // probability of the sequence:
         var prob = BigDecimal(0)
-        for (i ← 0 until N) {
+        i = 0
+        while (i < N) {
           prob += alpha(T - 1)(i)
+          i += 1
         }
         prob
       }
 
       def gen_gamma(seq: SymbolSequence, pO: BigDecimal): Unit = {
-        for (t ← 0 until seq.T) {
-          for (i ← 0 until N) {
+        var t = 0
+        while (t < seq.T) {
+          var i = 0
+          while (i < N) {
             gamma(t)(i) = alpha(t)(i) * beta(t)(i) / pO
+            i += 1
           }
+          t += 1
         }
       }
 
       def gen_pi(): Unit = {
-        for (i ← 0 until N) {
+        var i = 0
+        while (i < N) {
           f_pi(i) += gamma(0)(i)
+          i += 1
         }
       }
 
@@ -259,28 +283,38 @@ class HmmLearn(className: String,
         val O = seq.symbols
         val T = seq.T
 
-        for (i ← 0 until N) {
-          for (j ← 0 until N) {
+        var i = 0
+        while (i < N) {
+          var j = 0
+          while (j < N) {
             var value = BigDecimal(0)
-            for (t ← 0 until T - 1) {
+            var t = 0
+            while (t < T - 1) {
               value += alpha(t)(i) * B(j)(O(t + 1)) * beta(t + 1)(j)
+              t += 1
             }
             value *= A(i)(j) / pO
             numA(i)(j) += value
+            j += 1
           }
+          i += 1
         }
       }
 
       def gen_denA_denB(seq: SymbolSequence): Unit = {
         val T = seq.T
 
-        for (i ← 0 until N) {
+        var i = 0
+        while (i < N) {
           var value = BigDecimal(0)
-          for (t ← 0 until T - 1) {
+          var t = 0
+          while (t < T - 1) {
             value += gamma(t)(i)
+            t += 1
           }
           denA(i) += value
           denB(i) += gamma(T - 1)(i) + value
+          i += 1
         }
       }
 
@@ -288,38 +322,54 @@ class HmmLearn(className: String,
         val O = seq.symbols
         val T = seq.T
 
-        for (j ← 0 until N) {
-          for (k ← 0 until M) {
+        var j = 0
+        while (j < N) {
+          var k = 0
+          while (k < M) {
             var value = BigDecimal(0)
-            for (t ← 0 until T) {
+            var t = 0
+            while (t < T) {
               if (O(t) == k) {
                 value += gamma(t)(j)
               }
+              t += 1
             }
             numB(j)(k) += value
+            k += 1
           }
+          j += 1
         }
       }
 
       def refine_pi(): Unit = {
-        for (i ← 0 until N) {
+        var i = 0
+        while (i < N) {
           pi(i) = f_pi(i) / sequences.size
+          i += 1
         }
       }
 
       def refine_A(): Unit = {
-        for (i ← 0 until N) {
-          for (j ← 0 until N) {
+        var i = 0
+        while (i < N) {
+          var j = 0
+          while (j < N) {
             A(i)(j) = numA(i)(j) / denA(i)
+            j += 1
           }
+          i += 1
         }
       }
 
       def refine_B(): Unit = {
-        for (j ← 0 until N) {
-          for (k ← 0 until M) {
+        var j = 0
+        while (j < N) {
+          var k = 0
+          while (k < M) {
             B(j)(k) = numB(j)(k) / denB(j)
+            k += 1
           }
+          j += 1
         }
         hmm.adjustB(ε)
       }
