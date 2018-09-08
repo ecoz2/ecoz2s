@@ -14,6 +14,11 @@ object ecoz extends ScalaModule {
   )
 
   override def scalacOptions = Seq(
+    //"-opt:help",
+    //"-optimize",  --> deprecated
+    "-opt:l:inline", "-opt-inline-from:**",
+    "-opt:simplify-jumps",
+    "-opt:box-unbox",
     "-deprecation", "-feature", "-encoding", "utf8",
     "-Ywarn-dead-code",
     "-unchecked",
