@@ -54,6 +54,22 @@ package object hmm {
     case None ⇒ new Random()
   }
 
+  @inline def zero(a: Array[BigDecimal]): Unit = {
+    var i = 0
+    while (i < a.length) {
+      a(i) = 0
+      i += 1
+    }
+  }
+
+  @inline def zero(a: Array[Array[BigDecimal]]): Unit = {
+    var i = 0
+    while (i < a.length) {
+      zero(a(i))
+      i += 1
+    }
+  }
+
   def coloredRankMarker(rank: Int, width: Int = 1): String = {
     require(rank >= 0)
     val marker = if (width > 1) {

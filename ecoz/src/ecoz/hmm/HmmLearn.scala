@@ -158,20 +158,26 @@ class HmmLearn(className: String,
   //sequences foreach SymbolSequences.showSequence
   //println(s"Initial HMM: $hmm")
 
+  // accumulators for numerators/denominators
+  private val numA = Array.fill[BigDecimal](N, N)(0)
+  private val numB = Array.fill[BigDecimal](N, M)(0)
+  private val denA = Array.fill[BigDecimal](N)(0)
+  private val denB = Array.fill[BigDecimal](N)(0)
+  private val f_pi = Array.fill[BigDecimal](N)(0)
+
+  private val alpha = Array.ofDim[BigDecimal](maxT, N)
+  private val beta  = Array.ofDim[BigDecimal](maxT, N)
+  private val gamma = Array.ofDim[BigDecimal](maxT, N)
+
   def learn(): Hmm = {
 
     def refinementStep(): Unit = {
-      // accumulators for numerators/denominators
-      val numA = Array.fill[BigDecimal](N, N)(0)
-      val numB = Array.fill[BigDecimal](N, M)(0)
-      val denA = Array.fill[BigDecimal](N)(0)
-      val denB = Array.fill[BigDecimal](N)(0)
-      val f_pi = Array.fill[BigDecimal](N)(0)
-
-      val alpha = Array.ofDim[BigDecimal](maxT, N)
-      val beta  = Array.ofDim[BigDecimal](maxT, N)
-      val gamma = Array.ofDim[BigDecimal](maxT, N)
-
+      // initialize accumulators for numerators/denominators
+      zero(numA)
+      zero(numB)
+      zero(denA)
+      zero(denB)
+      zero(f_pi)
 
       // process each sequence:
       for (seq ← sequences) {
