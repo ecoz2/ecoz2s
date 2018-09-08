@@ -96,11 +96,21 @@ object SignalExtractor {
     //print("Header: "); pprint.pprintln(headerCols)
     val begTimeIndex = headerCols.indexOf("Begin Time (s)")
     val endTimeIndex = headerCols.indexOf("End Time (s)")
-    val descriptionIndex = headerCols.indexWhere(_.startsWith("Description"))
+    val descriptionIndex = {
+      val Dunlop_Fournet = headerCols.indexWhere(_.startsWith("Description (Dunlop & Fournet)"))
+      if (Dunlop_Fournet > 0) {
+        // the case of data/songs/selections/20151207T070326.txt
+        Dunlop_Fournet
+      }
+      else {
+        // all other 9 selection files
+        headerCols.indexOf("Description")
+      }
+    }
 
     require(begTimeIndex >= 0, s"""expected column: "Begin Time (s)" """)
     require(endTimeIndex >= 0, s"""expected column: "End Time (s)" """)
-    require(descriptionIndex >= 0, s"""expected column starting with: "Description" """)
+    require(descriptionIndex >= 0, s"""expected column: "Description [(Dunlop & Fournet)]" """)
 
     allLines.drop(1) map { columns ⇒
       val begTime = columns(begTimeIndex).toFloat

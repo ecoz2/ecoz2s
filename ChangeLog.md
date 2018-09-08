@@ -1,6 +1,7 @@
 2018-09-07
 
-- ex2: a second exercise with 24 classes from the 10 labelled song files
+- fix mistake in extracting description column
+  repeating ex2..
 
 - vp.learn: add -take option (for T max number of symbols)
 - lpc: add -minpc and -take options
