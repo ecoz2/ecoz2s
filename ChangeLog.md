@@ -1,5 +1,7 @@
 2018-09-07
 
+- classifySequence: use futures to speed up probability calculation
+  across de hmm models
 - include sequence filename oin report of model rankings
 
 - ex2: a second, also preliminary exercise with 19 classes from the

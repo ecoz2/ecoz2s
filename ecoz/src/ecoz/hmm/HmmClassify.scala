@@ -83,24 +83,20 @@ object HmmClassify {
          |sequences : ${seqFilenames.length}
        """.stripMargin)
 
+    val sequences = seqFilenames map (fn ⇒ SymbolSequences.load(new File(fn)))
+    val namedSequences = sequences filter { seq ⇒
+      seq.classNameOpt.isDefined && hmmNames.contains(seq.classNameOpt.get)
+    }
+
     val classifier = new HmmClassifier(hmms, showRanked)
 
-    seqFilenames foreach { seqFilename ⇒
-      val seq = SymbolSequences.load(new File(seqFilename))
-
-      seq.classNameOpt match {
-        case Some(className) ⇒
-          if (hmmNames.contains(className)) {
-            val hmmAndProbs = classifier.classifySequence(seq, className)
-            print(coloredDot(className, hmmAndProbs))
-            Console.flush()
-          }
-          // else: ignore sequence with no model for its class
-
-        case None ⇒
-          warn(s"Unnamed sequence ignored: $seqFilename")
-      }
+    namedSequences foreach { seq ⇒
+      val hmmAndProbs = classifier.classifySequence(seq)
+      val className = seq.classNameOpt.get
+      print(coloredDot(className, hmmAndProbs))
+      Console.flush()
     }
+
     println()
 
     classifier.reportResults()

@@ -4,6 +4,10 @@ import ecoz.rpt
 import ecoz.rpt.{ConfusionMatrix, quoted}
 import ecoz.symbol.SymbolSequence
 
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, Future}
+
 class HmmClassifier(hmms: List[Hmm],
                     showRanked: Int = 0
                    ) {
@@ -16,17 +20,24 @@ class HmmClassifier(hmms: List[Hmm],
   /**
     * Performs classification of the given sequence,
     * @param seq          Sequence
-    * @param seqName      Sequence's associated class name
     * @return             Ranked list of models with associated probabilities
     *                     (sorted in descending probability).
     */
-  def classifySequence(seq: SymbolSequence,
-                       seqName: String
+  def classifySequence(seq: SymbolSequence
                       ): List[(Hmm,BigDecimal)] = {
+    val seqName = seq.classNameOpt.get
     classNames += seqName
     val list = bySeqName.getOrElseUpdate(seqName, List.empty)
-    val hmmsAndProbs = hmms map { hmm ⇒ (hmm, hmm.probability(seq)) }
-    val sortedByProb = hmmsAndProbs.sortBy(-_._2)
+
+    val hmmsAndProbsFut = Future.sequence {
+      hmms map { hmm ⇒
+        Future { (hmm, hmm.probability(seq)) }
+      }
+    }
+    val sortedByProbFut = hmmsAndProbsFut map { hmmsAndProbs ⇒
+      hmmsAndProbs.sortBy(-_._2)
+    }
+    val sortedByProb = Await.result(sortedByProbFut, Duration.Inf)
     bySeqName.update(seqName, (seq, sortedByProb) :: list)
     sortedByProb
   }
