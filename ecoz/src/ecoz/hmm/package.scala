@@ -1,6 +1,7 @@
 package ecoz
 
 import fansi.Attr
+import scala.util.Random
 
 package object hmm {
 
@@ -46,7 +47,12 @@ package object hmm {
     Array.fill[BigDecimal](size)(v)
   }
 
-  private val random = scala.util.Random
+  private val random = sys.env.get("RANDOM_SEED") match {
+    case Some(seed) ⇒
+      println(rpt.lightYellow(s"\n****NOTE**** Using RANDOM_SEED=$seed\n"))
+      new Random(seed.toInt)
+    case None ⇒ new Random()
+  }
 
   def coloredRankMarker(rank: Int, width: Int = 1): String = {
     require(rank >= 0)

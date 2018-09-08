@@ -1,5 +1,11 @@
 2018-09-07
 
+- hmm: check env var RANDOM_SEED to set seed for random values, which
+  facilitates performance evaluation upon changes in code.
+  For example:
+
+        RANDOM_SEED=0 ecoz hmm.learn -N 10 -a 0.005  data/sequences/TRAIN/M256/bellow/*
+
 - hmm.learn: micro optimization for sequence product probability calculation
 - classifySequence: use futures to speed up probability calculation
   across de hmm models
