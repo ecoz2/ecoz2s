@@ -8,6 +8,10 @@ import ecoz.hmm.HmmType.HmmType
 import ecoz.rpt.magenta
 import ecoz.symbol.{SymbolSequence, SymbolSequences}
 
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.{Await, Future}
+import scala.concurrent.duration.Duration
+
 object HmmLearn {
   private val defaultN = 5
   private val default_ε = BigDecimal(1e-5)
@@ -315,7 +319,7 @@ class HmmLearn(className: String,
       }
     }
 
-    var PROld = showSeqProbabilities("Initial sequence probabilities:", hmm)
+    var PROld = productProbability("Initial sequence probabilities:", hmm)
 
     var continue = true
     var r = 0
@@ -324,7 +328,7 @@ class HmmLearn(className: String,
 
       refinementStep()
 
-      val PR = showSeqProbabilities(s"After refinement $r:", hmm)
+      val PR = productProbability(s"After refinement $r:", hmm)
 
       val change = (PR - PROld) / PR
       println(s"CHANGE = " + magenta(change.toString()))
@@ -340,13 +344,24 @@ class HmmLearn(className: String,
     hmm
   }
 
-  def showSeqProbabilities(msg: String, hmm: Hmm): BigDecimal = {
+  def productProbability(msg: String, hmm: Hmm): BigDecimal = {
     println(msg)
+
+    val probsFut = Future.sequence {
+      sequences map { seq ⇒
+        Future { hmm.probability(seq) }
+      }
+    }
+    val probs = Await.result(probsFut, Duration.Inf)
+    val numProbs = probs.length
+
     var PR = BigDecimal(1)
-    for ( r ← sequences.indices) {
-      val prob = hmm.probability(sequences(r))
-      println(" %03d: %s" format (r, prob))
+    var r = 0
+    while (r < numProbs) {
+      val prob = probs(r)
+      printf(" %03d: %s\n", r, prob)
       PR *= prob
+      r += 1
     }
     println("   Product = %s\n" format PR)
     PR

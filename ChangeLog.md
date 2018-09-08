@@ -1,5 +1,6 @@
 2018-09-07
 
+- hmm.learn: micro optimization for sequence product probability calculation
 - classifySequence: use futures to speed up probability calculation
   across de hmm models
 - include sequence filename oin report of model rankings
