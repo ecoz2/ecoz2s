@@ -20,7 +20,9 @@ class HmmClassifier(hmms: List[Hmm],
     * @return             Ranked list of models with associated probabilities
     *                     (sorted in descending probability).
     */
-  def classifySequence(seq: SymbolSequence, seqName: String): List[(Hmm,BigDecimal)] = {
+  def classifySequence(seq: SymbolSequence,
+                       seqName: String
+                      ): List[(Hmm,BigDecimal)] = {
     classNames += seqName
     val list = bySeqName.getOrElseUpdate(seqName, List.empty)
     val hmmsAndProbs = hmms map { hmm ⇒ (hmm, hmm.probability(seq)) }
@@ -46,7 +48,9 @@ class HmmClassifier(hmms: List[Hmm],
           val reportList = sortedByProb.zipWithIndex.take(take)
 
           println()
-          printf(s"  %-24s sequence (T=%d):\n", quoted(seqName), seq.T)
+          printf(s"  %s sequence (T=%d) %s:\n",
+            quoted(seqName), seq.T, seq.filenameOpt.getOrElse("")
+          )
           reportList foreach { case ((hmm, prob), rank) ⇒
             val hmmNameStr = "%s" format quoted(hmm.classNameOpt.get)
 

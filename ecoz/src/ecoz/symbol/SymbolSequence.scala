@@ -8,7 +8,8 @@ case class SymbolSequence(
                            M: Int,
                            symbols: List[Int],
                            distortion: Option[Float] = None,
-                           classNameOpt: Option[String] = None
+                           classNameOpt: Option[String] = None,
+                           filenameOpt: Option[String] = None
                          ) {
 
   val T: Int = symbols.length
@@ -65,8 +66,10 @@ object SymbolSequences {
 
     s.close()
 
-    SymbolSequence(M, symbols.toList, classNameOpt = classNameOpt,
-      distortion = if (dist.isNaN) None else Some(dist)
+    SymbolSequence(M, symbols.toList,
+      distortion = if (dist.isNaN) None else Some(dist),
+      classNameOpt = classNameOpt,
+      filenameOpt = Some(file.getPath)
     )
   }
 

@@ -1,5 +1,7 @@
 2018-09-07
 
+- include sequence filename oin report of model rankings
+
 - ex2: a second, also preliminary exercise with 19 classes from the
   10 labelled song files
 
