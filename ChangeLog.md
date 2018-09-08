@@ -1,5 +1,8 @@
 2018-09-07
 
+- ex2: a second, also preliminary exercise with 19 classes from the
+  10 labelled song files
+
 - hmm.classify -sr #: only show until corresponding model
 - fix mistake in extracting description column
   repeating ex2..

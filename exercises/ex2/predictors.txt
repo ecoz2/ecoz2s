@@ -1,0 +1,3144 @@
+➜  ecoz git:(master) ✗ ecoz lpc -minpc 10 -take 80 -split 0.7 -classes data/signals/*
+
+"ascending_grunt": insufficient #signals 1
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__17.01337_18.229565.wav
+ lpa.onSignal: T = 79
+
+Processing: data/signals/ascending_moan/from_HBSe_20151207T070326__30.62574_32.316895.wav
+ lpa.onSignal: T = 110
+
+Processing: data/signals/ascending_moan/from_HBSe_20161101T153358__274.24_276.40195.wav
+ lpa.onSignal: T = 142
+
+Processing: data/signals/ascending_moan/from_HBSe_20170116T054541__14.9278_17.007296.wav
+ lpa.onSignal: T = 136
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__48.93634_50.359543.wav
+ lpa.onSignal: T = 92
+
+Processing: data/signals/ascending_moan/from_HBSe_20161207T115528__126.17629_128.04402.wav
+ lpa.onSignal: T = 122
+
+Processing: data/signals/ascending_moan/from_HBSe_20161101T153358__322.07227_325.31522.wav
+ lpa.onSignal: T = 214
+
+Processing: data/signals/ascending_moan/from_HBSe_20170424T102157__74.88163_76.24144.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/ascending_moan/from_HBSe_20170424T102157__86.09342_87.81319.wav
+ lpa.onSignal: T = 112
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__99.65929_100.77198.wav
+ lpa.onSignal: T = 72
+
+Processing: data/signals/ascending_moan/from_HBSe_20151207T070326__55.36414_57.365555.wav
+ lpa.onSignal: T = 131
+
+Processing: data/signals/ascending_moan/from_HBSe_20161101T153358__354.14136_355.943.wav
+ lpa.onSignal: T = 118
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__205.9825_208.98416.wav
+ lpa.onSignal: T = 198
+
+Processing: data/signals/ascending_moan/from_HBSe_20151228T103639__62.581722_64.35195.wav
+ lpa.onSignal: T = 116
+
+Processing: data/signals/ascending_moan/from_HBSe_20151121T040102__6.967441_8.214247.wav
+ lpa.onSignal: T = 81
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__113.76866_116.84796.wav
+ lpa.onSignal: T = 203
+
+Processing: data/signals/ascending_moan/from_HBSe_20170424T102157__61.66411_62.743958.wav
+ lpa.onSignal: T = 69
+
+Processing: data/signals/ascending_moan/from_HBSe_20161207T115528__95.83883_98.495735.wav
+ lpa.onSignal: T = 175
+
+Processing: data/signals/ascending_moan/from_HBSe_20151121T040102__269.2667_270.6602.wav
+ lpa.onSignal: T = 90
+
+Processing: data/signals/ascending_moan/from_HBSe_20170424T102157__99.693695_101.21348.wav
+ lpa.onSignal: T = 99
+
+Processing: data/signals/ascending_moan/from_HBSe_20170424T102157__88.77305_90.092865.wav
+ lpa.onSignal: T = 85
+
+Processing: data/signals/ascending_moan/from_HBSe_20151207T070326__67.139496_68.71266.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__27.714828_29.008652.wav
+ lpa.onSignal: T = 84
+
+Processing: data/signals/ascending_moan/from_HBSe_20151207T070326__43.43147_45.349854.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__88.82483_90.19628.wav
+ lpa.onSignal: T = 89
+
+Processing: data/signals/ascending_moan/from_HBSe_20170116T054541__180.50159_182.62846.wav
+ lpa.onSignal: T = 139
+
+Processing: data/signals/ascending_moan/from_HBSe_20161207T115528__17.859404_19.016867.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/ascending_moan/from_HBSe_20161101T153358__167.19176_170.4347.wav
+ lpa.onSignal: T = 214
+
+Processing: data/signals/ascending_moan/from_HBSe_20161101T153358__285.77045_288.29272.wav
+ lpa.onSignal: T = 166
+
+Processing: data/signals/ascending_moan/from_HBSe_20161101T153358__155.66129_158.5439.wav
+ lpa.onSignal: T = 190
+
+Processing: data/signals/ascending_moan/from_HBSe_20161101T153358__338.287_342.25058.wav
+ lpa.onSignal: T = 262
+
+Processing: data/signals/ascending_moan/from_HBSe_20151121T040102__16.208467_17.30859.wav
+ lpa.onSignal: T = 71
+
+Processing: data/signals/ascending_moan/from_HBSe_20161101T153358__190.25269_193.85596.wav
+ lpa.onSignal: T = 238
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__160.86723_162.2128.wav
+ lpa.onSignal: T = 87
+
+Processing: data/signals/ascending_moan/from_HBSe_20161207T115528__6.050377_7.0236983.wav
+ lpa.onSignal: T = 62
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__38.719296_39.987244.wav
+ lpa.onSignal: T = 82
+
+Processing: data/signals/ascending_moan/from_HBSe_20161207T115528__43.002987_44.186756.wav
+ lpa.onSignal: T = 76
+
+Processing: data/signals/ascending_moan/from_HBSe_20151023T122324__5.0200343_6.0809693.wav
+ lpa.onSignal: T = 68
+
+Processing: data/signals/ascending_moan/from_HBSe_20161101T153358__179.08255_181.60484.wav
+ lpa.onSignal: T = 166
+
+Processing: data/signals/ascending_moan/from_HBSe_20170116T054541__36.89047_38.413406.wav
+ lpa.onSignal: T = 99
+"ascending_moan" split: training=28  test=12
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151121T040102__269.2667_270.6602.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20170424T102157__88.77305_90.092865.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151023T122324__205.9825_208.98416.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161101T153358__354.14136_355.943.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161101T153358__190.25269_193.85596.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161207T115528__43.002987_44.186756.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20170424T102157__61.66411_62.743958.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20170424T102157__74.88163_76.24144.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151207T070326__67.139496_68.71266.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151207T070326__55.36414_57.365555.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151023T122324__113.76866_116.84796.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161101T153358__338.287_342.25058.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161101T153358__274.24_276.40195.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20170424T102157__99.693695_101.21348.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151023T122324__5.0200343_6.0809693.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161207T115528__95.83883_98.495735.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151207T070326__43.43147_45.349854.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161101T153358__322.07227_325.31522.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151023T122324__88.82483_90.19628.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161101T153358__285.77045_288.29272.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151023T122324__27.714828_29.008652.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151228T103639__62.581722_64.35195.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151121T040102__16.208467_17.30859.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151207T070326__30.62574_32.316895.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151121T040102__6.967441_8.214247.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20151023T122324__48.93634_50.359543.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161207T115528__17.859404_19.016867.prd
+ saved data/predictors/TRAIN/P36/ascending_moan/from_HBSe_20161207T115528__126.17629_128.04402.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20151023T122324__38.719296_39.987244.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20151023T122324__17.01337_18.229565.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20170116T054541__14.9278_17.007296.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20151023T122324__160.86723_162.2128.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20170116T054541__180.50159_182.62846.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20161101T153358__167.19176_170.4347.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20151023T122324__99.65929_100.77198.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20170116T054541__36.89047_38.413406.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20161101T153358__155.66129_158.5439.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20170424T102157__86.09342_87.81319.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20161101T153358__179.08255_181.60484.prd
+ saved data/predictors/TEST/P36/ascending_moan/from_HBSe_20161207T115528__6.050377_7.0236983.prd
+
+"ascending_moan?": insufficient #signals 3
+
+"ascending_moan_(D)": insufficient #signals 1
+
+"ascending_moan_+_purr": insufficient #signals 1
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__180.56184_181.10652.wav
+ lpa.onSignal: T = 34
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151121T040102__24.569397_25.596178.wav
+ lpa.onSignal: T = 66
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__177.00934_178.16467.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__94.71769_96.66075.wav
+ lpa.onSignal: T = 127
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__191.59174_192.34068.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__56.045486_57.47529.wav
+ lpa.onSignal: T = 93
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170107T085150__58.809113_59.96145.wav
+ lpa.onSignal: T = 74
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151121T040102__22.002445_22.809202.wav
+ lpa.onSignal: T = 51
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__233.95253_234.56529.wav
+ lpa.onSignal: T = 38
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__587.48517_588.2992.wav
+ lpa.onSignal: T = 52
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__214.55095_216.15266.wav
+ lpa.onSignal: T = 104
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__39.736492_40.89395.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__228.26671_229.55333.wav
+ lpa.onSignal: T = 83
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__187.25372_188.5666.wav
+ lpa.onSignal: T = 85
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__230.55112_231.864.wav
+ lpa.onSignal: T = 85
+
+Processing: data/signals/ascending_shriek/from_HBSe_20161207T115528__20.029186_21.265568.wav
+ lpa.onSignal: T = 80
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__106.44585_107.46713.wav
+ lpa.onSignal: T = 66
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__40.724075_41.87941.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170107T085150__83.84841_85.11598.wav
+ lpa.onSignal: T = 82
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__60.402977_61.08383.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__146.90338_148.6889.wav
+ lpa.onSignal: T = 117
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__116.79488_117.61191.wav
+ lpa.onSignal: T = 52
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151121T040102__3.5203912_5.2072453.wav
+ lpa.onSignal: T = 110
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__201.38197_202.58981.wav
+ lpa.onSignal: T = 78
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__163.41328_164.77867.wav
+ lpa.onSignal: T = 89
+
+Processing: data/signals/ascending_shriek/from_HBSe_20161101T153358__36.43493_38.473248.wav
+ lpa.onSignal: T = 133
+
+Processing: data/signals/ascending_shriek/from_HBSe_20161207T115528__8.7862_9.614839.wav
+ lpa.onSignal: T = 53
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151121T040102__127.01421_128.4077.wav
+ lpa.onSignal: T = 90
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__76.50662_77.73217.wav
+ lpa.onSignal: T = 79
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__598.95905_599.7993.wav
+ lpa.onSignal: T = 54
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__106.13134_107.706795.wav
+ lpa.onSignal: T = 103
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__160.81378_162.73058.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__119.8378_121.38699.wav
+ lpa.onSignal: T = 101
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151023T122324__20.273806_21.826393.wav
+ lpa.onSignal: T = 101
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__203.66638_205.13681.wav
+ lpa.onSignal: T = 96
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__148.62526_149.51038.wav
+ lpa.onSignal: T = 57
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__604.63074_605.8123.wav
+ lpa.onSignal: T = 76
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__68.72874_70.46173.wav
+ lpa.onSignal: T = 113
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__149.89676_151.70853.wav
+ lpa.onSignal: T = 118
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__169.39142_170.4127.wav
+ lpa.onSignal: T = 66
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__42.459923_44.366325.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170107T085150__110.36068_111.62824.wav
+ lpa.onSignal: T = 82
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__92.35451_94.218796.wav
+ lpa.onSignal: T = 122
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__202.54428_203.4294.wav
+ lpa.onSignal: T = 57
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151207T070326__99.28388_101.42834.wav
+ lpa.onSignal: T = 140
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__174.35732_175.77522.wav
+ lpa.onSignal: T = 92
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__96.446495_97.33161.wav
+ lpa.onSignal: T = 57
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151022T015622__1.5213606_2.662381.wav
+ lpa.onSignal: T = 74
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170107T085150__45.03872_46.306286.wav
+ lpa.onSignal: T = 82
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__122.35853_123.90772.wav
+ lpa.onSignal: T = 101
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__66.44432_67.625916.wav
+ lpa.onSignal: T = 76
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151207T070326__117.839195_119.19386.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/ascending_shriek/from_HBSe_20161207T115528__239.40929_240.77719.wav
+ lpa.onSignal: T = 89
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__43.402348_44.452652.wav
+ lpa.onSignal: T = 68
+
+Processing: data/signals/ascending_shriek/from_HBSe_20161101T153358__34.14182_37.1993.wav
+ lpa.onSignal: T = 201
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__133.81001_135.64804.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__331.80487_332.34955.wav
+ lpa.onSignal: T = 34
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__190.22084_191.40242.wav
+ lpa.onSignal: T = 76
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__46.20464_47.089756.wav
+ lpa.onSignal: T = 57
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__136.33073_138.16876.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/ascending_shriek/from_HBSe_20161101T153358__25.22418_27.517288.wav
+ lpa.onSignal: T = 150
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__212.61989_213.43692.wav
+ lpa.onSignal: T = 52
+
+Processing: data/signals/ascending_shriek/from_HBSe_20161207T115528__87.28563_88.44309.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__27.3305_28.147444.wav
+ lpa.onSignal: T = 52
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__343.49002_344.4432.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151207T070326__108.68973_110.74766.wav
+ lpa.onSignal: T = 135
+
+Processing: data/signals/ascending_shriek/from_HBSe_20151228T103639__244.3299_245.41927.wav
+ lpa.onSignal: T = 70
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__608.2017_610.1448.wav
+ lpa.onSignal: T = 127
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170107T085150__42.618816_44.059235.wav
+ lpa.onSignal: T = 94
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__590.5048_591.24005.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__601.37476_602.1625.wav
+ lpa.onSignal: T = 50
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170107T085150__99.52873_101.31485.wav
+ lpa.onSignal: T = 117
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__4.3446584_5.755744.wav
+ lpa.onSignal: T = 92
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170107T085150__113.068665_114.45146.wav
+ lpa.onSignal: T = 90
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__108.83587_110.437584.wav
+ lpa.onSignal: T = 104
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170107T085150__97.39692_98.49163.wav
+ lpa.onSignal: T = 70
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__77.0679_79.35231.wav
+ lpa.onSignal: T = 150
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170116T054541__216.62529_218.43707.wav
+ lpa.onSignal: T = 118
+
+Processing: data/signals/ascending_shriek/from_HBSe_20170107T085150__69.44424_70.65419.wav
+ lpa.onSignal: T = 78
+
+Processing: data/signals/ascending_shriek/from_HBSe_20161101T153358__11.975117_14.777803.wav
+ lpa.onSignal: T = 184
+"ascending_shriek" split: training=56  test=24
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20161207T115528__239.40929_240.77719.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__96.446495_97.33161.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__191.59174_192.34068.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151022T015622__1.5213606_2.662381.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__244.3299_245.41927.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__233.95253_234.56529.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__39.736492_40.89395.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170107T085150__110.36068_111.62824.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__180.56184_181.10652.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__216.62529_218.43707.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__174.35732_175.77522.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__230.55112_231.864.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__212.61989_213.43692.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__119.8378_121.38699.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__590.5048_591.24005.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__214.55095_216.15266.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__604.63074_605.8123.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170107T085150__113.068665_114.45146.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__177.00934_178.16467.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__133.81001_135.64804.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__160.81378_162.73058.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170107T085150__99.52873_101.31485.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__202.54428_203.4294.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__60.402977_61.08383.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__169.39142_170.4127.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__76.50662_77.73217.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__77.0679_79.35231.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151023T122324__20.273806_21.826393.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170107T085150__97.39692_98.49163.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__598.95905_599.7993.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20161101T153358__36.43493_38.473248.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__92.35451_94.218796.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151207T070326__99.28388_101.42834.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__608.2017_610.1448.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__46.20464_47.089756.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20161207T115528__87.28563_88.44309.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__42.459923_44.366325.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__148.62526_149.51038.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__106.13134_107.706795.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170107T085150__83.84841_85.11598.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__201.38197_202.58981.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__587.48517_588.2992.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170107T085150__45.03872_46.306286.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__106.44585_107.46713.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__56.045486_57.47529.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151228T103639__343.49002_344.4432.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20161207T115528__8.7862_9.614839.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__43.402348_44.452652.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__149.89676_151.70853.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20161101T153358__11.975117_14.777803.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__94.71769_96.66075.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__190.22084_191.40242.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20161207T115528__20.029186_21.265568.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__146.90338_148.6889.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20151121T040102__22.002445_22.809202.prd
+ saved data/predictors/TRAIN/P36/ascending_shriek/from_HBSe_20170116T054541__601.37476_602.1625.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20151228T103639__116.79488_117.61191.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20151121T040102__24.569397_25.596178.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__122.35853_123.90772.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__27.3305_28.147444.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__4.3446584_5.755744.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170107T085150__69.44424_70.65419.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20151228T103639__331.80487_332.34955.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20161101T153358__25.22418_27.517288.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20161101T153358__34.14182_37.1993.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__68.72874_70.46173.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__228.26671_229.55333.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__66.44432_67.625916.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__187.25372_188.5666.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20151121T040102__3.5203912_5.2072453.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170107T085150__42.618816_44.059235.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20151121T040102__127.01421_128.4077.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__40.724075_41.87941.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__108.83587_110.437584.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__136.33073_138.16876.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20151207T070326__117.839195_119.19386.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__163.41328_164.77867.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170116T054541__203.66638_205.13681.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20170107T085150__58.809113_59.96145.prd
+ saved data/predictors/TEST/P36/ascending_shriek/from_HBSe_20151207T070326__108.68973_110.74766.prd
+
+"ascending_shriek,_higher": insufficient #signals 1
+
+"ascending_shriek_(D)": insufficient #signals 1
+
+"bark": insufficient #signals 7
+
+"bark?": insufficient #signals 2
+
+"bark_(D)": insufficient #signals 1
+
+Processing: data/signals/bellow/from_HBSe_20151228T103639__462.5693_464.74805.wav
+ lpa.onSignal: T = 143
+
+Processing: data/signals/bellow/from_HBSe_20170107T085150__301.91632_303.1182.wav
+ lpa.onSignal: T = 78
+
+Processing: data/signals/bellow/from_HBSe_20151228T103639__439.15652_440.6544.wav
+ lpa.onSignal: T = 97
+
+Processing: data/signals/bellow/from_HBSe_20170107T085150__285.79916_287.78693.wav
+ lpa.onSignal: T = 130
+
+Processing: data/signals/bellow/from_HBSe_20151228T103639__427.37112_429.20944.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/bellow/from_HBSe_20170107T085150__282.74548_284.12827.wav
+ lpa.onSignal: T = 90
+
+Processing: data/signals/bellow/from_HBSe_20170107T085150__273.84467_275.7595.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/bellow/from_HBSe_20151228T103639__414.45172_416.56238.wav
+ lpa.onSignal: T = 138
+
+Processing: data/signals/bellow/from_HBSe_20151228T103639__451.1227_453.98233.wav
+ lpa.onSignal: T = 188
+
+Processing: data/signals/bellow/from_HBSe_20151228T103639__403.05252_404.6185.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/bellow/from_HBSe_20170107T085150__298.67477_299.9174.wav
+ lpa.onSignal: T = 80
+"bellow" split: training=8  test=3
+ saved data/predictors/TRAIN/P36/bellow/from_HBSe_20170107T085150__298.67477_299.9174.prd
+ saved data/predictors/TRAIN/P36/bellow/from_HBSe_20170107T085150__282.74548_284.12827.prd
+ saved data/predictors/TRAIN/P36/bellow/from_HBSe_20151228T103639__403.05252_404.6185.prd
+ saved data/predictors/TRAIN/P36/bellow/from_HBSe_20151228T103639__462.5693_464.74805.prd
+ saved data/predictors/TRAIN/P36/bellow/from_HBSe_20151228T103639__414.45172_416.56238.prd
+ saved data/predictors/TRAIN/P36/bellow/from_HBSe_20170107T085150__301.91632_303.1182.prd
+ saved data/predictors/TRAIN/P36/bellow/from_HBSe_20151228T103639__451.1227_453.98233.prd
+ saved data/predictors/TRAIN/P36/bellow/from_HBSe_20170107T085150__273.84467_275.7595.prd
+ saved data/predictors/TEST/P36/bellow/from_HBSe_20170107T085150__285.79916_287.78693.prd
+ saved data/predictors/TEST/P36/bellow/from_HBSe_20151228T103639__439.15652_440.6544.prd
+ saved data/predictors/TEST/P36/bellow/from_HBSe_20151228T103639__427.37112_429.20944.prd
+
+"broadband_burst": insufficient #signals 1
+
+"creek": insufficient #signals 7
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__417.58368_419.21774.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__391.79767_395.0658.wav
+ lpa.onSignal: T = 215
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__430.50308_431.8648.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__345.19217_346.69003.wav
+ lpa.onSignal: T = 97
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__367.97855_371.31476.wav
+ lpa.onSignal: T = 220
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__380.1414_383.13718.wav
+ lpa.onSignal: T = 197
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__453.8636_455.7019.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__405.1632_408.0228.wav
+ lpa.onSignal: T = 188
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__441.06293_443.17358.wav
+ lpa.onSignal: T = 138
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__356.40396_359.39975.wav
+ lpa.onSignal: T = 197
+
+Processing: data/signals/croak/from_HBSe_20151228T103639__333.30273_334.11978.wav
+ lpa.onSignal: T = 52
+
+Processing: data/signals/croak/from_HBSe_20170116T054541__387.63336_389.26135.wav
+ lpa.onSignal: T = 106
+"croak" split: training=8  test=4
+ saved data/predictors/TRAIN/P36/croak/from_HBSe_20151228T103639__367.97855_371.31476.prd
+ saved data/predictors/TRAIN/P36/croak/from_HBSe_20151228T103639__345.19217_346.69003.prd
+ saved data/predictors/TRAIN/P36/croak/from_HBSe_20151228T103639__417.58368_419.21774.prd
+ saved data/predictors/TRAIN/P36/croak/from_HBSe_20151228T103639__380.1414_383.13718.prd
+ saved data/predictors/TRAIN/P36/croak/from_HBSe_20151228T103639__333.30273_334.11978.prd
+ saved data/predictors/TRAIN/P36/croak/from_HBSe_20170116T054541__387.63336_389.26135.prd
+ saved data/predictors/TRAIN/P36/croak/from_HBSe_20151228T103639__405.1632_408.0228.prd
+ saved data/predictors/TRAIN/P36/croak/from_HBSe_20151228T103639__391.79767_395.0658.prd
+ saved data/predictors/TEST/P36/croak/from_HBSe_20151228T103639__356.40396_359.39975.prd
+ saved data/predictors/TEST/P36/croak/from_HBSe_20151228T103639__441.06293_443.17358.prd
+ saved data/predictors/TEST/P36/croak/from_HBSe_20151228T103639__430.50308_431.8648.prd
+ saved data/predictors/TEST/P36/croak/from_HBSe_20151228T103639__453.8636_455.7019.prd
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__338.73062_340.48987.wav
+ lpa.onSignal: T = 115
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__166.79279_168.47255.wav
+ lpa.onSignal: T = 109
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__55.624954_57.14474.wav
+ lpa.onSignal: T = 99
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__75.67624_77.53934.wav
+ lpa.onSignal: T = 122
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__78.315636_79.4542.wav
+ lpa.onSignal: T = 73
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__65.65534_67.28556.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__55.039024_56.97976.wav
+ lpa.onSignal: T = 127
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__187.30634_191.03255.wav
+ lpa.onSignal: T = 246
+
+Processing: data/signals/cry/from_HBSe_20151022T015622__39.784492_41.149242.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__132.43066_136.67006.wav
+ lpa.onSignal: T = 280
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__320.27664_323.12305.wav
+ lpa.onSignal: T = 187
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__71.92204_73.64181.wav
+ lpa.onSignal: T = 112
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__193.84438_195.97124.wav
+ lpa.onSignal: T = 139
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__117.54662_118.995705.wav
+ lpa.onSignal: T = 94
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__57.523167_58.81699.wav
+ lpa.onSignal: T = 84
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__102.21334_103.773125.wav
+ lpa.onSignal: T = 101
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__261.84113_264.00082.wav
+ lpa.onSignal: T = 141
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__214.57024_216.36998.wav
+ lpa.onSignal: T = 117
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__483.66394_484.81927.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__193.8272_196.82887.wav
+ lpa.onSignal: T = 198
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__86.31481_88.12617.wav
+ lpa.onSignal: T = 118
+
+Processing: data/signals/cry/from_HBSe_20151022T015622__11.947155_13.155294.wav
+ lpa.onSignal: T = 78
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__137.58994_139.54967.wav
+ lpa.onSignal: T = 128
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__242.48004_244.7313.wav
+ lpa.onSignal: T = 148
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__68.08773_69.303925.wav
+ lpa.onSignal: T = 79
+
+Processing: data/signals/cry/from_HBSe_20151022T015622__32.311928_33.676678.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__121.72719_123.48694.wav
+ lpa.onSignal: T = 115
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__207.34244_210.12575.wav
+ lpa.onSignal: T = 183
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__9.936563_11.359768.wav
+ lpa.onSignal: T = 92
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__369.04172_370.12158.wav
+ lpa.onSignal: T = 69
+
+Processing: data/signals/cry/from_HBSe_20151022T015622__23.12997_24.852688.wav
+ lpa.onSignal: T = 112
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__198.4387_200.11847.wav
+ lpa.onSignal: T = 109
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__139.71797_142.18617.wav
+ lpa.onSignal: T = 162
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__96.683495_98.33959.wav
+ lpa.onSignal: T = 108
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__55.738117_56.945965.wav
+ lpa.onSignal: T = 78
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__47.33569_49.305008.wav
+ lpa.onSignal: T = 129
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__166.28989_169.26569.wav
+ lpa.onSignal: T = 196
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__73.507614_76.08086.wav
+ lpa.onSignal: T = 169
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__92.932465_95.05217.wav
+ lpa.onSignal: T = 139
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__32.899315_34.947407.wav
+ lpa.onSignal: T = 134
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__220.9671_222.83139.wav
+ lpa.onSignal: T = 122
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__141.39781_142.5105.wav
+ lpa.onSignal: T = 72
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__62.058517_62.83481.wav
+ lpa.onSignal: T = 49
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__182.81851_184.89822.wav
+ lpa.onSignal: T = 136
+
+Processing: data/signals/cry/from_HBSe_20151023T122324__110.31067_111.55274.wav
+ lpa.onSignal: T = 80
+
+Processing: data/signals/cry/from_HBSe_20151022T015622__13.871229_15.39259.wav
+ lpa.onSignal: T = 99
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__151.63875_153.3985.wav
+ lpa.onSignal: T = 115
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__19.012522_20.832079.wav
+ lpa.onSignal: T = 119
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__589.66455_590.74115.wav
+ lpa.onSignal: T = 69
+
+Processing: data/signals/cry/from_HBSe_20170424T102157__58.824505_60.38429.wav
+ lpa.onSignal: T = 101
+
+Processing: data/signals/cry/from_HBSe_20151022T015622__20.892675_22.548275.wav
+ lpa.onSignal: T = 108
+
+Processing: data/signals/cry/from_HBSe_20170116T054541__558.11755_562.16125.wav
+ lpa.onSignal: T = 267
+"cry" split: training=36  test=16
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__92.932465_95.05217.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__71.92204_73.64181.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__187.30634_191.03255.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__62.058517_62.83481.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151022T015622__20.892675_22.548275.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__132.43066_136.67006.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__121.72719_123.48694.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__117.54662_118.995705.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__86.31481_88.12617.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__78.315636_79.4542.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170116T054541__73.507614_76.08086.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170116T054541__139.71797_142.18617.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__141.39781_142.5105.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__261.84113_264.00082.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__166.28989_169.26569.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__55.039024_56.97976.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__151.63875_153.3985.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__65.65534_67.28556.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170116T054541__47.33569_49.305008.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__102.21334_103.773125.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151022T015622__32.311928_33.676678.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__75.67624_77.53934.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170116T054541__19.012522_20.832079.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__57.523167_58.81699.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170116T054541__338.73062_340.48987.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170116T054541__207.34244_210.12575.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__96.683495_98.33959.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__137.58994_139.54967.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__193.8272_196.82887.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__9.936563_11.359768.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__198.4387_200.11847.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151022T015622__23.12997_24.852688.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151022T015622__11.947155_13.155294.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20151023T122324__242.48004_244.7313.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170424T102157__166.79279_168.47255.prd
+ saved data/predictors/TRAIN/P36/cry/from_HBSe_20170116T054541__558.11755_562.16125.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170116T054541__55.738117_56.945965.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20151022T015622__13.871229_15.39259.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20151022T015622__39.784492_41.149242.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20151023T122324__110.31067_111.55274.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170424T102157__58.824505_60.38429.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170116T054541__589.66455_590.74115.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170424T102157__214.57024_216.36998.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170116T054541__193.84438_195.97124.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170424T102157__55.624954_57.14474.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170116T054541__32.899315_34.947407.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20151023T122324__68.08773_69.303925.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170424T102157__369.04172_370.12158.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170424T102157__182.81851_184.89822.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170116T054541__220.9671_222.83139.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20170116T054541__483.66394_484.81927.prd
+ saved data/predictors/TEST/P36/cry/from_HBSe_20151023T122324__320.27664_323.12305.prd
+
+"descending_grunt": insufficient #signals 1
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__255.0442_256.65747.wav
+ lpa.onSignal: T = 105
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__40.766354_42.54988.wav
+ lpa.onSignal: T = 116
+
+Processing: data/signals/descending_moan/from_HBSe_20151228T103639__409.58878_411.49518.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__143.7705_147.37376.wav
+ lpa.onSignal: T = 238
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__81.433914_86.118164.wav
+ lpa.onSignal: T = 310
+
+Processing: data/signals/descending_moan/from_HBSe_20151228T103639__220.74388_222.30986.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__298.03818_301.53043.wav
+ lpa.onSignal: T = 230
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__126.03781_128.86104.wav
+ lpa.onSignal: T = 186
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__420.44156_424.40515.wav
+ lpa.onSignal: T = 262
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__432.08685_434.79138.wav
+ lpa.onSignal: T = 178
+
+Processing: data/signals/descending_moan/from_HBSe_20151207T070326__222.62271_225.41945.wav
+ lpa.onSignal: T = 184
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__571.98157_573.6358.wav
+ lpa.onSignal: T = 108
+
+Processing: data/signals/descending_moan/from_HBSe_20151228T103639__468.9906_471.78214.wav
+ lpa.onSignal: T = 184
+
+Processing: data/signals/descending_moan/from_HBSe_20151228T103639__445.82892_447.93958.wav
+ lpa.onSignal: T = 138
+
+Processing: data/signals/descending_moan/from_HBSe_20151121T040102__53.14555_56.079212.wav
+ lpa.onSignal: T = 193
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__308.37982_314.5054.wav
+ lpa.onSignal: T = 406
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__69.54312_73.86705.wav
+ lpa.onSignal: T = 286
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__317.74832_323.8739.wav
+ lpa.onSignal: T = 406
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__182.33208_184.80959.wav
+ lpa.onSignal: T = 163
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__255.8633_261.62854.wav
+ lpa.onSignal: T = 382
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__116.58328_119.4065.wav
+ lpa.onSignal: T = 186
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__241.97404_244.33633.wav
+ lpa.onSignal: T = 155
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__154.62213_157.5606.wav
+ lpa.onSignal: T = 193
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__408.55075_412.15402.wav
+ lpa.onSignal: T = 238
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__281.3946_283.96783.wav
+ lpa.onSignal: T = 169
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__225.95615_229.91975.wav
+ lpa.onSignal: T = 262
+
+Processing: data/signals/descending_moan/from_HBSe_20151228T103639__124.89709_126.463066.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/descending_moan/from_HBSe_20170424T102157__310.80377_312.8035.wav
+ lpa.onSignal: T = 131
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__110.62041_113.1427.wav
+ lpa.onSignal: T = 166
+
+Processing: data/signals/descending_moan/from_HBSe_20170424T102157__332.82224_335.3019.wav
+ lpa.onSignal: T = 163
+
+Processing: data/signals/descending_moan/from_HBSe_20170424T102157__314.64325_316.00305.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__442.06116_447.46606.wav
+ lpa.onSignal: T = 358
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__280.36554_285.0498.wav
+ lpa.onSignal: T = 310
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__168.38882_171.26965.wav
+ lpa.onSignal: T = 190
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__538.5441_540.0408.wav
+ lpa.onSignal: T = 97
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__350.2292_353.35382.wav
+ lpa.onSignal: T = 206
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__58.889027_61.09466.wav
+ lpa.onSignal: T = 145
+
+Processing: data/signals/descending_moan/from_HBSe_20170424T102157__374.48315_377.0428.wav
+ lpa.onSignal: T = 168
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__382.22113_385.29327.wav
+ lpa.onSignal: T = 202
+
+Processing: data/signals/descending_moan/from_HBSe_20151121T040102__43.977863_47.278233.wav
+ lpa.onSignal: T = 218
+
+Processing: data/signals/descending_moan/from_HBSe_20170424T102157__354.25583_356.6155.wav
+ lpa.onSignal: T = 155
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__221.2719_226.31648.wav
+ lpa.onSignal: T = 334
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__333.39563_336.59906.wav
+ lpa.onSignal: T = 211
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__268.83508_273.87964.wav
+ lpa.onSignal: T = 334
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__163.22816_167.19176.wav
+ lpa.onSignal: T = 262
+
+Processing: data/signals/descending_moan/from_HBSe_20151023T122324__253.10916_255.77443.wav
+ lpa.onSignal: T = 175
+
+Processing: data/signals/descending_moan/from_HBSe_20151228T103639__493.93015_496.6536.wav
+ lpa.onSignal: T = 179
+
+Processing: data/signals/descending_moan/from_HBSe_20170424T102157__435.96063_438.3203.wav
+ lpa.onSignal: T = 155
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__215.11525_218.3582.wav
+ lpa.onSignal: T = 214
+
+Processing: data/signals/descending_moan/from_HBSe_20151121T040102__80.21322_82.41346.wav
+ lpa.onSignal: T = 144
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__395.4056_397.50623.wav
+ lpa.onSignal: T = 138
+
+Processing: data/signals/descending_moan/from_HBSe_20151207T070326__243.6873_246.55396.wav
+ lpa.onSignal: T = 189
+
+Processing: data/signals/descending_moan/from_HBSe_20151121T040102__117.99321_120.85353.wav
+ lpa.onSignal: T = 188
+
+Processing: data/signals/descending_moan/from_HBSe_20161207T115528__106.08109_108.68539.wav
+ lpa.onSignal: T = 171
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__262.34918_265.2318.wav
+ lpa.onSignal: T = 190
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__431.25137_435.5753.wav
+ lpa.onSignal: T = 286
+
+Processing: data/signals/descending_moan/from_HBSe_20151023T122324__264.43723_267.38715.wav
+ lpa.onSignal: T = 194
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__175.11896_178.3619.wav
+ lpa.onSignal: T = 214
+
+Processing: data/signals/descending_moan/from_HBSe_20170424T102157__401.58432_402.66415.wav
+ lpa.onSignal: T = 69
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__103.27382_105.80896.wav
+ lpa.onSignal: T = 167
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__90.013405_92.31807.wav
+ lpa.onSignal: T = 151
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__75.66684_78.25959.wav
+ lpa.onSignal: T = 170
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__0.6312751_2.1166284.wav
+ lpa.onSignal: T = 97
+
+Processing: data/signals/descending_moan/from_HBSe_20151207T070326__295.54202_298.65613.wav
+ lpa.onSignal: T = 205
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__374.31967_377.92294.wav
+ lpa.onSignal: T = 238
+
+Processing: data/signals/descending_moan/from_HBSe_20151228T103639__73.442764_75.28108.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/descending_moan/from_HBSe_20170107T085150__48.841423_50.685158.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/descending_moan/from_HBSe_20151023T122324__297.61685_300.35977.wav
+ lpa.onSignal: T = 180
+
+Processing: data/signals/descending_moan/from_HBSe_20151228T103639__167.0084_168.64247.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/descending_moan/from_HBSe_20170424T102157__397.14493_399.86456.wav
+ lpa.onSignal: T = 179
+
+Processing: data/signals/descending_moan/from_HBSe_20151228T103639__480.8577_483.7173.wav
+ lpa.onSignal: T = 188
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__292.1651_296.48904.wav
+ lpa.onSignal: T = 286
+
+Processing: data/signals/descending_moan/from_HBSe_20151207T070326__264.45065_267.81848.wav
+ lpa.onSignal: T = 222
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__121.06989_124.312836.wav
+ lpa.onSignal: T = 214
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__209.35002_214.75493.wav
+ lpa.onSignal: T = 358
+
+Processing: data/signals/descending_moan/from_HBSe_20151023T122324__177.71562_180.30327.wav
+ lpa.onSignal: T = 170
+
+Processing: data/signals/descending_moan/from_HBSe_20151023T122324__221.84256_224.19731.wav
+ lpa.onSignal: T = 154
+
+Processing: data/signals/descending_moan/from_HBSe_20170116T054541__407.64166_409.74225.wav
+ lpa.onSignal: T = 138
+
+Processing: data/signals/descending_moan/from_HBSe_20161101T153358__150.97704_154.5803.wav
+ lpa.onSignal: T = 238
+
+Processing: data/signals/descending_moan/from_HBSe_20170424T102157__358.4432_360.003.wav
+ lpa.onSignal: T = 101
+"descending_moan" split: training=56  test=24
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170424T102157__332.82224_335.3019.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170107T085150__103.27382_105.80896.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170424T102157__358.4432_360.003.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151023T122324__221.84256_224.19731.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__298.03818_301.53043.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151228T103639__493.93015_496.6536.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__221.2719_226.31648.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__292.1651_296.48904.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__350.2292_353.35382.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151228T103639__124.89709_126.463066.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170424T102157__354.25583_356.6155.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170424T102157__314.64325_316.00305.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__538.5441_540.0408.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151228T103639__409.58878_411.49518.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170424T102157__374.48315_377.0428.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151228T103639__73.442764_75.28108.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__333.39563_336.59906.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151121T040102__117.99321_120.85353.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__163.22816_167.19176.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161207T115528__106.08109_108.68539.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151023T122324__253.10916_255.77443.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__374.31967_377.92294.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151121T040102__43.977863_47.278233.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__382.22113_385.29327.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__571.98157_573.6358.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__255.8633_261.62854.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151228T103639__220.74388_222.30986.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__215.11525_218.3582.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__40.766354_42.54988.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__408.55075_412.15402.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__432.08685_434.79138.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170424T102157__397.14493_399.86456.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151121T040102__53.14555_56.079212.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151207T070326__243.6873_246.55396.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170107T085150__182.33208_184.80959.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__121.06989_124.312836.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151228T103639__167.0084_168.64247.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151023T122324__264.43723_267.38715.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151023T122324__297.61685_300.35977.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__395.4056_397.50623.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170424T102157__310.80377_312.8035.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170107T085150__126.03781_128.86104.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151228T103639__445.82892_447.93958.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__0.6312751_2.1166284.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__420.44156_424.40515.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__308.37982_314.5054.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170107T085150__116.58328_119.4065.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170107T085150__154.62213_157.5606.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170107T085150__168.38882_171.26965.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__431.25137_435.5753.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__407.64166_409.74225.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20151207T070326__295.54202_298.65613.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170116T054541__58.889027_61.09466.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__81.433914_86.118164.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20161101T153358__150.97704_154.5803.prd
+ saved data/predictors/TRAIN/P36/descending_moan/from_HBSe_20170107T085150__48.841423_50.685158.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__69.54312_73.86705.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__225.95615_229.91975.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__268.83508_273.87964.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20151121T040102__80.21322_82.41346.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20170424T102157__401.58432_402.66415.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__317.74832_323.8739.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20151228T103639__480.8577_483.7173.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20170107T085150__241.97404_244.33633.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__280.36554_285.0498.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__143.7705_147.37376.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20170424T102157__435.96063_438.3203.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20151207T070326__222.62271_225.41945.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20170107T085150__255.0442_256.65747.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__209.35002_214.75493.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20151207T070326__264.45065_267.81848.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20151023T122324__177.71562_180.30327.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__110.62041_113.1427.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__262.34918_265.2318.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20170116T054541__281.3946_283.96783.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20170107T085150__75.66684_78.25959.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20170107T085150__90.013405_92.31807.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__175.11896_178.3619.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20161101T153358__442.06116_447.46606.prd
+ saved data/predictors/TEST/P36/descending_moan/from_HBSe_20151228T103639__468.9906_471.78214.prd
+
+"descending_moan_(F)": insufficient #signals 1
+
+Processing: data/signals/descending_shriek/from_HBSe_20161207T115528__272.06866_273.09457.wav
+ lpa.onSignal: T = 66
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__9.123494_10.008609.wav
+ lpa.onSignal: T = 57
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__11.846925_12.663955.wav
+ lpa.onSignal: T = 52
+
+Processing: data/signals/descending_shriek/from_HBSe_20161207T115528__259.99744_260.54987.wav
+ lpa.onSignal: T = 34
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__6.263891_7.353264.wav
+ lpa.onSignal: T = 70
+
+Processing: data/signals/descending_shriek/from_HBSe_20151207T070326__8.481215_9.62451.wav
+ lpa.onSignal: T = 74
+
+Processing: data/signals/descending_shriek/from_HBSe_20151207T070326__14.225019_15.645238.wav
+ lpa.onSignal: T = 92
+
+Processing: data/signals/descending_shriek/from_HBSe_20161207T115528__15.174027_16.252573.wav
+ lpa.onSignal: T = 69
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__29.464254_30.485542.wav
+ lpa.onSignal: T = 66
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__3.336203_4.4936614.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/descending_shriek/from_HBSe_20151207T070326__37.135204_38.612232.wav
+ lpa.onSignal: T = 96
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__49.132328_50.221703.wav
+ lpa.onSignal: T = 70
+
+Processing: data/signals/descending_shriek/from_HBSe_20161207T115528__254.52579_255.31496.wav
+ lpa.onSignal: T = 50
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__34.843033_36.27283.wav
+ lpa.onSignal: T = 93
+
+Processing: data/signals/descending_shriek/from_HBSe_20161207T115528__1.3152994_1.9992551.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__31.983429_33.685574.wav
+ lpa.onSignal: T = 111
+
+Processing: data/signals/descending_shriek/from_HBSe_20161207T115528__244.12729_244.83755.wav
+ lpa.onSignal: T = 45
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__21.491138_23.057112.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/descending_shriek/from_HBSe_20151207T070326__21.749895_23.41483.wav
+ lpa.onSignal: T = 108
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__0.3404289_1.2936298.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__14.706528_15.523557.wav
+ lpa.onSignal: T = 52
+
+Processing: data/signals/descending_shriek/from_HBSe_20161207T115528__274.59402_275.3832.wav
+ lpa.onSignal: T = 50
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__17.293787_18.246988.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/descending_shriek/from_HBSe_20151207T070326__11.314861_12.934015.wav
+ lpa.onSignal: T = 105
+
+Processing: data/signals/descending_shriek/from_HBSe_20151228T103639__26.672739_27.898283.wav
+ lpa.onSignal: T = 79
+
+Processing: data/signals/descending_shriek/from_HBSe_20151207T070326__39.91328_41.180553.wav
+ lpa.onSignal: T = 82
+"descending_shriek" split: training=18  test=8
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151228T103639__49.132328_50.221703.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151207T070326__39.91328_41.180553.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151228T103639__11.846925_12.663955.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151228T103639__17.293787_18.246988.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20161207T115528__254.52579_255.31496.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151207T070326__14.225019_15.645238.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151207T070326__11.314861_12.934015.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151228T103639__21.491138_23.057112.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20161207T115528__1.3152994_1.9992551.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151228T103639__29.464254_30.485542.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20161207T115528__272.06866_273.09457.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151228T103639__34.843033_36.27283.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151228T103639__31.983429_33.685574.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151228T103639__26.672739_27.898283.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151207T070326__21.749895_23.41483.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20161207T115528__274.59402_275.3832.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20161207T115528__244.12729_244.83755.prd
+ saved data/predictors/TRAIN/P36/descending_shriek/from_HBSe_20151207T070326__8.481215_9.62451.prd
+ saved data/predictors/TEST/P36/descending_shriek/from_HBSe_20161207T115528__15.174027_16.252573.prd
+ saved data/predictors/TEST/P36/descending_shriek/from_HBSe_20151228T103639__6.263891_7.353264.prd
+ saved data/predictors/TEST/P36/descending_shriek/from_HBSe_20151228T103639__0.3404289_1.2936298.prd
+ saved data/predictors/TEST/P36/descending_shriek/from_HBSe_20151207T070326__37.135204_38.612232.prd
+ saved data/predictors/TEST/P36/descending_shriek/from_HBSe_20161207T115528__259.99744_260.54987.prd
+ saved data/predictors/TEST/P36/descending_shriek/from_HBSe_20151228T103639__3.336203_4.4936614.prd
+ saved data/predictors/TEST/P36/descending_shriek/from_HBSe_20151228T103639__9.123494_10.008609.prd
+ saved data/predictors/TEST/P36/descending_shriek/from_HBSe_20151228T103639__14.706528_15.523557.prd
+
+"descending_shriek?": insufficient #signals 1
+
+"descending_shriek_(D)": insufficient #signals 1
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__135.39075_136.3716.wav
+ lpa.onSignal: T = 63
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__269.84842_271.417.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__97.68899_99.06533.wav
+ lpa.onSignal: T = 89
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__78.64309_79.873604.wav
+ lpa.onSignal: T = 80
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__249.14972_251.17735.wav
+ lpa.onSignal: T = 133
+
+Processing: data/signals/groan/from_HBSe_20161207T115528__90.87721_94.076614.wav
+ lpa.onSignal: T = 211
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__88.68207_90.06919.wav
+ lpa.onSignal: T = 90
+
+Processing: data/signals/groan/from_HBSe_20151228T103639__281.8958_283.73413.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/groan/from_HBSe_20161207T115528__56.004124_58.57108.wav
+ lpa.onSignal: T = 169
+
+Processing: data/signals/groan/from_HBSe_20151023T122324__281.51306_284.74762.wav
+ lpa.onSignal: T = 213
+
+Processing: data/signals/groan/from_HBSe_20151023T122324__169.78322_175.68304.wav
+ lpa.onSignal: T = 391
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__123.23511_124.32669.wav
+ lpa.onSignal: T = 70
+
+Processing: data/signals/groan/from_HBSe_20151023T122324__155.64018_157.34804.wav
+ lpa.onSignal: T = 111
+
+Processing: data/signals/groan/from_HBSe_20151121T040102__283.13614_286.80322.wav
+ lpa.onSignal: T = 242
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__177.84088_178.81975.wav
+ lpa.onSignal: T = 63
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__76.13732_77.70342.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/groan/from_HBSe_20151228T103639__489.50458_490.04926.wav
+ lpa.onSignal: T = 34
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__108.52049_109.84937.wav
+ lpa.onSignal: T = 86
+
+Processing: data/signals/groan/from_HBSe_20151023T122324__292.70035_296.32303.wav
+ lpa.onSignal: T = 239
+
+Processing: data/signals/groan/from_HBSe_20151228T103639__499.0742_500.09546.wav
+ lpa.onSignal: T = 66
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__290.42377_292.1077.wav
+ lpa.onSignal: T = 110
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__66.38249_68.01572.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/groan/from_HBSe_20151023T122324__303.8679_307.30945.wav
+ lpa.onSignal: T = 227
+
+Processing: data/signals/groan/from_HBSe_20151023T122324__313.97223_318.837.wav
+ lpa.onSignal: T = 322
+
+Processing: data/signals/groan/from_HBSe_20161207T115528__79.73945_82.343605.wav
+ lpa.onSignal: T = 171
+
+Processing: data/signals/groan/from_HBSe_20151023T122324__182.46744_185.33972.wav
+ lpa.onSignal: T = 189
+
+Processing: data/signals/groan/from_HBSe_20151228T103639__522.24457_523.87866.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__100.2202_101.390884.wav
+ lpa.onSignal: T = 76
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__259.6045_261.10388.wav
+ lpa.onSignal: T = 97
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__120.60898_121.84294.wav
+ lpa.onSignal: T = 80
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__86.01969_87.541046.wav
+ lpa.onSignal: T = 99
+
+Processing: data/signals/groan/from_HBSe_20170116T054541__454.43832_456.0663.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__320.60626_322.82455.wav
+ lpa.onSignal: T = 145
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__280.25742_281.82602.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__323.57523_324.75165.wav
+ lpa.onSignal: T = 76
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__111.51048_112.61789.wav
+ lpa.onSignal: T = 71
+
+Processing: data/signals/groan/from_HBSe_20151022T015622__56.878025_58.712605.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__300.68604_302.23154.wav
+ lpa.onSignal: T = 101
+
+Processing: data/signals/groan/from_HBSe_20151207T070326__310.75436_312.67908.wav
+ lpa.onSignal: T = 126
+"groan" split: training=27  test=12
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151023T122324__155.64018_157.34804.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20161207T115528__79.73945_82.343605.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20170116T054541__454.43832_456.0663.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__76.13732_77.70342.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151207T070326__249.14972_251.17735.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151023T122324__281.51306_284.74762.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151228T103639__522.24457_523.87866.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__97.68899_99.06533.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__108.52049_109.84937.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151023T122324__303.8679_307.30945.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__78.64309_79.873604.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151023T122324__313.97223_318.837.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151207T070326__320.60626_322.82455.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151228T103639__281.8958_283.73413.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151207T070326__280.25742_281.82602.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151207T070326__259.6045_261.10388.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20161207T115528__56.004124_58.57108.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151228T103639__489.50458_490.04926.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151207T070326__177.84088_178.81975.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__111.51048_112.61789.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151207T070326__323.57523_324.75165.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__88.68207_90.06919.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__120.60898_121.84294.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151228T103639__499.0742_500.09546.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__56.878025_58.712605.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__135.39075_136.3716.prd
+ saved data/predictors/TRAIN/P36/groan/from_HBSe_20151022T015622__86.01969_87.541046.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151121T040102__283.13614_286.80322.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151023T122324__182.46744_185.33972.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151022T015622__66.38249_68.01572.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20161207T115528__90.87721_94.076614.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151207T070326__300.68604_302.23154.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151207T070326__310.75436_312.67908.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151023T122324__292.70035_296.32303.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151207T070326__269.84842_271.417.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151022T015622__123.23511_124.32669.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151207T070326__290.42377_292.1077.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151022T015622__100.2202_101.390884.prd
+ saved data/predictors/TEST/P36/groan/from_HBSe_20151023T122324__169.78322_175.68304.prd
+
+Processing: data/signals/groan_+_purr/from_HBSe_20161207T115528__200.88698_202.7284.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/groan_+_purr/from_HBSe_20151207T070326__372.48965_373.57382.wav
+ lpa.onSignal: T = 70
+
+Processing: data/signals/groan_+_purr/from_HBSe_20151207T070326__375.696_376.68793.wav
+ lpa.onSignal: T = 64
+
+Processing: data/signals/groan_+_purr/from_HBSe_20161207T115528__162.14832_163.98973.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/groan_+_purr/from_HBSe_20151207T070326__358.21786_359.6711.wav
+ lpa.onSignal: T = 94
+
+Processing: data/signals/groan_+_purr/from_HBSe_20151207T070326__335.24094_336.27896.wav
+ lpa.onSignal: T = 67
+
+Processing: data/signals/groan_+_purr/from_HBSe_20151207T070326__361.35504_362.69293.wav
+ lpa.onSignal: T = 87
+
+Processing: data/signals/groan_+_purr/from_HBSe_20151207T070326__348.0139_348.89044.wav
+ lpa.onSignal: T = 56
+
+Processing: data/signals/groan_+_purr/from_HBSe_20151207T070326__344.80753_345.79944.wav
+ lpa.onSignal: T = 64
+
+Processing: data/signals/groan_+_purr/from_HBSe_20161207T115528__190.68025_192.6795.wav
+ lpa.onSignal: T = 131
+
+Processing: data/signals/groan_+_purr/from_HBSe_20161207T115528__156.71706_160.24207.wav
+ lpa.onSignal: T = 233
+"groan_+_purr" split: training=8  test=3
+ saved data/predictors/TRAIN/P36/groan_+_purr/from_HBSe_20161207T115528__156.71706_160.24207.prd
+ saved data/predictors/TRAIN/P36/groan_+_purr/from_HBSe_20151207T070326__375.696_376.68793.prd
+ saved data/predictors/TRAIN/P36/groan_+_purr/from_HBSe_20151207T070326__335.24094_336.27896.prd
+ saved data/predictors/TRAIN/P36/groan_+_purr/from_HBSe_20151207T070326__344.80753_345.79944.prd
+ saved data/predictors/TRAIN/P36/groan_+_purr/from_HBSe_20161207T115528__200.88698_202.7284.prd
+ saved data/predictors/TRAIN/P36/groan_+_purr/from_HBSe_20161207T115528__162.14832_163.98973.prd
+ saved data/predictors/TRAIN/P36/groan_+_purr/from_HBSe_20151207T070326__358.21786_359.6711.prd
+ saved data/predictors/TRAIN/P36/groan_+_purr/from_HBSe_20161207T115528__190.68025_192.6795.prd
+ saved data/predictors/TEST/P36/groan_+_purr/from_HBSe_20151207T070326__372.48965_373.57382.prd
+ saved data/predictors/TEST/P36/groan_+_purr/from_HBSe_20151207T070326__361.35504_362.69293.prd
+ saved data/predictors/TEST/P36/groan_+_purr/from_HBSe_20151207T070326__348.0139_348.89044.prd
+
+"groan_+purr": insufficient #signals 1
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__447.10104_448.9408.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__451.82037_454.06006.wav
+ lpa.onSignal: T = 147
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__533.28467_535.50433.wav
+ lpa.onSignal: T = 145
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__509.30942_510.6892.wav
+ lpa.onSignal: T = 89
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__441.89618_444.13586.wav
+ lpa.onSignal: T = 147
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__553.30865_554.78845.wav
+ lpa.onSignal: T = 96
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__455.9798_458.41946.wav
+ lpa.onSignal: T = 160
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__472.24548_473.48532.wav
+ lpa.onSignal: T = 80
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__486.3375_487.6773.wav
+ lpa.onSignal: T = 87
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__490.41693_491.71674.wav
+ lpa.onSignal: T = 84
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__467.9261_469.76584.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/growl/from_HBSe_20170424T102157__505.24997_506.66977.wav
+ lpa.onSignal: T = 92
+"growl" split: training=8  test=4
+ saved data/predictors/TRAIN/P36/growl/from_HBSe_20170424T102157__509.30942_510.6892.prd
+ saved data/predictors/TRAIN/P36/growl/from_HBSe_20170424T102157__455.9798_458.41946.prd
+ saved data/predictors/TRAIN/P36/growl/from_HBSe_20170424T102157__447.10104_448.9408.prd
+ saved data/predictors/TRAIN/P36/growl/from_HBSe_20170424T102157__533.28467_535.50433.prd
+ saved data/predictors/TRAIN/P36/growl/from_HBSe_20170424T102157__505.24997_506.66977.prd
+ saved data/predictors/TRAIN/P36/growl/from_HBSe_20170424T102157__441.89618_444.13586.prd
+ saved data/predictors/TRAIN/P36/growl/from_HBSe_20170424T102157__467.9261_469.76584.prd
+ saved data/predictors/TRAIN/P36/growl/from_HBSe_20170424T102157__486.3375_487.6773.prd
+ saved data/predictors/TEST/P36/growl/from_HBSe_20170424T102157__472.24548_473.48532.prd
+ saved data/predictors/TEST/P36/growl/from_HBSe_20170424T102157__553.30865_554.78845.prd
+ saved data/predictors/TEST/P36/growl/from_HBSe_20170424T102157__490.41693_491.71674.prd
+ saved data/predictors/TEST/P36/growl/from_HBSe_20170424T102157__451.82037_454.06006.prd
+
+"growl+gurgle": insufficient #signals 1
+
+"grumble": insufficient #signals 3
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__391.46573_392.70557.wav
+ lpa.onSignal: T = 80
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__329.22058_330.22043.wav
+ lpa.onSignal: T = 64
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__328.24915_328.98438.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__407.9942_409.15402.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__478.77917_479.32385.wav
+ lpa.onSignal: T = 34
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__375.76093_376.8375.wav
+ lpa.onSignal: T = 69
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__381.86707_383.0669.wav
+ lpa.onSignal: T = 77
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__276.65656_277.41803.wav
+ lpa.onSignal: T = 48
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__329.98215_330.84866.wav
+ lpa.onSignal: T = 55
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__363.73874_364.68402.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__366.80203_367.8419.wav
+ lpa.onSignal: T = 67
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__240.24025_240.9492.wav
+ lpa.onSignal: T = 45
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__293.92615_295.20596.wav
+ lpa.onSignal: T = 83
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__298.5255_299.60535.wav
+ lpa.onSignal: T = 69
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__361.68277_362.32266.wav
+ lpa.onSignal: T = 40
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__413.7934_414.99323.wav
+ lpa.onSignal: T = 77
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__379.35822_380.3035.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/grunt/from_HBSe_20161101T153358__355.80942_364.09695.wav
+ lpa.onSignal: T = 550
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__306.88434_307.56424.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__377.5202_378.5705.wav
+ lpa.onSignal: T = 68
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__254.88199_255.9323.wav
+ lpa.onSignal: T = 68
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__330.74036_331.70023.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__326.58096_327.50082.wav
+ lpa.onSignal: T = 59
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__465.58633_466.26718.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__307.72723_308.9351.wav
+ lpa.onSignal: T = 78
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__343.35196_344.08716.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__303.80475_304.64465.wav
+ lpa.onSignal: T = 53
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__292.55405_294.18204.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__410.7938_412.11362.wav
+ lpa.onSignal: T = 85
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__364.2824_364.9623.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__322.5415_323.3814.wav
+ lpa.onSignal: T = 53
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__591.7612_592.1017.wav
+ lpa.onSignal: T = 20
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__305.9417_306.83447.wav
+ lpa.onSignal: T = 57
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__313.11005_314.21286.wav
+ lpa.onSignal: T = 71
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__404.9146_406.27444.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__592.9868_593.66766.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__238.42847_239.16368.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__305.48453_306.28442.wav
+ lpa.onSignal: T = 51
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__323.83884_324.51968.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__594.8932_595.506.wav
+ lpa.onSignal: T = 38
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__317.98215_318.70206.wav
+ lpa.onSignal: T = 45
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__296.28583_297.64563.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/grunt/from_HBSe_20151207T070326__167.33717_168.89285.wav
+ lpa.onSignal: T = 101
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__320.18185_321.14172.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__374.0542_375.05197.wav
+ lpa.onSignal: T = 64
+
+Processing: data/signals/grunt/from_HBSe_20161101T153358__325.18164_334.91046.wav
+ lpa.onSignal: T = 646
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__590.3314_590.7399.wav
+ lpa.onSignal: T = 25
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__360.299_361.0342.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__346.69687_347.8167.wav
+ lpa.onSignal: T = 72
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__302.32498_303.36484.wav
+ lpa.onSignal: T = 67
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__384.42673_385.70654.wav
+ lpa.onSignal: T = 83
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__324.4418_325.22952.wav
+ lpa.onSignal: T = 50
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__466.81186_467.49274.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__273.05927_274.13583.wav
+ lpa.onSignal: T = 69
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__274.87103_275.86884.wav
+ lpa.onSignal: T = 64
+
+Processing: data/signals/grunt/from_HBSe_20151207T070326__156.03535_158.36888.wav
+ lpa.onSignal: T = 153
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__324.7812_325.26114.wav
+ lpa.onSignal: T = 29
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__511.82745_513.25726.wav
+ lpa.onSignal: T = 93
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__327.98074_328.90063.wav
+ lpa.onSignal: T = 59
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__594.0762_594.4847.wav
+ lpa.onSignal: T = 25
+
+Processing: data/signals/grunt/from_HBSe_20151207T070326__145.65627_146.76622.wav
+ lpa.onSignal: T = 71
+
+WARN: problem with lpa.onSignal: problem with section t=29: lpca_r: non positive prediction error: -0.0062579555
+ r=List(0.4231472, 0.41527188, 0.40559384, 0.3974163, 0.38662392, 0.37909457, 0.37166688, 0.36583644, 0.36138138, 0.35651067, 0.35148966, 0.34525654, 0.33971834, 0.33279747, 0.3235215, 0.31322914, 0.30269125, 0.2933014, 0.28428206, 0.27570084, 0.26736403, 0.25852108, 0.2487391, 0.23696442, 0.22471435, 0.21272892, 0.19973657, 0.18542577, 0.16961995, 0.1541869, 0.13996375, 0.12567432, 0.11203983, 0.09905739, 0.08596966, 0.072335854, 0.05749626)
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__372.44125_373.40112.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__345.21625_345.89896.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__351.6962_352.57605.wav
+ lpa.onSignal: T = 56
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__242.1833_242.81349.wav
+ lpa.onSignal: T = 40
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__477.28128_477.96213.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__341.35638_342.2754.wav
+ lpa.onSignal: T = 59
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__597.07196_597.6847.wav
+ lpa.onSignal: T = 38
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__308.5241_309.32397.wav
+ lpa.onSignal: T = 51
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__370.88147_371.60138.wav
+ lpa.onSignal: T = 45
+
+Processing: data/signals/grunt/from_HBSe_20161101T153358__339.95505_349.32355.wav
+ lpa.onSignal: T = 622
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__345.01712_346.01697.wav
+ lpa.onSignal: T = 64
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__347.13306_347.9733.wav
+ lpa.onSignal: T = 54
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__258.37424_259.31952.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__300.20526_301.16513.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__596.1868_596.9358.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/grunt/from_HBSe_20151228T103639__598.36554_599.1826.wav
+ lpa.onSignal: T = 52
+
+Processing: data/signals/grunt/from_HBSe_20170116T054541__252.91661_253.88814.wav
+ lpa.onSignal: T = 62
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__389.10605_390.06592.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/grunt/from_HBSe_20170424T102157__340.2978_341.29764.wav
+ lpa.onSignal: T = 64
+"grunt" split: training=55  test=24
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__296.28583_297.64563.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20161101T153358__325.18164_334.91046.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__366.80203_367.8419.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__340.2978_341.29764.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151228T103639__323.83884_324.51968.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__329.98215_330.84866.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__391.46573_392.70557.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__363.73874_364.68402.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__346.69687_347.8167.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__343.35196_344.08716.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__341.35638_342.2754.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__317.98215_318.70206.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__238.42847_239.16368.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__303.80475_304.64465.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151228T103639__511.82745_513.25726.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__242.1833_242.81349.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151228T103639__594.0762_594.4847.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__407.9942_409.15402.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__305.48453_306.28442.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__384.42673_385.70654.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__292.55405_294.18204.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__361.68277_362.32266.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__324.7812_325.26114.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__274.87103_275.86884.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151228T103639__596.1868_596.9358.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__240.24025_240.9492.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__330.74036_331.70023.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__327.98074_328.90063.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151207T070326__167.33717_168.89285.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151228T103639__477.28128_477.96213.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__413.7934_414.99323.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__326.58096_327.50082.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151228T103639__592.9868_593.66766.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__347.13306_347.9733.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151228T103639__465.58633_466.26718.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__252.91661_253.88814.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151207T070326__156.03535_158.36888.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__307.72723_308.9351.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__364.2824_364.9623.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__258.37424_259.31952.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__273.05927_274.13583.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__293.92615_295.20596.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151228T103639__591.7612_592.1017.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20151228T103639__478.77917_479.32385.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__360.299_361.0342.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__305.9417_306.83447.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__379.35822_380.3035.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__300.20526_301.16513.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__298.5255_299.60535.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__320.18185_321.14172.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__370.88147_371.60138.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__372.44125_373.40112.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__254.88199_255.9323.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170424T102157__308.5241_309.32397.prd
+ saved data/predictors/TRAIN/P36/grunt/from_HBSe_20170116T054541__345.21625_345.89896.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20161101T153358__355.80942_364.09695.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170116T054541__276.65656_277.41803.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20161101T153358__339.95505_349.32355.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170116T054541__324.4418_325.22952.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__404.9146_406.27444.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__381.86707_383.0669.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20151228T103639__466.81186_467.49274.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__410.7938_412.11362.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20151228T103639__590.3314_590.7399.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__389.10605_390.06592.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__351.6962_352.57605.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__322.5415_323.3814.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170116T054541__375.76093_376.8375.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20151228T103639__594.8932_595.506.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20151228T103639__598.36554_599.1826.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170116T054541__313.11005_314.21286.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__302.32498_303.36484.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170116T054541__377.5202_378.5705.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20151228T103639__597.07196_597.6847.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__306.88434_307.56424.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170116T054541__374.0542_375.05197.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170116T054541__328.24915_328.98438.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__345.01712_346.01697.prd
+ saved data/predictors/TEST/P36/grunt/from_HBSe_20170424T102157__329.22058_330.22043.prd
+
+"grunt_(long)": insufficient #signals 4
+
+"grunt_(s)": insufficient #signals 7
+
+"grunt_(short)": insufficient #signals 5
+
+"grunt_+_modulated_moan": insufficient #signals 1
+
+"grunt_echo": insufficient #signals 1
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__518.0216_520.7612.wav
+ lpa.onSignal: T = 180
+
+Processing: data/signals/grunts/from_HBSe_20151207T070326__229.3776_231.07312.wav
+ lpa.onSignal: T = 111
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__474.81073_478.13025.wav
+ lpa.onSignal: T = 219
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__478.87015_483.80945.wav
+ lpa.onSignal: T = 327
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__515.02203_517.5417.wav
+ lpa.onSignal: T = 165
+
+Processing: data/signals/grunts/from_HBSe_20170116T054541__546.5265_554.22.wav
+ lpa.onSignal: T = 510
+
+Processing: data/signals/grunts/from_HBSe_20151207T070326__218.09549_220.61256.wav
+ lpa.onSignal: T = 165
+
+Processing: data/signals/grunts/from_HBSe_20170116T054541__511.57825_513.12744.wav
+ lpa.onSignal: T = 101
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__495.51797_497.89764.wav
+ lpa.onSignal: T = 156
+
+Processing: data/signals/grunts/from_HBSe_20170116T054541__497.3527_501.21255.wav
+ lpa.onSignal: T = 255
+
+Processing: data/signals/grunts/from_HBSe_20170116T054541__513.39_517.72253.wav
+ lpa.onSignal: T = 286
+
+Processing: data/signals/grunts/from_HBSe_20151207T070326__239.57597_241.21906.wav
+ lpa.onSignal: T = 107
+
+Processing: data/signals/grunts/from_HBSe_20170116T054541__477.99222_479.69897.wav
+ lpa.onSignal: T = 111
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__521.8345_522.9543.wav
+ lpa.onSignal: T = 72
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__511.74414_514.0438.wav
+ lpa.onSignal: T = 151
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__535.89764_537.2575.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__492.33337_494.913.wav
+ lpa.onSignal: T = 169
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__500.77722_503.23688.wav
+ lpa.onSignal: T = 161
+
+Processing: data/signals/grunts/from_HBSe_20170116T054541__480.19785_483.19122.wav
+ lpa.onSignal: T = 197
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__498.3376_500.15732.wav
+ lpa.onSignal: T = 119
+
+Processing: data/signals/grunts/from_HBSe_20170116T054541__494.7709_497.18658.wav
+ lpa.onSignal: T = 159
+
+Processing: data/signals/grunts/from_HBSe_20170424T102157__538.1174_544.0565.wav
+ lpa.onSignal: T = 393
+
+Processing: data/signals/grunts/from_HBSe_20170116T054541__528.59015_534.4193.wav
+ lpa.onSignal: T = 386
+"grunts" split: training=16  test=7
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170424T102157__492.33337_494.913.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170424T102157__500.77722_503.23688.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20151207T070326__218.09549_220.61256.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170116T054541__480.19785_483.19122.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170424T102157__474.81073_478.13025.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170424T102157__518.0216_520.7612.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170424T102157__498.3376_500.15732.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170116T054541__494.7709_497.18658.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170424T102157__478.87015_483.80945.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170116T054541__477.99222_479.69897.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170116T054541__513.39_517.72253.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170116T054541__511.57825_513.12744.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170424T102157__521.8345_522.9543.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20151207T070326__229.3776_231.07312.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170424T102157__495.51797_497.89764.prd
+ saved data/predictors/TRAIN/P36/grunts/from_HBSe_20170116T054541__528.59015_534.4193.prd
+ saved data/predictors/TEST/P36/grunts/from_HBSe_20170116T054541__497.3527_501.21255.prd
+ saved data/predictors/TEST/P36/grunts/from_HBSe_20170424T102157__515.02203_517.5417.prd
+ saved data/predictors/TEST/P36/grunts/from_HBSe_20170424T102157__535.89764_537.2575.prd
+ saved data/predictors/TEST/P36/grunts/from_HBSe_20170424T102157__511.74414_514.0438.prd
+ saved data/predictors/TEST/P36/grunts/from_HBSe_20151207T070326__239.57597_241.21906.prd
+ saved data/predictors/TEST/P36/grunts/from_HBSe_20170116T054541__546.5265_554.22.prd
+ saved data/predictors/TEST/P36/grunts/from_HBSe_20170424T102157__538.1174_544.0565.prd
+
+Processing: data/signals/gurgle/from_HBSe_20161101T153358__466.56342_475.5716.wav
+ lpa.onSignal: T = 598
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__167.20944_167.63034.wav
+ lpa.onSignal: T = 26
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__102.7047_104.0463.wav
+ lpa.onSignal: T = 87
+
+Processing: data/signals/gurgle/from_HBSe_20170107T085150__278.8331_279.26523.wav
+ lpa.onSignal: T = 26
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__202.46927_203.34938.wav
+ lpa.onSignal: T = 56
+
+Processing: data/signals/gurgle/from_HBSe_20151023T122324__358.19324_359.90106.wav
+ lpa.onSignal: T = 111
+
+Processing: data/signals/gurgle/from_HBSe_20151022T015622__113.060844_118.53459.wav
+ lpa.onSignal: T = 362
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__222.43977_222.9659.wav
+ lpa.onSignal: T = 33
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__59.306236_60.333015.wav
+ lpa.onSignal: T = 66
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__342.17786_343.10056.wav
+ lpa.onSignal: T = 59
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__611.321_611.60095.wav
+ lpa.onSignal: T = 16
+
+Processing: data/signals/gurgle/from_HBSe_20151023T122324__361.66068_363.54965.wav
+ lpa.onSignal: T = 123
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__266.07703_266.6898.wav
+ lpa.onSignal: T = 38
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__464.65857_465.49847.wav
+ lpa.onSignal: T = 53
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__325.32834_326.6893.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/gurgle/from_HBSe_20170116T054541__493.85187_494.71838.wav
+ lpa.onSignal: T = 55
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__363.6848_364.42297.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__627.3722_628.03204.wav
+ lpa.onSignal: T = 41
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__624.79254_625.15247.wav
+ lpa.onSignal: T = 21
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__226.8886_227.23058.wav
+ lpa.onSignal: T = 20
+
+Processing: data/signals/gurgle/from_HBSe_20151023T122324__150.72949_151.40228.wav
+ lpa.onSignal: T = 42
+
+Processing: data/signals/gurgle/from_HBSe_20151023T122324__334.61554_335.15897.wav
+ lpa.onSignal: T = 34
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__101.31048_101.99443.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__582.1241_582.7369.wav
+ lpa.onSignal: T = 38
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__378.92694_379.98804.wav
+ lpa.onSignal: T = 68
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__339.87112_340.60928.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/gurgle/from_HBSe_20151023T122324__391.49268_398.19467.wav
+ lpa.onSignal: T = 444
+
+Processing: data/signals/gurgle/from_HBSe_20170107T085150__306.52008_306.846.wav
+ lpa.onSignal: T = 19
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__112.48347_113.583595.wav
+ lpa.onSignal: T = 71
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__248.17249_249.12592.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__370.0676_370.898.wav
+ lpa.onSignal: T = 53
+
+Processing: data/signals/gurgle/from_HBSe_20170116T054541__525.67554_527.0672.wav
+ lpa.onSignal: T = 90
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__328.1887_328.9499.wav
+ lpa.onSignal: T = 48
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__571.5513_571.91125.wav
+ lpa.onSignal: T = 22
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__548.18097_548.52094.wav
+ lpa.onSignal: T = 20
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__173.44514_174.69196.wav
+ lpa.onSignal: T = 81
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__192.81728_193.56622.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/gurgle/from_HBSe_20151023T122324__34.81195_35.76938.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__256.90942_257.38602.wav
+ lpa.onSignal: T = 29
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__258.45837_259.85187.wav
+ lpa.onSignal: T = 90
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__518.7722_519.45306.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__563.30066_563.6206.wav
+ lpa.onSignal: T = 19
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__588.7923_589.1522.wav
+ lpa.onSignal: T = 21
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__531.0957_531.7085.wav
+ lpa.onSignal: T = 38
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__630.1318_630.53174.wav
+ lpa.onSignal: T = 24
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__566.022_566.42194.wav
+ lpa.onSignal: T = 24
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__462.13895_463.0188.wav
+ lpa.onSignal: T = 56
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__116.55614_117.397934.wav
+ lpa.onSignal: T = 54
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__138.3088_139.26224.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/gurgle/from_HBSe_20170116T054541__527.5661_528.4326.wav
+ lpa.onSignal: T = 55
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__135.66852_136.54861.wav
+ lpa.onSignal: T = 56
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__50.06521_51.018646.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__103.75584_105.00264.wav
+ lpa.onSignal: T = 81
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__533.6149_534.0915.wav
+ lpa.onSignal: T = 29
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__338.51016_339.61737.wav
+ lpa.onSignal: T = 71
+
+Processing: data/signals/gurgle/from_HBSe_20151023T122324__377.87857_378.9654.wav
+ lpa.onSignal: T = 70
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__115.35292_116.23302.wav
+ lpa.onSignal: T = 56
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__86.15388_87.107315.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__143.96365_144.56868.wav
+ lpa.onSignal: T = 38
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__366.4529_367.2141.wav
+ lpa.onSignal: T = 48
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__542.2825_542.9634.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/gurgle/from_HBSe_20170107T085150__304.5034_304.80896.wav
+ lpa.onSignal: T = 18
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__45.39683_46.501682.wav
+ lpa.onSignal: T = 71
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__124.30058_125.18068.wav
+ lpa.onSignal: T = 56
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__576.2006_576.74536.wav
+ lpa.onSignal: T = 34
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__550.9406_551.2206.wav
+ lpa.onSignal: T = 16
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__353.4142_354.1754.wav
+ lpa.onSignal: T = 48
+
+Processing: data/signals/gurgle/from_HBSe_20170116T054541__510.64993_511.3589.wav
+ lpa.onSignal: T = 45
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__181.67914_182.02112.wav
+ lpa.onSignal: T = 20
+
+Processing: data/signals/gurgle/from_HBSe_20170424T102157__545.40137_545.80133.wav
+ lpa.onSignal: T = 24
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__185.15152_185.4672.wav
+ lpa.onSignal: T = 19
+
+Processing: data/signals/gurgle/from_HBSe_20161207T115528__141.5435_142.22745.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__528.3042_528.7127.wav
+ lpa.onSignal: T = 25
+
+Processing: data/signals/gurgle/from_HBSe_20151023T122324__336.55627_337.53958.wav
+ lpa.onSignal: T = 63
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__279.45126_280.1321.wav
+ lpa.onSignal: T = 43
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__548.901_549.51373.wav
+ lpa.onSignal: T = 38
+
+Processing: data/signals/gurgle/from_HBSe_20151121T040102__13.421492_14.521614.wav
+ lpa.onSignal: T = 71
+
+Processing: data/signals/gurgle/from_HBSe_20151207T070326__354.49567_355.44144.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__560.9652_561.50995.wav
+ lpa.onSignal: T = 34
+
+Processing: data/signals/gurgle/from_HBSe_20151228T103639__573.4091_573.88574.wav
+ lpa.onSignal: T = 29
+"gurgle" split: training=56  test=24
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20161207T115528__222.43977_222.9659.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170107T085150__304.5034_304.80896.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170424T102157__624.79254_625.15247.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20161101T153358__466.56342_475.5716.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151207T070326__363.6848_364.42297.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__103.75584_105.00264.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__192.81728_193.56622.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170107T085150__278.8331_279.26523.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__582.1241_582.7369.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__135.66852_136.54861.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170424T102157__588.7923_589.1522.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151023T122324__391.49268_398.19467.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151207T070326__378.92694_379.98804.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__13.421492_14.521614.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151207T070326__353.4142_354.1754.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170424T102157__566.022_566.42194.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__542.2825_542.9634.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151023T122324__334.61554_335.15897.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20161207T115528__181.67914_182.02112.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151022T015622__113.060844_118.53459.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__531.0957_531.7085.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151207T070326__328.1887_328.9499.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170424T102157__548.18097_548.52094.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__266.07703_266.6898.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__256.90942_257.38602.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151207T070326__366.4529_367.2141.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151023T122324__361.66068_363.54965.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151023T122324__358.19324_359.90106.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__573.4091_573.88574.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170424T102157__627.3722_628.03204.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151207T070326__354.49567_355.44144.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151207T070326__342.17786_343.10056.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__548.901_549.51373.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170424T102157__464.65857_465.49847.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20161207T115528__101.31048_101.99443.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20161207T115528__141.5435_142.22745.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__138.3088_139.26224.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170424T102157__462.13895_463.0188.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20161207T115528__102.7047_104.0463.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151023T122324__150.72949_151.40228.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151207T070326__339.87112_340.60928.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__50.06521_51.018646.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__258.45837_259.85187.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__112.48347_113.583595.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__248.17249_249.12592.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20170116T054541__493.85187_494.71838.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__202.46927_203.34938.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__115.35292_116.23302.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__518.7722_519.45306.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151207T070326__325.32834_326.6893.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__279.45126_280.1321.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151121T040102__86.15388_87.107315.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20151228T103639__533.6149_534.0915.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20161207T115528__143.96365_144.56868.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20161207T115528__45.39683_46.501682.prd
+ saved data/predictors/TRAIN/P36/gurgle/from_HBSe_20161207T115528__167.20944_167.63034.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151228T103639__560.9652_561.50995.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170424T102157__571.5513_571.91125.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170424T102157__545.40137_545.80133.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151228T103639__576.2006_576.74536.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170116T054541__527.5661_528.4326.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20161207T115528__185.15152_185.4672.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151121T040102__59.306236_60.333015.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20161207T115528__116.55614_117.397934.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20161207T115528__226.8886_227.23058.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151207T070326__370.0676_370.898.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151023T122324__377.87857_378.9654.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170116T054541__525.67554_527.0672.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151121T040102__173.44514_174.69196.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170424T102157__611.321_611.60095.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170424T102157__550.9406_551.2206.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170424T102157__563.30066_563.6206.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151228T103639__528.3042_528.7127.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170116T054541__510.64993_511.3589.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151023T122324__34.81195_35.76938.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170107T085150__306.52008_306.846.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20170424T102157__630.1318_630.53174.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151121T040102__124.30058_125.18068.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151207T070326__338.51016_339.61737.prd
+ saved data/predictors/TEST/P36/gurgle/from_HBSe_20151023T122324__336.55627_337.53958.prd
+
+"gurgle?": insufficient #signals 6
+
+"gurgle?_ascending__": insufficient #signals 1
+
+"gurgle_+_descending_shriek": insufficient #signals 3
+
+"gurgle_+_trill": insufficient #signals 1
+
+"gurgle_+modulated_moan": insufficient #signals 1
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__163.05943_164.62541.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__248.68738_249.91292.wav
+ lpa.onSignal: T = 79
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__152.7104_154.27637.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__237.9015_239.53555.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__195.47263_197.58328.wav
+ lpa.onSignal: T = 138
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__205.74432_207.65073.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__227.68863_229.3227.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__173.46675_175.78168.wav
+ lpa.onSignal: T = 152
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__131.77376_133.47589.wav
+ lpa.onSignal: T = 111
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__216.97739_218.20293.wav
+ lpa.onSignal: T = 79
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__259.26846_261.0387.wav
+ lpa.onSignal: T = 116
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__185.39594_186.68956.wav
+ lpa.onSignal: T = 84
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__120.88003_121.9694.wav
+ lpa.onSignal: T = 70
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__142.53131_143.68877.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/long_grunt/from_HBSe_20151228T103639__270.66818_272.64267.wav
+ lpa.onSignal: T = 129
+"long_grunt" split: training=11  test=4
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__205.74432_207.65073.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__227.68863_229.3227.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__120.88003_121.9694.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__195.47263_197.58328.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__270.66818_272.64267.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__248.68738_249.91292.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__152.7104_154.27637.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__216.97739_218.20293.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__259.26846_261.0387.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__142.53131_143.68877.prd
+ saved data/predictors/TRAIN/P36/long_grunt/from_HBSe_20151228T103639__185.39594_186.68956.prd
+ saved data/predictors/TEST/P36/long_grunt/from_HBSe_20151228T103639__173.46675_175.78168.prd
+ saved data/predictors/TEST/P36/long_grunt/from_HBSe_20151228T103639__163.05943_164.62541.prd
+ saved data/predictors/TEST/P36/long_grunt/from_HBSe_20151228T103639__131.77376_133.47589.prd
+ saved data/predictors/TEST/P36/long_grunt/from_HBSe_20151228T103639__237.9015_239.53555.prd
+
+"low_yaps": insufficient #signals 9
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__124.45328_126.52461.wav
+ lpa.onSignal: T = 136
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__172.44661_174.24635.wav
+ lpa.onSignal: T = 117
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__70.30994_72.37068.wav
+ lpa.onSignal: T = 135
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__26.977383_28.790892.wav
+ lpa.onSignal: T = 118
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__157.04875_158.2486.wav
+ lpa.onSignal: T = 77
+
+Processing: data/signals/modulated_cry/from_HBSe_20161207T115528__52.756283_54.18857.wav
+ lpa.onSignal: T = 93
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__50.105137_52.14151.wav
+ lpa.onSignal: T = 133
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__217.86613_220.22581.wav
+ lpa.onSignal: T = 155
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__236.54352_237.98332.wav
+ lpa.onSignal: T = 93
+
+Processing: data/signals/modulated_cry/from_HBSe_20161207T115528__64.72529_65.83014.wav
+ lpa.onSignal: T = 71
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__133.80014_135.8103.wav
+ lpa.onSignal: T = 132
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__61.693512_63.62938.wav
+ lpa.onSignal: T = 127
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__201.54108_203.26083.wav
+ lpa.onSignal: T = 112
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__188.50632_189.90613.wav
+ lpa.onSignal: T = 91
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__249.44026_253.95963.wav
+ lpa.onSignal: T = 299
+
+Processing: data/signals/modulated_cry/from_HBSe_20161207T115528__76.27362_77.352165.wav
+ lpa.onSignal: T = 69
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__58.895435_60.80508.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__47.154114_49.352173.wav
+ lpa.onSignal: T = 144
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__274.9452_278.31302.wav
+ lpa.onSignal: T = 222
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__220.74573_222.18553.wav
+ lpa.onSignal: T = 93
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__115.44732_117.297325.wav
+ lpa.onSignal: T = 121
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__169.52701_171.7667.wav
+ lpa.onSignal: T = 147
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__185.54674_187.78642.wav
+ lpa.onSignal: T = 147
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__143.52376_145.58635.wav
+ lpa.onSignal: T = 135
+
+Processing: data/signals/modulated_cry/from_HBSe_20151207T070326__90.02346_91.84571.wav
+ lpa.onSignal: T = 119
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__154.40913_155.92891.wav
+ lpa.onSignal: T = 99
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__233.54395_235.70364.wav
+ lpa.onSignal: T = 141
+
+Processing: data/signals/modulated_cry/from_HBSe_20170424T102157__204.46066_205.90047.wav
+ lpa.onSignal: T = 93
+"modulated_cry" split: training=20  test=8
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20170424T102157__233.54395_235.70364.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__26.977383_28.790892.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__70.30994_72.37068.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20170424T102157__236.54352_237.98332.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20170424T102157__188.50632_189.90613.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20170424T102157__172.44661_174.24635.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20161207T115528__52.756283_54.18857.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__133.80014_135.8103.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__90.02346_91.84571.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__50.105137_52.14151.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__124.45328_126.52461.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__61.693512_63.62938.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20170424T102157__154.40913_155.92891.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__115.44732_117.297325.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__274.9452_278.31302.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__47.154114_49.352173.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20151207T070326__58.895435_60.80508.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20170424T102157__201.54108_203.26083.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20161207T115528__76.27362_77.352165.prd
+ saved data/predictors/TRAIN/P36/modulated_cry/from_HBSe_20170424T102157__157.04875_158.2486.prd
+ saved data/predictors/TEST/P36/modulated_cry/from_HBSe_20170424T102157__204.46066_205.90047.prd
+ saved data/predictors/TEST/P36/modulated_cry/from_HBSe_20151207T070326__143.52376_145.58635.prd
+ saved data/predictors/TEST/P36/modulated_cry/from_HBSe_20161207T115528__64.72529_65.83014.prd
+ saved data/predictors/TEST/P36/modulated_cry/from_HBSe_20170424T102157__249.44026_253.95963.prd
+ saved data/predictors/TEST/P36/modulated_cry/from_HBSe_20170424T102157__185.54674_187.78642.prd
+ saved data/predictors/TEST/P36/modulated_cry/from_HBSe_20170424T102157__220.74573_222.18553.prd
+ saved data/predictors/TEST/P36/modulated_cry/from_HBSe_20170424T102157__169.52701_171.7667.prd
+ saved data/predictors/TEST/P36/modulated_cry/from_HBSe_20170424T102157__217.86613_220.22581.prd
+
+"modulated_cry_(D)": insufficient #signals 2
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__240.73651_245.41585.wav
+ lpa.onSignal: T = 309
+
+Processing: data/signals/modulated_moan/from_HBSe_20170107T085150__173.28624_174.89952.wav
+ lpa.onSignal: T = 105
+
+Processing: data/signals/modulated_moan/from_HBSe_20170116T054541__534.65564_536.2836.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__341.05457_343.4015.wav
+ lpa.onSignal: T = 154
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__107.0562_109.696495.wav
+ lpa.onSignal: T = 174
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__330.55212_332.38565.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/modulated_moan/from_HBSe_20170116T054541__126.40537_129.50377.wav
+ lpa.onSignal: T = 204
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__289.29684_291.2037.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__60.609432_61.903255.wav
+ lpa.onSignal: T = 84
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__197.47578_199.4424.wav
+ lpa.onSignal: T = 129
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__128.24225_130.18298.wav
+ lpa.onSignal: T = 127
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__146.2795_150.59889.wav
+ lpa.onSignal: T = 285
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__405.55798_407.75824.wav
+ lpa.onSignal: T = 144
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__119.910095_122.119804.wav
+ lpa.onSignal: T = 145
+
+Processing: data/signals/modulated_moan/from_HBSe_20151022T015622__52.12066_53.686764.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__319.6603_321.7872.wav
+ lpa.onSignal: T = 139
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__89.08754_92.607925.wav
+ lpa.onSignal: T = 232
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__110.683784_111.97278.wav
+ lpa.onSignal: T = 83
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__270.7821_273.5509.wav
+ lpa.onSignal: T = 182
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__308.44803_312.0966.wav
+ lpa.onSignal: T = 241
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__84.28674_86.23339.wav
+ lpa.onSignal: T = 127
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__272.23883_275.3584.wav
+ lpa.onSignal: T = 205
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__21.860168_25.77976.wav
+ lpa.onSignal: T = 259
+
+Processing: data/signals/modulated_moan/from_HBSe_20151022T015622__61.01702_62.806854.wav
+ lpa.onSignal: T = 117
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__68.066154_71.22287.wav
+ lpa.onSignal: T = 208
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__286.72498_289.68457.wav
+ lpa.onSignal: T = 195
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__48.754234_51.507202.wav
+ lpa.onSignal: T = 181
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__116.76788_120.327385.wav
+ lpa.onSignal: T = 235
+
+Processing: data/signals/modulated_moan/from_HBSe_20170116T054541__451.6025_453.30927.wav
+ lpa.onSignal: T = 111
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__395.87692_398.59055.wav
+ lpa.onSignal: T = 178
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__224.66519_229.34453.wav
+ lpa.onSignal: T = 309
+
+Processing: data/signals/modulated_moan/from_HBSe_20170116T054541__112.564445_115.79413.wav
+ lpa.onSignal: T = 213
+
+Processing: data/signals/modulated_moan/from_HBSe_20151022T015622__70.85708_72.177086.wav
+ lpa.onSignal: T = 86
+
+Processing: data/signals/modulated_moan/from_HBSe_20170116T054541__98.420006_101.70221.wav
+ lpa.onSignal: T = 216
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__201.36423_202.81331.wav
+ lpa.onSignal: T = 94
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__192.7995_197.03891.wav
+ lpa.onSignal: T = 280
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__158.07257_160.3497.wav
+ lpa.onSignal: T = 149
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__208.13113_213.4104.wav
+ lpa.onSignal: T = 349
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__141.16913_143.29602.wav
+ lpa.onSignal: T = 139
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__276.7982_278.47794.wav
+ lpa.onSignal: T = 109
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__160.95401_165.47339.wav
+ lpa.onSignal: T = 299
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__35.4347_37.85485.wav
+ lpa.onSignal: T = 159
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__211.59769_213.40904.wav
+ lpa.onSignal: T = 118
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__291.12436_293.08408.wav
+ lpa.onSignal: T = 128
+
+Processing: data/signals/modulated_moan/from_HBSe_20170107T085150__144.76324_146.77983.wav
+ lpa.onSignal: T = 132
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__71.260895_73.46114.wav
+ lpa.onSignal: T = 144
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__134.05177_136.57715.wav
+ lpa.onSignal: T = 166
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__246.81566_248.81538.wav
+ lpa.onSignal: T = 131
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__26.989666_29.849985.wav
+ lpa.onSignal: T = 188
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__148.24535_149.66855.wav
+ lpa.onSignal: T = 92
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__124.51901_125.886925.wav
+ lpa.onSignal: T = 89
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__152.67023_153.62766.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__138.72876_140.20189.wav
+ lpa.onSignal: T = 96
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__79.01441_81.41408.wav
+ lpa.onSignal: T = 157
+
+Processing: data/signals/modulated_moan/from_HBSe_20170107T085150__238.6827_239.89264.wav
+ lpa.onSignal: T = 78
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__73.03798_75.72119.wav
+ lpa.onSignal: T = 176
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__384.94904_387.22263.wav
+ lpa.onSignal: T = 149
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__373.80112_376.5881.wav
+ lpa.onSignal: T = 183
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__145.1499_146.70248.wav
+ lpa.onSignal: T = 101
+
+Processing: data/signals/modulated_moan/from_HBSe_20151207T070326__184.53177_186.41083.wav
+ lpa.onSignal: T = 123
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__36.49385_37.533707.wav
+ lpa.onSignal: T = 67
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__148.53928_151.2488.wav
+ lpa.onSignal: T = 178
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__153.34381_155.47072.wav
+ lpa.onSignal: T = 139
+
+Processing: data/signals/modulated_moan/from_HBSe_20170116T054541__517.775_519.8231.wav
+ lpa.onSignal: T = 134
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__230.74434_232.58408.wav
+ lpa.onSignal: T = 120
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__233.18817_235.68178.wav
+ lpa.onSignal: T = 164
+
+Processing: data/signals/modulated_moan/from_HBSe_20161207T115528__59.533024_62.76866.wav
+ lpa.onSignal: T = 213
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__362.4399_364.93353.wav
+ lpa.onSignal: T = 164
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__278.66232_281.59598.wav
+ lpa.onSignal: T = 193
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__351.2525_354.03946.wav
+ lpa.onSignal: T = 183
+
+Processing: data/signals/modulated_moan/from_HBSe_20170107T085150__201.04367_202.196.wav
+ lpa.onSignal: T = 74
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__308.58563_311.22592.wav
+ lpa.onSignal: T = 174
+
+Processing: data/signals/modulated_moan/from_HBSe_20170107T085150__186.88379_188.49706.wav
+ lpa.onSignal: T = 105
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__256.55927_260.5987.wav
+ lpa.onSignal: T = 267
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__331.43274_334.22742.wav
+ lpa.onSignal: T = 184
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__242.2047_244.47829.wav
+ lpa.onSignal: T = 149
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__176.91136_181.07079.wav
+ lpa.onSignal: T = 275
+
+Processing: data/signals/modulated_moan/from_HBSe_20170424T102157__106.17279_108.17251.wav
+ lpa.onSignal: T = 131
+
+Processing: data/signals/modulated_moan/from_HBSe_20151121T040102__297.87778_300.44473.wav
+ lpa.onSignal: T = 169
+
+Processing: data/signals/modulated_moan/from_HBSe_20151023T122324__102.935875_105.264755.wav
+ lpa.onSignal: T = 153
+"modulated_moan" split: training=56  test=24
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__278.66232_281.59598.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__116.76788_120.327385.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151023T122324__148.24535_149.66855.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__79.01441_81.41408.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__341.05457_343.4015.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170107T085150__238.6827_239.89264.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170107T085150__144.76324_146.77983.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__330.55212_332.38565.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__351.2525_354.03946.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__89.08754_92.607925.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151023T122324__197.47578_199.4424.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170107T085150__201.04367_202.196.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__160.95401_165.47339.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20161207T115528__21.860168_25.77976.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__240.73651_245.41585.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20161207T115528__134.05177_136.57715.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__71.260895_73.46114.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__362.4399_364.93353.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__153.34381_155.47072.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170116T054541__126.40537_129.50377.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170116T054541__534.65564_536.2836.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20161207T115528__138.72876_140.20189.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151023T122324__270.7821_273.5509.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151023T122324__158.07257_160.3497.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__297.87778_300.44473.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170107T085150__173.28624_174.89952.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__224.66519_229.34453.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151023T122324__152.67023_153.62766.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20161207T115528__119.910095_122.119804.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151023T122324__201.36423_202.81331.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__26.989666_29.849985.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__106.17279_108.17251.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__208.13113_213.4104.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__286.72498_289.68457.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__256.55927_260.5987.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151023T122324__308.44803_312.0966.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170116T054541__112.564445_115.79413.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__176.91136_181.07079.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__146.2795_150.59889.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__319.6603_321.7872.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__291.12436_293.08408.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20161207T115528__110.683784_111.97278.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__233.18817_235.68178.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20161207T115528__68.066154_71.22287.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__373.80112_376.5881.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__230.74434_232.58408.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__276.7982_278.47794.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170116T054541__517.775_519.8231.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20161207T115528__35.4347_37.85485.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__384.94904_387.22263.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__308.58563_311.22592.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__395.87692_398.59055.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20170424T102157__246.81566_248.81538.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20151121T040102__141.16913_143.29602.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20161207T115528__59.533024_62.76866.prd
+ saved data/predictors/TRAIN/P36/modulated_moan/from_HBSe_20161207T115528__48.754234_51.507202.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151023T122324__211.59769_213.40904.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151207T070326__184.53177_186.41083.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151121T040102__107.0562_109.696495.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151023T122324__128.24225_130.18298.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20170116T054541__451.6025_453.30927.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20161207T115528__148.53928_151.2488.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151023T122324__60.609432_61.903255.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20170424T102157__192.7995_197.03891.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20161207T115528__124.51901_125.886925.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20170424T102157__36.49385_37.533707.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151023T122324__331.43274_334.22742.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20161207T115528__73.03798_75.72119.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20170116T054541__98.420006_101.70221.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151022T015622__52.12066_53.686764.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151121T040102__242.2047_244.47829.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151023T122324__145.1499_146.70248.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20170424T102157__272.23883_275.3584.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151022T015622__70.85708_72.177086.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151121T040102__289.29684_291.2037.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151121T040102__405.55798_407.75824.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151023T122324__102.935875_105.264755.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20161207T115528__84.28674_86.23339.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20151022T015622__61.01702_62.806854.prd
+ saved data/predictors/TEST/P36/modulated_moan/from_HBSe_20170107T085150__186.88379_188.49706.prd
+
+"modulated_moan_+_upsweep": insufficient #signals 6
+
+"modulated_moans_(F)": insufficient #signals 1
+
+"pulse": insufficient #signals 6
+
+"pulses": insufficient #signals 2
+
+Processing: data/signals/purr/from_HBSe_20151228T103639__568.0156_568.9689.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/purr/from_HBSe_20151207T070326__205.7353_210.6296.wav
+ lpa.onSignal: T = 324
+
+Processing: data/signals/purr/from_HBSe_20161207T115528__204.46458_206.7269.wav
+ lpa.onSignal: T = 148
+
+Processing: data/signals/purr/from_HBSe_20151228T103639__536.69946_538.1293.wav
+ lpa.onSignal: T = 93
+
+Processing: data/signals/purr/from_HBSe_20151228T103639__588.4561_589.8178.wav
+ lpa.onSignal: T = 88
+
+Processing: data/signals/purr/from_HBSe_20161207T115528__233.1229_234.70125.wav
+ lpa.onSignal: T = 103
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__489.46686_490.9898.wav
+ lpa.onSignal: T = 99
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__536.4674_537.99036.wav
+ lpa.onSignal: T = 99
+
+Processing: data/signals/purr/from_HBSe_20151207T070326__196.33571_199.11668.wav
+ lpa.onSignal: T = 183
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__472.3731_474.49997.wav
+ lpa.onSignal: T = 139
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__458.8496_460.63513.wav
+ lpa.onSignal: T = 117
+
+Processing: data/signals/purr/from_HBSe_20151228T103639__584.9837_586.2093.wav
+ lpa.onSignal: T = 79
+
+Processing: data/signals/purr/from_HBSe_20161207T115528__217.61868_218.88136.wav
+ lpa.onSignal: T = 82
+
+Processing: data/signals/purr/from_HBSe_20161207T115528__175.19089_176.92708.wav
+ lpa.onSignal: T = 113
+
+Processing: data/signals/purr/from_HBSe_20151207T070326__186.5517_188.19557.wav
+ lpa.onSignal: T = 107
+
+Processing: data/signals/purr/from_HBSe_20161207T115528__153.4569_155.58768.wav
+ lpa.onSignal: T = 140
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__519.84937_521.3723.wav
+ lpa.onSignal: T = 99
+
+Processing: data/signals/purr/from_HBSe_20161207T115528__229.5979_231.01842.wav
+ lpa.onSignal: T = 92
+
+Processing: data/signals/purr/from_HBSe_20151023T122324__246.51067_251.06491.wav
+ lpa.onSignal: T = 301
+
+Processing: data/signals/purr/from_HBSe_20151207T070326__164.03352_166.09612.wav
+ lpa.onSignal: T = 135
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__467.83054_469.8524.wav
+ lpa.onSignal: T = 132
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__540.7405_542.421.wav
+ lpa.onSignal: T = 110
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__485.13437_486.76233.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/purr/from_HBSe_20151228T103639__571.48804_572.237.wav
+ lpa.onSignal: T = 47
+
+Processing: data/signals/purr/from_HBSe_20151023T122324__236.9166_239.37486.wav
+ lpa.onSignal: T = 161
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__502.14246_503.74417.wav
+ lpa.onSignal: T = 104
+
+Processing: data/signals/purr/from_HBSe_20151228T103639__554.5058_555.459.wav
+ lpa.onSignal: T = 61
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__506.42245_508.4968.wav
+ lpa.onSignal: T = 136
+
+Processing: data/signals/purr/from_HBSe_20151023T122324__258.79614_260.0641.wav
+ lpa.onSignal: T = 82
+
+Processing: data/signals/purr/from_HBSe_20151228T103639__539.8995_541.53357.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/purr/from_HBSe_20151207T070326__195.15324_196.14204.wav
+ lpa.onSignal: T = 63
+
+Processing: data/signals/purr/from_HBSe_20161207T115528__171.40282_173.55992.wav
+ lpa.onSignal: T = 141
+
+Processing: data/signals/purr/from_HBSe_20151207T070326__188.28209_188.99896.wav
+ lpa.onSignal: T = 45
+
+Processing: data/signals/purr/from_HBSe_20170116T054541__523.4992_524.99585.wav
+ lpa.onSignal: T = 97
+
+Processing: data/signals/purr/from_HBSe_20151228T103639__551.1696_551.9185.wav
+ lpa.onSignal: T = 47
+"purr" split: training=25  test=10
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151207T070326__196.33571_199.11668.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20170116T054541__467.83054_469.8524.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20170116T054541__519.84937_521.3723.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151207T070326__195.15324_196.14204.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151023T122324__246.51067_251.06491.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20170116T054541__540.7405_542.421.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151228T103639__554.5058_555.459.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20161207T115528__171.40282_173.55992.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20170116T054541__489.46686_490.9898.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20161207T115528__204.46458_206.7269.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151228T103639__584.9837_586.2093.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20161207T115528__233.1229_234.70125.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151228T103639__536.69946_538.1293.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151228T103639__588.4561_589.8178.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20170116T054541__458.8496_460.63513.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20161207T115528__229.5979_231.01842.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151023T122324__258.79614_260.0641.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20161207T115528__217.61868_218.88136.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151207T070326__205.7353_210.6296.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151228T103639__551.1696_551.9185.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20161207T115528__175.19089_176.92708.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20170116T054541__536.4674_537.99036.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20170116T054541__506.42245_508.4968.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20151228T103639__568.0156_568.9689.prd
+ saved data/predictors/TRAIN/P36/purr/from_HBSe_20161207T115528__153.4569_155.58768.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20151207T070326__164.03352_166.09612.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20170116T054541__523.4992_524.99585.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20151207T070326__188.28209_188.99896.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20151228T103639__571.48804_572.237.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20151023T122324__236.9166_239.37486.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20151228T103639__539.8995_541.53357.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20170116T054541__472.3731_474.49997.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20151207T070326__186.5517_188.19557.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20170116T054541__502.14246_503.74417.prd
+ saved data/predictors/TEST/P36/purr/from_HBSe_20170116T054541__485.13437_486.76233.prd
+
+"purr_(D)": insufficient #signals 1
+
+"purr_+_modulated_moan": insufficient #signals 1
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__144.25137_146.50952.wav
+ lpa.onSignal: T = 148
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__90.0701_91.82935.wav
+ lpa.onSignal: T = 115
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__103.461464_105.50955.wav
+ lpa.onSignal: T = 134
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__197.86421_200.30617.wav
+ lpa.onSignal: T = 160
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__184.52293_186.57103.wav
+ lpa.onSignal: T = 134
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__592.97235_596.56964.wav
+ lpa.onSignal: T = 237
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__116.81818_118.62995.wav
+ lpa.onSignal: T = 118
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__170.84727_173.78813.wav
+ lpa.onSignal: T = 194
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__225.01077_226.90132.wav
+ lpa.onSignal: T = 124
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__130.52782_132.70718.wav
+ lpa.onSignal: T = 143
+
+Processing: data/signals/scream/from_HBSe_20170116T054541__210.97992_214.28838.wav
+ lpa.onSignal: T = 218
+"scream" split: training=8  test=3
+ saved data/predictors/TRAIN/P36/scream/from_HBSe_20170116T054541__170.84727_173.78813.prd
+ saved data/predictors/TRAIN/P36/scream/from_HBSe_20170116T054541__130.52782_132.70718.prd
+ saved data/predictors/TRAIN/P36/scream/from_HBSe_20170116T054541__116.81818_118.62995.prd
+ saved data/predictors/TRAIN/P36/scream/from_HBSe_20170116T054541__197.86421_200.30617.prd
+ saved data/predictors/TRAIN/P36/scream/from_HBSe_20170116T054541__225.01077_226.90132.prd
+ saved data/predictors/TRAIN/P36/scream/from_HBSe_20170116T054541__592.97235_596.56964.prd
+ saved data/predictors/TRAIN/P36/scream/from_HBSe_20170116T054541__210.97992_214.28838.prd
+ saved data/predictors/TRAIN/P36/scream/from_HBSe_20170116T054541__90.0701_91.82935.prd
+ saved data/predictors/TEST/P36/scream/from_HBSe_20170116T054541__184.52293_186.57103.prd
+ saved data/predictors/TEST/P36/scream/from_HBSe_20170116T054541__144.25137_146.50952.prd
+ saved data/predictors/TEST/P36/scream/from_HBSe_20170116T054541__103.461464_105.50955.prd
+
+"screech_?": insufficient #signals 1
+
+"short_moan": insufficient #signals 1
+
+"sigh": insufficient #signals 8
+
+"siren": insufficient #signals 1
+
+"snort": insufficient #signals 1
+
+"thwop": insufficient #signals 1
+
+Processing: data/signals/trill/from_HBSe_20170116T054541__355.2313_356.93802.wav
+ lpa.onSignal: T = 111
+
+Processing: data/signals/trill/from_HBSe_20151207T070326__96.48578_98.01524.wav
+ lpa.onSignal: T = 99
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__307.794_309.7685.wav
+ lpa.onSignal: T = 129
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__303.18814_305.09454.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__296.60834_299.39984.wav
+ lpa.onSignal: T = 184
+
+Processing: data/signals/trill/from_HBSe_20170116T054541__371.06082_373.03015.wav
+ lpa.onSignal: T = 129
+
+Processing: data/signals/trill/from_HBSe_20151121T040102__214.93733_216.4775.wav
+ lpa.onSignal: T = 100
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__210.51031_212.4848.wav
+ lpa.onSignal: T = 129
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__241.81071_243.58095.wav
+ lpa.onSignal: T = 116
+
+Processing: data/signals/trill/from_HBSe_20170116T054541__234.33229_236.69547.wav
+ lpa.onSignal: T = 155
+
+Processing: data/signals/trill/from_HBSe_20151121T040102__187.96677_190.167.wav
+ lpa.onSignal: T = 144
+
+Processing: data/signals/trill/from_HBSe_20170116T054541__302.7908_305.31152.wav
+ lpa.onSignal: T = 166
+
+Processing: data/signals/trill/from_HBSe_20151121T040102__223.5071_225.70734.wav
+ lpa.onSignal: T = 144
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__135.72273_138.37807.wav
+ lpa.onSignal: T = 175
+
+Processing: data/signals/trill/from_HBSe_20151022T015622__48.160645_50.30845.wav
+ lpa.onSignal: T = 141
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__231.2291_233.40784.wav
+ lpa.onSignal: T = 143
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__103.79976_105.297646.wav
+ lpa.onSignal: T = 97
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__113.867195_115.7736.wav
+ lpa.onSignal: T = 125
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__252.27959_254.52641.wav
+ lpa.onSignal: T = 147
+
+Processing: data/signals/trill/from_HBSe_20151121T040102__205.62296_207.16313.wav
+ lpa.onSignal: T = 100
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__361.71466_363.34872.wav
+ lpa.onSignal: T = 106
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__314.2861_315.85208.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__275.1188_277.29758.wav
+ lpa.onSignal: T = 143
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__263.08127_265.60043.wav
+ lpa.onSignal: T = 165
+
+Processing: data/signals/trill/from_HBSe_20170116T054541__167.17122_169.7182.wav
+ lpa.onSignal: T = 167
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__285.85077_288.36993.wav
+ lpa.onSignal: T = 165
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__92.90604_94.47201.wav
+ lpa.onSignal: T = 102
+
+Processing: data/signals/trill/from_HBSe_20151207T070326__176.41629_177.63113.wav
+ lpa.onSignal: T = 78
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__505.3593_507.94656.wav
+ lpa.onSignal: T = 170
+
+Processing: data/signals/trill/from_HBSe_20151121T040102__196.16191_198.21547.wav
+ lpa.onSignal: T = 134
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__328.94525_330.10272.wav
+ lpa.onSignal: T = 75
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__326.31277_328.01492.wav
+ lpa.onSignal: T = 111
+
+Processing: data/signals/trill/from_HBSe_20151121T040102__129.72784_132.00143.wav
+ lpa.onSignal: T = 149
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__458.0849_460.3998.wav
+ lpa.onSignal: T = 152
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__337.61502_338.84058.wav
+ lpa.onSignal: T = 79
+
+Processing: data/signals/trill/from_HBSe_20151121T040102__164.64418_167.28447.wav
+ lpa.onSignal: T = 174
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__433.8393_435.81378.wav
+ lpa.onSignal: T = 129
+
+Processing: data/signals/trill/from_HBSe_20170116T054541__321.2909_323.60156.wav
+ lpa.onSignal: T = 152
+
+Processing: data/signals/trill/from_HBSe_20151121T040102__176.23213_177.55228.wav
+ lpa.onSignal: T = 86
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__398.06158_400.24033.wav
+ lpa.onSignal: T = 143
+
+Processing: data/signals/trill/from_HBSe_20170116T054541__153.5203_156.09354.wav
+ lpa.onSignal: T = 169
+
+Processing: data/signals/trill/from_HBSe_20151228T103639__373.28925_375.19565.wav
+ lpa.onSignal: T = 125
+"trill" split: training=29  test=13
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__263.08127_265.60043.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__303.18814_305.09454.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20170116T054541__167.17122_169.7182.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__307.794_309.7685.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151121T040102__223.5071_225.70734.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__103.79976_105.297646.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__328.94525_330.10272.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151207T070326__176.41629_177.63113.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__285.85077_288.36993.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__296.60834_299.39984.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20170116T054541__234.33229_236.69547.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__337.61502_338.84058.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__361.71466_363.34872.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20170116T054541__371.06082_373.03015.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151121T040102__129.72784_132.00143.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__314.2861_315.85208.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151121T040102__187.96677_190.167.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20170116T054541__302.7908_305.31152.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__373.28925_375.19565.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__505.3593_507.94656.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__210.51031_212.4848.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__241.81071_243.58095.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151207T070326__96.48578_98.01524.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151121T040102__205.62296_207.16313.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151121T040102__214.93733_216.4775.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__275.1188_277.29758.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__113.867195_115.7736.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__231.2291_233.40784.prd
+ saved data/predictors/TRAIN/P36/trill/from_HBSe_20151228T103639__458.0849_460.3998.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151121T040102__176.23213_177.55228.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151228T103639__135.72273_138.37807.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151228T103639__326.31277_328.01492.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151121T040102__196.16191_198.21547.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151022T015622__48.160645_50.30845.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151228T103639__252.27959_254.52641.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151228T103639__433.8393_435.81378.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20170116T054541__321.2909_323.60156.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151121T040102__164.64418_167.28447.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20170116T054541__355.2313_356.93802.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151228T103639__398.06158_400.24033.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20170116T054541__153.5203_156.09354.prd
+ saved data/predictors/TEST/P36/trill/from_HBSe_20151228T103639__92.90604_94.47201.prd
+
+"trill?": insufficient #signals 1
+
+"trill_(D)": insufficient #signals 1
+
+"trumpet?": insufficient #signals 1
+
+"violin?": insufficient #signals 1
+
+"wops": insufficient #signals 9

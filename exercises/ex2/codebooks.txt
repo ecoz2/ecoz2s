@@ -1,0 +1,198 @@
+➜  ecoz git:(master) ✗ ecoz vq.learn -e 0.0005 data/predictors/TRAIN/P36/*/*.prd data/predictors/TEST/P36/*/*.prd
+className   : (not given)
+prefix      : "eps_0.0005_"
+epsilon     : 0.0005
+predictors  : 756
+takeT       : 2147483647
+
+loaded 91840 vectors as training set
+Report: data/codebooks/eps_0.0005_.rpt
+======================
+data/codebooks/eps_0.0005__0002.cbook
+ ===> [ 0] codebook.size=2  DP=2.03447       DDprv=3.40282e+38  DD=186845  (DD-DDprv)/DD=-1.82120e+33     Dchange=1.82120e+33
+ ===> [ 1] codebook.size=2  DP=0.359912      DDprv=186845  DD=33054.3  (DD-DDprv)/DD=-4.65268         Dchange=4.65268
+ ===> [ 2] codebook.size=2  DP=0.346447      DDprv=33054.3  DD=31817.7  (DD-DDprv)/DD=-0.0388664       Dchange=0.0388664
+ ===> [ 3] codebook.size=2  DP=0.304473      DDprv=31817.7  DD=27962.8  (DD-DDprv)/DD=-0.137857        Dchange=0.137857
+ ===> [ 4] codebook.size=2  DP=0.271992      DDprv=27962.8  DD=24979.7  (DD-DDprv)/DD=-0.119419        Dchange=0.119419
+ ===> [ 5] codebook.size=2  DP=0.265715      DDprv=24979.7  DD=24403.2  (DD-DDprv)/DD=-0.0236247       Dchange=0.0236247
+ ===> [ 6] codebook.size=2  DP=0.264241      DDprv=24403.2  DD=24267.9  (DD-DDprv)/DD=-0.00557545      Dchange=0.00557545
+ ===> [ 7] codebook.size=2  DP=0.263841      DDprv=24267.9  DD=24231.2  (DD-DDprv)/DD=-0.00151616      Dchange=0.00151616
+ ===> [ 8] codebook.size=2  DP=0.263751      DDprv=24231.2  DD=24222.9  (DD-DDprv)/DD=-0.000341312     Dchange=0.000341312
+codebook saved: data/codebooks/eps_0.0005__0002.cbook
+
+======================
+data/codebooks/eps_0.0005__0004.cbook
+ ===> [ 0] codebook.size=4  DP=0.256422      DDprv=24222.9  DD=23549.8  (DD-DDprv)/DD=-0.0285809       Dchange=0.0285809
+ ===> [ 1] codebook.size=4  DP=0.233337      DDprv=23549.8  DD=21429.7  (DD-DDprv)/DD=-0.0989355       Dchange=0.0989355
+ ===> [ 2] codebook.size=4  DP=0.227372      DDprv=21429.7  DD=20881.9  (DD-DDprv)/DD=-0.0262341       Dchange=0.0262341
+ ===> [ 3] codebook.size=4  DP=0.224618      DDprv=20881.9  DD=20628.9  (DD-DDprv)/DD=-0.0122632       Dchange=0.0122632
+ ===> [ 4] codebook.size=4  DP=0.223486      DDprv=20628.9  DD=20525.0  (DD-DDprv)/DD=-0.00506252      Dchange=0.00506252
+ ===> [ 5] codebook.size=4  DP=0.222615      DDprv=20525.0  DD=20445.0  (DD-DDprv)/DD=-0.00391409      Dchange=0.00391409
+ ===> [ 6] codebook.size=4  DP=0.222190      DDprv=20445.0  DD=20406.0  (DD-DDprv)/DD=-0.00191111      Dchange=0.00191111
+ ===> [ 7] codebook.size=4  DP=0.221548      DDprv=20406.0  DD=20347.0  (DD-DDprv)/DD=-0.00289816      Dchange=0.00289816
+ ===> [ 8] codebook.size=4  DP=0.220791      DDprv=20347.0  DD=20277.4  (DD-DDprv)/DD=-0.00342957      Dchange=0.00342957
+ ===> [ 9] codebook.size=4  DP=0.219797      DDprv=20277.4  DD=20186.2  (DD-DDprv)/DD=-0.00452032      Dchange=0.00452032
+ ===> [10] codebook.size=4  DP=0.218167      DDprv=20186.2  DD=20036.5  (DD-DDprv)/DD=-0.00747241      Dchange=0.00747241
+ ===> [11] codebook.size=4  DP=0.217404      DDprv=20036.5  DD=19966.3  (DD-DDprv)/DD=-0.00351236      Dchange=0.00351236
+ ===> [12] codebook.size=4  DP=0.217188      DDprv=19966.3  DD=19946.5  (DD-DDprv)/DD=-0.000993574     Dchange=0.000993574
+ ===> [13] codebook.size=4  DP=0.216924      DDprv=19946.5  DD=19922.3  (DD-DDprv)/DD=-0.00121458      Dchange=0.00121458
+ ===> [14] codebook.size=4  DP=0.216743      DDprv=19922.3  DD=19905.6  (DD-DDprv)/DD=-0.000838625     Dchange=0.000838625
+ ===> [15] codebook.size=4  DP=0.217063      DDprv=19905.6  DD=19935.1  (DD-DDprv)/DD=0.00147579       Dchange=-0.00147579
+ ===> [16] codebook.size=4  DP=0.216972      DDprv=19935.1  DD=19926.7  (DD-DDprv)/DD=-0.000417839     Dchange=0.000417839
+codebook saved: data/codebooks/eps_0.0005__0004.cbook
+
+======================
+data/codebooks/eps_0.0005__0008.cbook
+ ===> [ 0] codebook.size=8  DP=0.210727      DDprv=19926.7  DD=19353.2  (DD-DDprv)/DD=-0.0296360       Dchange=0.0296360
+ ===> [ 1] codebook.size=8  DP=0.193336      DDprv=19353.2  DD=17756.0  (DD-DDprv)/DD=-0.0899520       Dchange=0.0899520
+ ===> [ 2] codebook.size=8  DP=0.188953      DDprv=17756.0  DD=17353.4  (DD-DDprv)/DD=-0.0231972       Dchange=0.0231972
+ ===> [ 3] codebook.size=8  DP=0.185151      DDprv=17353.4  DD=17004.3  (DD-DDprv)/DD=-0.0205341       Dchange=0.0205341
+ ===> [ 4] codebook.size=8  DP=0.183921      DDprv=17004.3  DD=16891.3  (DD-DDprv)/DD=-0.00669031      Dchange=0.00669031
+ ===> [ 5] codebook.size=8  DP=0.182883      DDprv=16891.3  DD=16795.9  (DD-DDprv)/DD=-0.00567637      Dchange=0.00567637
+ ===> [ 6] codebook.size=8  DP=0.182070      DDprv=16795.9  DD=16721.3  (DD-DDprv)/DD=-0.00446193      Dchange=0.00446193
+ ===> [ 7] codebook.size=8  DP=0.181098      DDprv=16721.3  DD=16632.0  (DD-DDprv)/DD=-0.00536921      Dchange=0.00536921
+ ===> [ 8] codebook.size=8  DP=0.180073      DDprv=16632.0  DD=16537.9  (DD-DDprv)/DD=-0.00568886      Dchange=0.00568886
+ ===> [ 9] codebook.size=8  DP=0.178413      DDprv=16537.9  DD=16385.4  (DD-DDprv)/DD=-0.00930729      Dchange=0.00930729
+ ===> [10] codebook.size=8  DP=0.177988      DDprv=16385.4  DD=16346.5  (DD-DDprv)/DD=-0.00238428      Dchange=0.00238428
+ ===> [11] codebook.size=8  DP=0.177520      DDprv=16346.5  DD=16303.5  (DD-DDprv)/DD=-0.00263664      Dchange=0.00263664
+ ===> [12] codebook.size=8  DP=0.176707      DDprv=16303.5  DD=16228.7  (DD-DDprv)/DD=-0.00460440      Dchange=0.00460440
+ ===> [13] codebook.size=8  DP=0.176356      DDprv=16228.7  DD=16196.6  (DD-DDprv)/DD=-0.00198616      Dchange=0.00198616
+ ===> [14] codebook.size=8  DP=0.176124      DDprv=16196.6  DD=16175.3  (DD-DDprv)/DD=-0.00131826      Dchange=0.00131826
+ ===> [15] codebook.size=8  DP=0.175909      DDprv=16175.3  DD=16155.4  (DD-DDprv)/DD=-0.00122661      Dchange=0.00122661
+ ===> [16] codebook.size=8  DP=0.175872      DDprv=16155.4  DD=16152.1  (DD-DDprv)/DD=-0.000209496     Dchange=0.000209496
+codebook saved: data/codebooks/eps_0.0005__0008.cbook
+
+======================
+data/codebooks/eps_0.0005__0016.cbook
+ ===> [ 0] codebook.size=16  DP=0.171380      DDprv=16152.1  DD=15739.5  (DD-DDprv)/DD=-0.0262089       Dchange=0.0262089
+ ===> [ 1] codebook.size=16  DP=0.160393      DDprv=15739.5  DD=14730.5  (DD-DDprv)/DD=-0.0684986       Dchange=0.0684986
+ ===> [ 2] codebook.size=16  DP=0.156341      DDprv=14730.5  DD=14358.3  (DD-DDprv)/DD=-0.0259216       Dchange=0.0259216
+ ===> [ 3] codebook.size=16  DP=0.153263      DDprv=14358.3  DD=14075.7  (DD-DDprv)/DD=-0.0200801       Dchange=0.0200801
+ ===> [ 4] codebook.size=16  DP=0.151756      DDprv=14075.7  DD=13937.2  (DD-DDprv)/DD=-0.00993454      Dchange=0.00993454
+ ===> [ 5] codebook.size=16  DP=0.150794      DDprv=13937.2  DD=13848.9  (DD-DDprv)/DD=-0.00637756      Dchange=0.00637756
+ ===> [ 6] codebook.size=16  DP=0.149951      DDprv=13848.9  DD=13771.5  (DD-DDprv)/DD=-0.00562332      Dchange=0.00562332
+ ===> [ 7] codebook.size=16  DP=0.149436      DDprv=13771.5  DD=13724.2  (DD-DDprv)/DD=-0.00344096      Dchange=0.00344096
+ ===> [ 8] codebook.size=16  DP=0.148703      DDprv=13724.2  DD=13656.9  (DD-DDprv)/DD=-0.00492997      Dchange=0.00492997
+ ===> [ 9] codebook.size=16  DP=0.148078      DDprv=13656.9  DD=13599.5  (DD-DDprv)/DD=-0.00421947      Dchange=0.00421947
+ ===> [10] codebook.size=16  DP=0.147777      DDprv=13599.5  DD=13571.8  (DD-DDprv)/DD=-0.00204072      Dchange=0.00204072
+ ===> [11] codebook.size=16  DP=0.147448      DDprv=13571.8  DD=13541.6  (DD-DDprv)/DD=-0.00222938      Dchange=0.00222938
+ ===> [12] codebook.size=16  DP=0.147070      DDprv=13541.6  DD=13506.9  (DD-DDprv)/DD=-0.00257269      Dchange=0.00257269
+ ===> [13] codebook.size=16  DP=0.146871      DDprv=13506.9  DD=13488.7  (DD-DDprv)/DD=-0.00135060      Dchange=0.00135060
+ ===> [14] codebook.size=16  DP=0.146635      DDprv=13488.7  DD=13466.9  (DD-DDprv)/DD=-0.00161362      Dchange=0.00161362
+ ===> [15] codebook.size=16  DP=0.146537      DDprv=13466.9  DD=13458.0  (DD-DDprv)/DD=-0.000667153     Dchange=0.000667153
+ ===> [16] codebook.size=16  DP=0.146506      DDprv=13458.0  DD=13455.1  (DD-DDprv)/DD=-0.000212222     Dchange=0.000212222
+codebook saved: data/codebooks/eps_0.0005__0016.cbook
+
+======================
+data/codebooks/eps_0.0005__0032.cbook
+ ===> [ 0] codebook.size=32  DP=0.142898      DDprv=13455.1  DD=13123.7  (DD-DDprv)/DD=-0.0252520       Dchange=0.0252520
+ ===> [ 1] codebook.size=32  DP=0.136200      DDprv=13123.7  DD=12508.6  (DD-DDprv)/DD=-0.0491739       Dchange=0.0491739
+ ===> [ 2] codebook.size=32  DP=0.132523      DDprv=12508.6  DD=12170.9  (DD-DDprv)/DD=-0.0277474       Dchange=0.0277474
+ ===> [ 3] codebook.size=32  DP=0.130427      DDprv=12170.9  DD=11978.4  (DD-DDprv)/DD=-0.0160728       Dchange=0.0160728
+ ===> [ 4] codebook.size=32  DP=0.129290      DDprv=11978.4  DD=11874.0  (DD-DDprv)/DD=-0.00879088      Dchange=0.00879088
+ ===> [ 5] codebook.size=32  DP=0.128395      DDprv=11874.0  DD=11791.8  (DD-DDprv)/DD=-0.00696713      Dchange=0.00696713
+ ===> [ 6] codebook.size=32  DP=0.127727      DDprv=11791.8  DD=11730.4  (DD-DDprv)/DD=-0.00523570      Dchange=0.00523570
+ ===> [ 7] codebook.size=32  DP=0.127157      DDprv=11730.4  DD=11678.1  (DD-DDprv)/DD=-0.00448197      Dchange=0.00448197
+ ===> [ 8] codebook.size=32  DP=0.126733      DDprv=11678.1  DD=11639.2  (DD-DDprv)/DD=-0.00334245      Dchange=0.00334245
+ ===> [ 9] codebook.size=32  DP=0.126394      DDprv=11639.2  DD=11608.0  (DD-DDprv)/DD=-0.00268243      Dchange=0.00268243
+ ===> [10] codebook.size=32  DP=0.126122      DDprv=11608.0  DD=11583.0  (DD-DDprv)/DD=-0.00215900      Dchange=0.00215900
+ ===> [11] codebook.size=32  DP=0.125813      DDprv=11583.0  DD=11554.7  (DD-DDprv)/DD=-0.00245115      Dchange=0.00245115
+ ===> [12] codebook.size=32  DP=0.125459      DDprv=11554.7  DD=11522.2  (DD-DDprv)/DD=-0.00282540      Dchange=0.00282540
+ ===> [13] codebook.size=32  DP=0.125145      DDprv=11522.2  DD=11493.3  (DD-DDprv)/DD=-0.00251089      Dchange=0.00251089
+ ===> [14] codebook.size=32  DP=0.125078      DDprv=11493.3  DD=11487.2  (DD-DDprv)/DD=-0.000534479     Dchange=0.000534479
+ ===> [15] codebook.size=32  DP=0.125031      DDprv=11487.2  DD=11482.8  (DD-DDprv)/DD=-0.000376751     Dchange=0.000376751
+codebook saved: data/codebooks/eps_0.0005__0032.cbook
+
+======================
+data/codebooks/eps_0.0005__0064.cbook
+ ===> [ 0] codebook.size=64  DP=0.122060      DDprv=11482.8  DD=11210.0  (DD-DDprv)/DD=-0.0243393       Dchange=0.0243393
+ ===> [ 1] codebook.size=64  DP=0.116933      DDprv=11210.0  DD=10739.1  (DD-DDprv)/DD=-0.0438446       Dchange=0.0438446
+ ===> [ 2] codebook.size=64  DP=0.114522      DDprv=10739.1  DD=10517.7  (DD-DDprv)/DD=-0.0210560       Dchange=0.0210560
+ ===> [ 3] codebook.size=64  DP=0.112910      DDprv=10517.7  DD=10369.7  (DD-DDprv)/DD=-0.0142746       Dchange=0.0142746
+ ===> [ 4] codebook.size=64  DP=0.111772      DDprv=10369.7  DD=10265.1  (DD-DDprv)/DD=-0.0101829       Dchange=0.0101829
+ ===> [ 5] codebook.size=64  DP=0.111221      DDprv=10265.1  DD=10214.5  (DD-DDprv)/DD=-0.00495321      Dchange=0.00495321
+ ===> [ 6] codebook.size=64  DP=0.110683      DDprv=10214.5  DD=10165.1  (DD-DDprv)/DD=-0.00486404      Dchange=0.00486404
+ ===> [ 7] codebook.size=64  DP=0.110331      DDprv=10165.1  DD=10132.8  (DD-DDprv)/DD=-0.00318359      Dchange=0.00318359
+ ===> [ 8] codebook.size=64  DP=0.110170      DDprv=10132.8  DD=10118.0  (DD-DDprv)/DD=-0.00146252      Dchange=0.00146252
+ ===> [ 9] codebook.size=64  DP=0.110036      DDprv=10118.0  DD=10105.7  (DD-DDprv)/DD=-0.00121721      Dchange=0.00121721
+ ===> [10] codebook.size=64  DP=0.109912      DDprv=10105.7  DD=10094.3  (DD-DDprv)/DD=-0.00113326      Dchange=0.00113326
+ ===> [11] codebook.size=64  DP=0.109839      DDprv=10094.3  DD=10087.6  (DD-DDprv)/DD=-0.000658390     Dchange=0.000658390
+ ===> [12] codebook.size=64  DP=0.109767      DDprv=10087.6  DD=10081.0  (DD-DDprv)/DD=-0.000658048     Dchange=0.000658048
+ ===> [13] codebook.size=64  DP=0.109675      DDprv=10081.0  DD=10072.6  (DD-DDprv)/DD=-0.000835439     Dchange=0.000835439
+ ===> [14] codebook.size=64  DP=0.109614      DDprv=10072.6  DD=10067.0  (DD-DDprv)/DD=-0.000559826     Dchange=0.000559826
+ ===> [15] codebook.size=64  DP=0.109562      DDprv=10067.0  DD=10062.2  (DD-DDprv)/DD=-0.000473714     Dchange=0.000473714
+codebook saved: data/codebooks/eps_0.0005__0064.cbook
+
+======================
+data/codebooks/eps_0.0005__0128.cbook
+ ===> [ 0] codebook.size=128  DP=0.107223      DDprv=10062.2  DD=9847.37  (DD-DDprv)/DD=-0.0218157       Dchange=0.0218157
+ ===> [ 1] codebook.size=128  DP=0.102621      DDprv=9847.37  DD=9424.68  (DD-DDprv)/DD=-0.0448491       Dchange=0.0448491
+ ===> [ 2] codebook.size=128  DP=0.100510      DDprv=9424.68  DD=9230.83  (DD-DDprv)/DD=-0.0209999       Dchange=0.0209999
+ ===> [ 3] codebook.size=128  DP=0.0993489     DDprv=9230.83  DD=9124.20  (DD-DDprv)/DD=-0.0116863       Dchange=0.0116863
+ ===> [ 4] codebook.size=128  DP=0.0985892     DDprv=9124.20  DD=9054.43  (DD-DDprv)/DD=-0.00770600      Dchange=0.00770600
+ ===> [ 5] codebook.size=128  DP=0.0981794     DDprv=9054.43  DD=9016.79  (DD-DDprv)/DD=-0.00417429      Dchange=0.00417429
+ ===> [ 6] codebook.size=128  DP=0.0978425     DDprv=9016.79  DD=8985.86  (DD-DDprv)/DD=-0.00344269      Dchange=0.00344269
+ ===> [ 7] codebook.size=128  DP=0.0975856     DDprv=8985.86  DD=8962.26  (DD-DDprv)/DD=-0.00263246      Dchange=0.00263246
+ ===> [ 8] codebook.size=128  DP=0.0974899     DDprv=8962.26  DD=8953.47  (DD-DDprv)/DD=-0.000981855     Dchange=0.000981855
+ ===> [ 9] codebook.size=128  DP=0.0973194     DDprv=8953.47  DD=8937.81  (DD-DDprv)/DD=-0.00175201      Dchange=0.00175201
+ ===> [10] codebook.size=128  DP=0.0971811     DDprv=8937.81  DD=8925.11  (DD-DDprv)/DD=-0.00142297      Dchange=0.00142297
+ ===> [11] codebook.size=128  DP=0.0971196     DDprv=8925.11  DD=8919.46  (DD-DDprv)/DD=-0.000633819     Dchange=0.000633819
+ ===> [12] codebook.size=128  DP=0.0969808     DDprv=8919.46  DD=8906.71  (DD-DDprv)/DD=-0.00143096      Dchange=0.00143096
+ ===> [13] codebook.size=128  DP=0.0969034     DDprv=8906.71  DD=8899.61  (DD-DDprv)/DD=-0.000798732     Dchange=0.000798732
+ ===> [14] codebook.size=128  DP=0.0967980     DDprv=8899.61  DD=8889.93  (DD-DDprv)/DD=-0.00108895      Dchange=0.00108895
+ ===> [15] codebook.size=128  DP=0.0967393     DDprv=8889.93  DD=8884.53  (DD-DDprv)/DD=-0.000606852     Dchange=0.000606852
+ ===> [16] codebook.size=128  DP=0.0966190     DDprv=8884.53  DD=8873.49  (DD-DDprv)/DD=-0.00124460      Dchange=0.00124460
+ ===> [17] codebook.size=128  DP=0.0965858     DDprv=8873.49  DD=8870.44  (DD-DDprv)/DD=-0.000343927     Dchange=0.000343927
+codebook saved: data/codebooks/eps_0.0005__0128.cbook
+
+======================
+data/codebooks/eps_0.0005__0256.cbook
+ ===> [ 0] codebook.size=256  DP=0.0945010     DDprv=8870.44  DD=8678.98  (DD-DDprv)/DD=-0.0220607       Dchange=0.0220607
+ ===> [ 1] codebook.size=256  DP=0.0907635     DDprv=8678.98  DD=8335.72  (DD-DDprv)/DD=-0.0411794       Dchange=0.0411794
+ ===> [ 2] codebook.size=256  DP=0.0892504     DDprv=8335.72  DD=8196.76  (DD-DDprv)/DD=-0.0169530       Dchange=0.0169530
+ ===> [ 3] codebook.size=256  DP=0.0884698     DDprv=8196.76  DD=8125.06  (DD-DDprv)/DD=-0.00882367      Dchange=0.00882367
+ ===> [ 4] codebook.size=256  DP=0.0880106     DDprv=8125.06  DD=8082.89  (DD-DDprv)/DD=-0.00521700      Dchange=0.00521700
+ ===> [ 5] codebook.size=256  DP=0.0876986     DDprv=8082.89  DD=8054.24  (DD-DDprv)/DD=-0.00355736      Dchange=0.00355736
+ ===> [ 6] codebook.size=256  DP=0.0874373     DDprv=8054.24  DD=8030.24  (DD-DDprv)/DD=-0.00298888      Dchange=0.00298888
+ ===> [ 7] codebook.size=256  DP=0.0872230     DDprv=8030.24  DD=8010.56  (DD-DDprv)/DD=-0.00245684      Dchange=0.00245684
+ ===> [ 8] codebook.size=256  DP=0.0870515     DDprv=8010.56  DD=7994.81  (DD-DDprv)/DD=-0.00197003      Dchange=0.00197003
+ ===> [ 9] codebook.size=256  DP=0.0869611     DDprv=7994.81  DD=7986.51  (DD-DDprv)/DD=-0.00103917      Dchange=0.00103917
+ ===> [10] codebook.size=256  DP=0.0868768     DDprv=7986.51  DD=7978.77  (DD-DDprv)/DD=-0.000970655     Dchange=0.000970655
+ ===> [11] codebook.size=256  DP=0.0867914     DDprv=7978.77  DD=7970.93  (DD-DDprv)/DD=-0.000983555     Dchange=0.000983555
+ ===> [12] codebook.size=256  DP=0.0867190     DDprv=7970.93  DD=7964.27  (DD-DDprv)/DD=-0.000835948     Dchange=0.000835948
+ ===> [13] codebook.size=256  DP=0.0866759     DDprv=7964.27  DD=7960.32  (DD-DDprv)/DD=-0.000496236     Dchange=0.000496236
+codebook saved: data/codebooks/eps_0.0005__0256.cbook
+
+======================
+data/codebooks/eps_0.0005__0512.cbook
+ ===> [ 0] codebook.size=512  DP=0.0850936     DDprv=7960.32  DD=7814.99  (DD-DDprv)/DD=-0.0185956       Dchange=0.0185956
+ ===> [ 1] codebook.size=512  DP=0.0817187     DDprv=7814.99  DD=7505.05  (DD-DDprv)/DD=-0.0412988       Dchange=0.0412988
+ ===> [ 2] codebook.size=512  DP=0.0802525     DDprv=7505.05  DD=7370.39  (DD-DDprv)/DD=-0.0182702       Dchange=0.0182702
+ ===> [ 3] codebook.size=512  DP=0.0793421     DDprv=7370.39  DD=7286.78  (DD-DDprv)/DD=-0.0114741       Dchange=0.0114741
+ ===> [ 4] codebook.size=512  DP=0.0788106     DDprv=7286.78  DD=7237.96  (DD-DDprv)/DD=-0.00674456      Dchange=0.00674456
+ ===> [ 5] codebook.size=512  DP=0.0784369     DDprv=7237.96  DD=7203.64  (DD-DDprv)/DD=-0.00476396      Dchange=0.00476396
+ ===> [ 6] codebook.size=512  DP=0.0781737     DDprv=7203.64  DD=7179.47  (DD-DDprv)/DD=-0.00336646      Dchange=0.00336646
+ ===> [ 7] codebook.size=512  DP=0.0779511     DDprv=7179.47  DD=7159.03  (DD-DDprv)/DD=-0.00285581      Dchange=0.00285581
+ ===> [ 8] codebook.size=512  DP=0.0777972     DDprv=7159.03  DD=7144.90  (DD-DDprv)/DD=-0.00197803      Dchange=0.00197803
+ ===> [ 9] codebook.size=512  DP=0.0776722     DDprv=7144.90  DD=7133.42  (DD-DDprv)/DD=-0.00160912      Dchange=0.00160912
+ ===> [10] codebook.size=512  DP=0.0776016     DDprv=7133.42  DD=7126.93  (DD-DDprv)/DD=-0.000910184     Dchange=0.000910184
+ ===> [11] codebook.size=512  DP=0.0775439     DDprv=7126.93  DD=7121.63  (DD-DDprv)/DD=-0.000744527     Dchange=0.000744527
+ ===> [12] codebook.size=512  DP=0.0775239     DDprv=7121.63  DD=7119.79  (DD-DDprv)/DD=-0.000258001     Dchange=0.000258001
+codebook saved: data/codebooks/eps_0.0005__0512.cbook
+
+======================
+data/codebooks/eps_0.0005__1024.cbook
+ ===> [ 0] codebook.size=1024  DP=0.0761276     DDprv=7119.79  DD=6991.56  (DD-DDprv)/DD=-0.0183405       Dchange=0.0183405
+ ===> [ 1] codebook.size=1024  DP=0.0729370     DDprv=6991.56  DD=6698.54  (DD-DDprv)/DD=-0.0437447       Dchange=0.0437447
+ ===> [ 2] codebook.size=1024  DP=0.0715159     DDprv=6698.54  DD=6568.02  (DD-DDprv)/DD=-0.0198716       Dchange=0.0198716
+ ===> [ 3] codebook.size=1024  DP=0.0707267     DDprv=6568.02  DD=6495.54  (DD-DDprv)/DD=-0.0111586       Dchange=0.0111586
+ ===> [ 4] codebook.size=1024  DP=0.0702647     DDprv=6495.54  DD=6453.11  (DD-DDprv)/DD=-0.00657546      Dchange=0.00657546
+ ===> [ 5] codebook.size=1024  DP=0.0700101     DDprv=6453.11  DD=6429.72  (DD-DDprv)/DD=-0.00363675      Dchange=0.00363675
+ ===> [ 6] codebook.size=1024  DP=0.0697909     DDprv=6429.72  DD=6409.59  (DD-DDprv)/DD=-0.00314059      Dchange=0.00314059
+ ===> [ 7] codebook.size=1024  DP=0.0696354     DDprv=6409.59  DD=6395.31  (DD-DDprv)/DD=-0.00223293      Dchange=0.00223293
+ ===> [ 8] codebook.size=1024  DP=0.0695246     DDprv=6395.31  DD=6385.14  (DD-DDprv)/DD=-0.00159336      Dchange=0.00159336
+ ===> [ 9] codebook.size=1024  DP=0.0694482     DDprv=6385.14  DD=6378.12  (DD-DDprv)/DD=-0.00110087      Dchange=0.00110087
+ ===> [10] codebook.size=1024  DP=0.0693785     DDprv=6378.12  DD=6371.72  (DD-DDprv)/DD=-0.00100404      Dchange=0.00100404
+ ===> [11] codebook.size=1024  DP=0.0693206     DDprv=6371.72  DD=6366.41  (DD-DDprv)/DD=-0.000834611     Dchange=0.000834611
+ ===> [12] codebook.size=1024  DP=0.0692922     DDprv=6366.41  DD=6363.80  (DD-DDprv)/DD=-0.000409727     Dchange=0.000409727
+codebook saved: data/codebooks/eps_0.0005__1024.cbook

@@ -1,0 +1,207 @@
+➜  ecoz git:(master) ✗ for s in `ls data/songs/selections`; do
+        name=`basename $s .txt`
+        echo "name=$name"
+        ecoz sig.xtor data/songs/HBSe_$name.wav data/songs/selections/$name.txt
+    done
+name=20151022T015622
+Reading audio file: data/songs/HBSe_20151022T015622.wav
+AudioFile@r(data/songs/HBSe_20151022T015622.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),4467081))
+sampleRate: 32000.000000 Hz  duration: 139.596281 secs
+Loading selection file: data/songs/selections/20151022T015622.txt
+                     description : #selections
+              "ascending shriek" :  1
+                           "cry" :  6
+                         "groan" : 13
+                        "gurgle" :  8
+                "modulated moan" :  3
+      "modulated moan + upsweep" :  4
+                         "trill" :  1
+name=20151023T122324
+Reading audio file: data/songs/HBSe_20151023T122324.wav
+AudioFile@r(data/songs/HBSe_20151023T122324.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),13314995))
+sampleRate: 32000.000000 Hz  duration: 416.093594 secs
+Loading selection file: data/songs/selections/20151023T122324.txt
+                     description : #selections
+                "ascending moan" : 10
+         "ascending moan + purr" :  1
+              "ascending shriek" :  1
+                           "cry" : 18
+               "descending moan" :  9
+                         "groan" :  7
+                        "gurgle" : 20
+        "gurgle +modulated moan" :  1
+                "modulated moan" : 13
+      "modulated moan + upsweep" :  1
+                          "purr" :  3
+         "purr + modulated moan" :  1
+                          "sigh" :  8
+                         "siren" :  1
+name=20151121T040102
+Reading audio file: data/songs/HBSe_20151121T040102.wav
+AudioFile@r(data/songs/HBSe_20151121T040102.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),13860382))
+sampleRate: 32000.000000 Hz  duration: 433.136938 secs
+Loading selection file: data/songs/selections/20151121T040102.txt
+                     description : #selections
+                "ascending moan" :  3
+              "ascending shriek" :  4
+               "broadband burst" :  1
+               "descending moan" :  9
+                         "groan" :  1
+                        "gurgle" : 31
+                "modulated moan" : 21
+                         "thwop" :  1
+                         "trill" :  8
+name=20151207T070326
+Reading audio file: data/songs/HBSe_20151207T070326.wav
+AudioFile@r(data/songs/HBSe_20151207T070326.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),12719874))
+sampleRate: 32000.000000 Hz  duration: 397.496063 secs
+Loading selection file: data/songs/selections/20151207T070326.txt
+                     description : #selections
+                "ascending moan" :  4
+            "ascending moan (D)" :  1
+               "ascending moan?" :  3
+              "ascending shriek" :  3
+          "ascending shriek (D)" :  1
+                          "bark" :  3
+                      "bark (D)" :  1
+                         "bark?" :  2
+               "descending moan" :  9
+           "descending moan (F)" :  1
+             "descending shriek" :  6
+         "descending shriek (D)" :  1
+                         "groan" : 10
+                  "groan + purr" :  7
+                   "groan +purr" :  1
+                         "grunt" :  5
+                    "grunt echo" :  1
+                        "grunts" :  3
+                        "gurgle" : 25
+    "gurgle + descending shriek" :  3
+                "gurgle + trill" :  1
+                       "gurgle?" :  6
+           "gurgle?/ascending _" :  1
+                 "modulated cry" : 12
+             "modulated cry (D)" :  2
+                "modulated moan" :  2
+           "modulated moans (F)" :  1
+                          "purr" :  6
+                      "purr (D)" :  1
+                         "trill" :  2
+                     "trill (D)" :  1
+                        "trill?" :  1
+                      "trumpet?" :  1
+name=20151228T103639
+Reading audio file: data/songs/HBSe_20151228T103639.wav
+AudioFile@r(data/songs/HBSe_20151228T103639.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),19364685))
+sampleRate: 32000.000000 Hz  duration: 605.146406 secs
+Loading selection file: data/songs/selections/20151228T103639.txt
+                     description : #selections
+                "ascending moan" :  1
+              "ascending shriek" : 25
+                        "bellow" :  6
+                         "croak" : 11
+               "descending moan" : 20
+             "descending shriek" : 13
+                         "groan" :  4
+                       "grumble" :  1
+                         "grunt" : 17
+                        "gurgle" : 58
+                    "long grunt" : 15
+                          "purr" :  8
+                         "snort" :  1
+                         "trill" : 24
+name=20161101T153358
+Reading audio file: data/songs/HBSe_20161101T153358.wav
+AudioFile@r(data/songs/HBSe_20161101T153358.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),16388075))
+sampleRate: 32000.000000 Hz  duration: 512.127344 secs
+Loading selection file: data/songs/selections/20161101T153358.txt
+                     description : #selections
+                "ascending moan" :  9
+              "ascending shriek" :  4
+               "descending moan" : 43
+                  "growl+gurgle" :  1
+                         "grunt" :  3
+                        "gurgle" :  1
+name=20161207T115528
+Reading audio file: data/songs/HBSe_20161207T115528.wav
+AudioFile@r(data/songs/HBSe_20161207T115528.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),8885692))
+sampleRate: 32000.000000 Hz  duration: 277.677875 secs
+Loading selection file: data/songs/selections/20161207T115528.txt
+                     description : #selections
+                "ascending moan" :  5
+              "ascending shriek" :  5
+                         "creek" :  1
+               "descending moan" :  1
+             "descending shriek" :  7
+            "descending shriek?" :  1
+                         "groan" :  3
+                  "groan + purr" :  4
+                       "grumble" :  2
+                        "gurgle" : 29
+                      "low yaps" :  4
+                 "modulated cry" :  3
+                "modulated moan" : 13
+                         "pulse" :  6
+                        "pulses" :  2
+                          "purr" :  7
+                       "violin?" :  1
+name=20170107T085150
+Reading audio file: data/songs/HBSe_20170107T085150.wav
+AudioFile@r(data/songs/HBSe_20170107T085150.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),10481889))
+sampleRate: 32000.000000 Hz  duration: 327.559031 secs
+Loading selection file: data/songs/selections/20170107T085150.txt
+                     description : #selections
+               "ascending grunt" :  1
+              "ascending shriek" : 11
+                        "bellow" :  5
+              "descending grunt" :  1
+               "descending moan" : 19
+                  "grunt (long)" :  4
+                     "grunt (s)" :  7
+                 "grunt (short)" :  5
+                        "gurgle" :  8
+                "modulated moan" :  7
+      "modulated moan + upsweep" :  1
+name=20170116T054541
+Reading audio file: data/songs/HBSe_20170116T054541.wav
+AudioFile@r(data/songs/HBSe_20170116T054541.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),19654958))
+sampleRate: 32000.000000 Hz  duration: 614.217438 secs
+Loading selection file: data/songs/selections/20170116T054541.txt
+                     description : #selections
+                "ascending moan" :  3
+              "ascending shriek" : 39
+      "ascending shriek, higher" :  1
+                         "creek" :  6
+                         "croak" :  1
+                           "cry" : 13
+               "descending moan" : 31
+                         "groan" :  1
+                         "grunt" : 38
+                        "grunts" :  8
+                        "gurgle" : 14
+                "modulated moan" :  6
+                          "purr" : 11
+                        "scream" : 11
+                     "screech ?" :  1
+                    "short moan" :  1
+                         "trill" :  7
+                          "wops" :  1
+name=20170424T102157
+Reading audio file: data/songs/HBSe_20170424T102157.wav
+AudioFile@r(data/songs/HBSe_20170424T102157.wav,Wave,Int16,1,32000.0,Some(LITTLE_ENDIAN),20579522))
+sampleRate: 32000.000000 Hz  duration: 643.110063 secs
+Loading selection file: data/songs/selections/20170424T102157.txt
+                     description : #selections
+                "ascending moan" :  5
+                          "bark" :  4
+                           "cry" : 15
+               "descending moan" : 12
+                         "growl" : 12
+                         "grunt" : 38
+        "grunt + modulated moan" :  1
+                        "grunts" : 12
+                        "gurgle" : 21
+                      "low yaps" :  5
+                 "modulated cry" : 13
+                "modulated moan" : 18
+                          "wops" :  8
