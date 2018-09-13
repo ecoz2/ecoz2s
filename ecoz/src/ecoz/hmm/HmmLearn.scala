@@ -5,7 +5,7 @@ import java.io.File
 import ecoz.config.Config
 import ecoz.config.Config.dir
 import ecoz.hmm.HmmType.HmmType
-import ecoz.rpt.magenta
+import ecoz.rpt._
 import ecoz.symbol.{SymbolSequence, SymbolSequences}
 
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -13,11 +13,11 @@ import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.Duration
 
 object HmmLearn {
-  private val defaultN = 5
+  private val defaultType = Config.hmm.typ
+  private val defaultN = Config.hmm.N
+  private val defaultValAuto = Config.hmm.valAuto
   private val default_ε = BigDecimal(1e-5)
-  private val defaultType = HmmType.default
   private val defaultMaxRefinements = -1
-  private val defaultValAuto = BigDecimal(0.3)
 
   def usage(error: String = ""): Unit = {
     println(s"""$error
@@ -89,7 +89,11 @@ object HmmLearn {
       usage("Indicate sequence files for training")
     }
     val sequences = seqFilenames map { filename ⇒
-      SymbolSequences.load(new File(filename))
+      val seq = SymbolSequences.load(new File(filename))
+      if (seq.T > Config.hmm.trickMaxT) {
+        seq.copy(symbols = seq.symbols.take(Config.hmm.trickMaxT))
+      }
+      else seq
     }
 
     val classNameOpt2: Option[String] = classNameOpt orElse {
@@ -100,16 +104,16 @@ object HmmLearn {
     }
     val className = classNameOpt2.get
 
-    val M = sequences.head.M
+    val MM = sequences.head.M
 
     // verify all sequences are conformant wrt vocabulary size:
-    val nonM = sequences.filterNot(_.M == M)
+    val nonM = sequences.filterNot(_.M == MM)
     if (nonM.nonEmpty) {
-      usage(s"Error: ${nonM.length} non conformant sequences wrt to 1st one, M != $M")
+      usage(s"Error: ${nonM.length} non conformant sequences wrt to 1st one, M != $MM")
     }
 
     new HmmLearn(
-      className, N, M, typ, ε,
+      className, N, MM, typ, ε,
       sequences,
       maxRefinements,
       valAuto
@@ -150,7 +154,9 @@ class HmmLearn(className: String,
   hmm.adjustB(ε)
 
   private val hmmFile = {
-    val hmmDir = new File(Config.dir.hmms, s"N%d__M%d" format (hmm.N, hmm.M))
+    val hmmDir = new File(Config.dir.hmms,
+      s"N%d__M%d__a%s" format (hmm.N, hmm.M, valAuto)
+    )
     hmmDir.mkdirs()
     new File(hmmDir, s"$className.hmm")
   }
@@ -195,9 +201,7 @@ class HmmLearn(className: String,
       }
 
       // update parameters:
-      if (typ != HmmType.Cascade3 && typ != HmmType.Cascade2) {
-        refine_pi()
-      }
+      refine_pi()
       refine_A()
       refine_B()
 
@@ -375,7 +379,9 @@ class HmmLearn(className: String,
       }
     }
 
-    var PROld = productProbability("Initial sequence probabilities:", hmm)
+    var PROld = productProbability(
+      s"${quoted(className)}: Initial sequence probabilities:",
+      hmm)
 
     // save model every ~minute
     val savePeriodMs = 60*1000
@@ -388,7 +394,9 @@ class HmmLearn(className: String,
 
       refinementStep()
 
-      val PR = productProbability(s"After refinement $r:", hmm)
+      val PR = productProbability(
+        s"\n${cyan(quoted(className))}: After refinement $r:",
+        hmm)
 
       val change = (PR - PROld) / PR
       println(s"CHANGE = " + magenta(change.toString()))
@@ -406,7 +414,7 @@ class HmmLearn(className: String,
     }
 
     Hmms.save(hmm, hmmFile)
-    println(s"Trained HMM after $r refinements.")
+    println(cyan(s"Trained HMM after $r refinements."))
     hmm
   }
 
@@ -429,7 +437,7 @@ class HmmLearn(className: String,
       PR *= prob
       r += 1
     }
-    println("   Product = %s\n" format PR)
+    println("   Product = %s" format PR)
     PR
   }
 }

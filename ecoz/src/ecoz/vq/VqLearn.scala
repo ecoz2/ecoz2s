@@ -137,8 +137,10 @@ class VqLearn(prefix: String,
     // accumulates the distortion associated to such cell
     def addToCell(i: Int, rx: Array[Float], ddmin: Float): Unit = {
       val cell = cells(i)
-      for (n ← 0 until (1+P)) {
+      var n = 0
+      while (n < (1+P)) {
         cell(n) += rx(n)
+        n += 1
       }
       // update cell cardinality;
       cardd(i) += 1
@@ -188,12 +190,14 @@ class VqLearn(prefix: String,
         var ddmin = Float.MaxValue
 
         var raa_min = -1
-        for (i ← codebook.raas.indices) {
+        var i = 0
+        while (i < codebook.size) {
           val dd = distortion(rxg, codebook.raas(i))
           if (dd < ddmin) {
             ddmin = dd
             raa_min = i
           }
+          i += 1
         }
         DD += ddmin - 1
         Cells.addToCell(raa_min, rxg, ddmin)
@@ -256,15 +260,19 @@ class VqLearn(prefix: String,
 
     // Initialize codewords by perturbing each centroid
     // with the two multiplication factors pert0 and pert1:
-    for (i ← 0 until num_raas) {
+    var i = 0
+    while (i < num_raas) {
       val curr = reflections1(i)
       val new0 = reflections2(i)
       val new1 = reflections2(num_raas + i)
 
-      for (n ← 0 until P + 1) {
+      var n = 0
+      while (n < P + 1) {
         new0(n) = curr(n) * pert0
         new1(n) = curr(n) * pert1
+        n += 1
       }
+      i += 1
     }
 
     codebook = Codebook(reflections2, classNameOpt)
@@ -298,8 +306,10 @@ class VqLearn(prefix: String,
       // }
 
       if (cardd > 0) {
-        for (k ← 0 to P) {
+        var k = 0
+        while (k <= P) {
           cell(k) /= cardd
+          k += 1
         }
 
         val lpaResult = lpa.lpca_r(cell)
@@ -309,8 +319,10 @@ class VqLearn(prefix: String,
         // normalize accumulated autocorrelation sequence by gain
         // in this cell for the sigma ratio calculation:
         if (lpaResult.pe != 0F) {
-          for (k ← 0 to P) {
+          k = 0
+          while (k <= P) {
             cell(k) /= lpaResult.pe
+            k += 1
           }
         }
       }

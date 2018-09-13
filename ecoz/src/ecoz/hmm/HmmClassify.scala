@@ -2,6 +2,7 @@ package ecoz.hmm
 
 import java.io.File
 
+import ecoz.config.Config
 import ecoz.rpt._
 import ecoz.symbol.SymbolSequences
 
@@ -90,7 +91,13 @@ object HmmClassify {
 
     val classifier = new HmmClassifier(hmms, showRanked)
 
-    namedSequences foreach { seq ⇒
+    namedSequences foreach { seq_ ⇒
+
+      val seq = if (seq_.T > Config.hmm.trickMaxT) {
+        seq_.copy(symbols = seq_.symbols.take(Config.hmm.trickMaxT))
+      }
+      else seq_
+
       val hmmAndProbs = classifier.classifySequence(seq)
       val className = seq.classNameOpt.get
       print(coloredDot(className, hmmAndProbs))

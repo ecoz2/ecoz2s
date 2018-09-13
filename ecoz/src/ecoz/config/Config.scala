@@ -1,6 +1,8 @@
 package ecoz.config
 import java.io.File
 
+import ecoz.hmm.HmmType
+
 
 object Config {
   object dir {
@@ -29,5 +31,13 @@ object Config {
     val offsetLengthMs = 15
   }
 
-  val maxCodebookSize = 1024
+  val maxCodebookSize = 2048
+
+  object hmm {
+    val typ = HmmType.Cascade3
+    val N = 12
+    val valAuto = BigDecimal(0.3)
+
+    val trickMaxT = 50
+  }
 }

@@ -79,7 +79,7 @@ This applies to predictors as well as to sequences (see below).
 
 Done using both training and test predictors:
 
-    $ ecoz vq.learn -e 0.0005 data/predictors/TRAIN/P36/*/*.prd data/predictors/TEST/P36/*/*.prd
+    $ ecoz vq.learn -e 0.00005 data/predictors/TRAIN/P36/*/*.prd data/predictors/TEST/P36/*/*.prd
 
 See codebooks.md.
 
@@ -87,7 +87,7 @@ See codebooks.md.
 
 Generate training sequences:
 
-    $ ecoz vq.quantize -cb data/codebooks/eps_0.0005__0256.cbook data/predictors/TRAIN/P36/*/*.prd \
+    $ ecoz vq.quantize -cb data/codebooks/eps_0.00005__0128.cbook data/predictors/TRAIN/P36/*/*.prd \
         data/predictors/TEST/P36/*/*.prd
 
 See sequences.md
@@ -113,10 +113,10 @@ With training sequences, corresponding to 19 classes:
     bellow            descending_shriek grunt             modulated_cry     trill
     croak             groan             grunts            modulated_moan
 
-    $ for class in ascending_moan    cry               groan_+_purr      gurgle            purr;   do ecoz hmm.learn -N 10 -a 0.005  data/sequences/TRAIN/M256/$class/*; done
-    $ for class in ascending_shriek  descending_moan   growl             long_grunt        scream; do ecoz hmm.learn -N 10 -a 0.005  data/sequences/TRAIN/M256/$class/*; done
-    $ for class in bellow            descending_shriek grunt             modulated_cry     trill;  do ecoz hmm.learn -N 10 -a 0.005  data/sequences/TRAIN/M256/$class/*; done
-    $ for class in croak             groan             grunts            modulated_moan;           do ecoz hmm.learn -N 10 -a 0.005  data/sequences/TRAIN/M256/$class/*; done
+    $ for class in ascending_moan    cry               groan_+_purr      gurgle            purr;   do ecoz hmm.learn data/sequences/TRAIN/M512/$class/*; done
+    $ for class in ascending_shriek  descending_moan   growl             long_grunt        scream; do ecoz hmm.learn data/sequences/TRAIN/M512/$class/*; done
+    $ for class in bellow            descending_shriek grunt             modulated_cry     trill;  do ecoz hmm.learn data/sequences/TRAIN/M512/$class/*; done
+    $ for class in croak             groan             grunts            modulated_moan;           do ecoz hmm.learn data/sequences/TRAIN/M512/$class/*; done
 
 hmms.md captures the output for some of the trainings.
 

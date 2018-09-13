@@ -1,5 +1,7 @@
 2018-09-13
 
+- some "touches", but I'm now focusing on the C implementation
+
 - add ToEcoz2, an ad hoc conversion tool export sequences to previous
   ecoz2 system.
 
