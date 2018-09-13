@@ -1,3 +1,8 @@
+2018-09-13
+
+- add ToEcoz2, an ad hoc conversion tool export sequences to previous
+  ecoz2 system.
+
 2018-09-07
 
 - hmm.learn: more micro optimization using while loops

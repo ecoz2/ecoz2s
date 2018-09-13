@@ -3,7 +3,7 @@ package ecoz
 import ecoz.hmm._
 import ecoz.lpc._
 import ecoz.signal.{SignalExtractor, Signals}
-import ecoz.symbol.SymbolSequences
+import ecoz.symbol.{SymbolSequences, ToEcoz2}
 import ecoz.vq.{Codebooks, VqClassify, VqLearn, VqQuantize}
 
 object Ecoz {
@@ -62,6 +62,9 @@ object Ecoz {
 
       case "seq.show" :: rest ⇒
         SymbolSequences.showSequences(rest)
+
+      case "seq.2cad" :: rest ⇒
+        ToEcoz2.convertSequences(rest)
 
       case "vq.classify" :: rest ⇒
         VqClassify.main(rest)
