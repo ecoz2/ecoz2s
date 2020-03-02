@@ -46,15 +46,15 @@ class Lpa(val P: Int = lpa.P,
     // section under analysis
     val section = new Array[Float](winLen)
 
-    val results = collection.mutable.MutableList[LpaResult]()
+    val results = collection.mutable.ArrayDeque[LpaResult]()
 
     // perform LPA to each section:
-    for (t ← 0 until T) {
+    for (t <- 0 until T) {
       // println(s"analysing section: t = $t")
       var p = t * offsetLen
 
       // apply hamming weighting:
-      for (n ← 0 until winLen) {
+      for (n <- 0 until winLen) {
         section(n) = hamm(n) * signal.x(p)
         p += 1
       }
@@ -64,7 +64,7 @@ class Lpa(val P: Int = lpa.P,
         // gain normalize autocorrelation:
         if (lpaResult.pe != 0F) {
           val r = lpaResult.r
-          for (n ← r.indices) {
+          for (n <- r.indices) {
             r(n) /= lpaResult.pe
           }
         }
@@ -74,7 +74,7 @@ class Lpa(val P: Int = lpa.P,
         results += lpaResult
       }
       catch {
-        case e: LpaException ⇒
+        case e: LpaException =>
           throw LpaException(s"problem with section t=$t: " + e.getMessage, e)
       }
     }
@@ -96,9 +96,9 @@ class Lpa(val P: Int = lpa.P,
     val r = new Array[Float](P + 1)
 
     // compute autocorrelation:
-    for (i ← 0 to P) {
+    for (i <- 0 to P) {
       var sum = 0F
-      for (k ← 0 until N - i) {
+      for (k <- 0 until N - i) {
         sum += x(k) * x(k + i)
       }
       r(i) = sum
@@ -129,10 +129,10 @@ class Lpa(val P: Int = lpa.P,
     var pe = r0
     a(0) = 1F
 
-    for (k ← 1 to P) {
+    for (k <- 1 to P) {
       // new reflection coefficient:
       var sum = 0F
-      for (i ← 1 to k) {
+      for (i <- 1 to k) {
         sum -= a(k-i) * r(i)
       }
       val akk = sum / pe
@@ -145,7 +145,7 @@ class Lpa(val P: Int = lpa.P,
       a(k) = akk
 
       val k2 = k >> 1
-      for (i ← 1 to k2) {
+      for (i <- 1 to k2) {
         val ai = a(i)
         val aj = a(k-i)
         a(i) = ai + akk*aj
@@ -172,7 +172,7 @@ class Lpa(val P: Int = lpa.P,
   def lpca_rc(rc: Array[Float]): Array[Float] = {
     val a = new Array[Float](P + 1)
     a(0) = 1F
-    for (k ← 1 to P) {
+    for (k <- 1 to P) {
       // reflection coefficient:
       val akk = rc(k)
 
@@ -185,7 +185,7 @@ class Lpa(val P: Int = lpa.P,
       a(k) = akk
 
       val k2 = k >> 1
-      for (i ← 1 to k2) {
+      for (i <- 1 to k2) {
         val ai = a(i)
         val aj = a(k-i)
         a(i) = ai + akk*aj
@@ -198,7 +198,7 @@ class Lpa(val P: Int = lpa.P,
   def hamming(length: Int): Array[Float] = {
     val length1 = length - 1
     val x = new Array[Float](length)
-    for (n ← 0 until length) {
+    for (n <- 0 until length) {
       x(n) = (.54 -.46 * math.cos(n * twoPi / length1)).toFloat
     }
     x

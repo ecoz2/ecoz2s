@@ -30,11 +30,11 @@ class HmmClassifier(hmms: List[Hmm],
     val list = bySeqName.getOrElseUpdate(seqName, List.empty)
 
     val hmmsAndProbsFut = Future.sequence {
-      hmms map { hmm ⇒
+      hmms map { hmm =>
         Future { (hmm, hmm.probability(seq)) }
       }
     }
-    val sortedByProbFut = hmmsAndProbsFut map { hmmsAndProbs ⇒
+    val sortedByProbFut = hmmsAndProbsFut map { hmmsAndProbs =>
       hmmsAndProbs.sortBy(-_._2)
     }
     val sortedByProb = Await.result(sortedByProbFut, Duration.Inf)
@@ -45,8 +45,8 @@ class HmmClassifier(hmms: List[Hmm],
   def reportResults(): Unit = {
     val cm = new ConfusionMatrix(classNames.toSet)
 
-    bySeqName foreach { case (seqName, instances) ⇒
-      instances foreach { case (seq, sortedByProb) ⇒
+    bySeqName foreach { case (seqName, instances) =>
+      instances foreach { case (seq, sortedByProb) =>
         val hmmWinner = sortedByProb.head._1
         val hmmWinnerName = hmmWinner.classNameOpt.get
         cm.setWinner(seqName, hmmWinnerName)
@@ -62,7 +62,7 @@ class HmmClassifier(hmms: List[Hmm],
           printf(s"  %s sequence (T=%d) %s:\n",
             quoted(seqName), seq.T, seq.filenameOpt.getOrElse("")
           )
-          reportList foreach { case ((hmm, prob), rank) ⇒
+          reportList foreach { case ((hmm, prob), rank) =>
             val hmmNameStr = "%s" format quoted(hmm.classNameOpt.get)
 
             val (asterisk, probStr) = if (hmm.classNameOpt.contains(seqName))

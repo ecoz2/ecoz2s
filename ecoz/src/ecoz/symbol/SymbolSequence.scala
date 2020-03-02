@@ -15,7 +15,7 @@ case class SymbolSequence(
   val T: Int = symbols.length
 
   override def toString: String = {
-    val distStr = distortion.map { d ⇒
+    val distStr = distortion.map { d =>
       val c = magenta(d.toString)
       s"  (distortion=$c)"
     }.getOrElse("")
@@ -40,7 +40,7 @@ object SymbolSequences {
     // number of symbols:
     s.writeShort(sequence.T)
 
-    sequence.symbols foreach { symbol ⇒ s.writeShort(symbol) }
+    sequence.symbols foreach { symbol => s.writeShort(symbol) }
 
     // distortion (NaN if unknown)
     s.writeFloat(sequence.distortion.getOrElse(Float.NaN))

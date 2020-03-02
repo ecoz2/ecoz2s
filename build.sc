@@ -3,7 +3,7 @@ import mill.scalalib._
 
 object ecoz extends ScalaModule {
   override def mainClass = Some("ecoz.Ecoz")
-  def scalaVersion = "2.12.10"
+  def scalaVersion = "2.13.1"
 
   override def ivyDeps = Agg(
     ivy"de.sciss::audiofile:1.5.3",
@@ -25,6 +25,6 @@ object ecoz extends ScalaModule {
     "-Ywarn-dead-code",
     "-unchecked",
     "-Xlint",
-    "-Ywarn-unused-import",
+    "-Ywarn-unused:imports",
   )
 }

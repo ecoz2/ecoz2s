@@ -36,13 +36,13 @@ object SignalExtractor {
       "#selections"))
     val selByDescription: Map[String, Seq[Selection]] = allSelections.groupBy(_.description)
     val allSortedDescriptions = selByDescription.keys.toList.sorted
-    allSortedDescriptions foreach { description ⇒
+    allSortedDescriptions foreach { description =>
         println("  %30s : %2d".format(
           "\"" + description + "\"",
           selByDescription(description).length))
     }
 
-    allSortedDescriptions foreach { description ⇒
+    allSortedDescriptions foreach { description =>
       selByDescription.get(description) foreach extractSelections
     }
 
@@ -112,7 +112,7 @@ object SignalExtractor {
     require(endTimeIndex >= 0, s"""expected column: "End Time (s)" """)
     require(descriptionIndex >= 0, s"""expected column: "Description [(Dunlop & Fournet)]" """)
 
-    allLines.drop(1) map { columns ⇒
+    allLines.drop(1) map { columns =>
       val begTime = columns(begTimeIndex).toFloat
       val endTime = columns(endTimeIndex).toFloat
       val description = columns(descriptionIndex).trim

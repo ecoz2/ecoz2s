@@ -10,12 +10,12 @@ object ToEcoz2 {
   case class SeqAndFile(seq: SymbolSequence, file: File)
 
   def convertSequences(filenames: List[String]): Unit = {
-    val sequences = filenames map { fn ⇒
+    val sequences = filenames map { fn =>
       val file = new File(fn)
       SeqAndFile(SymbolSequences.load(file), file)
     }
 
-    val namedSequences = sequences filter { seq ⇒
+    val namedSequences = sequences filter { seq =>
       seq.seq.classNameOpt.isDefined
     }
 
@@ -23,10 +23,10 @@ object ToEcoz2 {
 
     val sortedClassNames = byClassName.keys.toSeq.sorted
 
-    for ( (className, classNumber) ← sortedClassNames.zipWithIndex ) {
+    for ( (className, classNumber) <- sortedClassNames.zipWithIndex ) {
       val seqs = byClassName(className)
 
-      seqs foreach { case SeqAndFile(seq, file) ⇒
+      seqs foreach { case SeqAndFile(seq, file) =>
         val cadFilename = file.getPath.replaceFirst("\\.[^.]*$", ".cad")
         val cadFile = new File(cadFilename)
         saveAsCadena(seq, classNumber.asInstanceOf[Short], cadFile)
@@ -47,7 +47,7 @@ object ToEcoz2 {
       // vocabulary size:
       writeShort(sequence.M.asInstanceOf[Short])
 
-      sequence.symbols foreach { symbol ⇒
+      sequence.symbols foreach { symbol =>
         val short = symbol.asInstanceOf[Short]
         assert(0 <= short && short < sequence.M, s"symbol=$short but M=${sequence.M}")
         writeShort(short)

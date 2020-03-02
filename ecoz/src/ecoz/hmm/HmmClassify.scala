@@ -30,24 +30,24 @@ object HmmClassify {
 
     def processArgs(opts: List[String]): Unit = {
       opts match {
-        case "-hmm" :: rest ⇒
+        case "-hmm" :: rest =>
           val (hmms, rest2) = rest.span(!_.startsWith("-"))
           hmmFilenames = hmms
           processArgs(rest2)
 
-        case "-seq" :: rest ⇒
+        case "-seq" :: rest =>
           val (seqs, rest2) = rest.span(!_.startsWith("-"))
           seqFilenames = seqs
           processArgs(rest2)
 
-        case "-sr" :: num :: rest ⇒
+        case "-sr" :: num :: rest =>
           showRanked = num.toInt
           processArgs(rest)
 
-        case opt :: _ ⇒
+        case opt :: _ =>
           usage(s"unrecognized option or missing arguments: $opt")
 
-        case Nil ⇒
+        case Nil =>
       }
     }
     processArgs(args)
@@ -62,13 +62,13 @@ object HmmClassify {
 
     var hmms = List[Hmm]()
 
-    hmmFilenames foreach { n ⇒
+    hmmFilenames foreach { n =>
       val cb = Hmms.load(new File(n))
       cb.classNameOpt match {
-        case Some(_) ⇒
+        case Some(_) =>
           hmms = cb :: hmms
 
-        case None ⇒
+        case None =>
           warn(s"Unnamed hmm ignored: $n")
       }
     }
@@ -84,14 +84,14 @@ object HmmClassify {
          |sequences : ${seqFilenames.length}
        """.stripMargin)
 
-    val sequences = seqFilenames map (fn ⇒ SymbolSequences.load(new File(fn)))
-    val namedSequences = sequences filter { seq ⇒
+    val sequences = seqFilenames map (fn => SymbolSequences.load(new File(fn)))
+    val namedSequences = sequences filter { seq =>
       seq.classNameOpt.isDefined && hmmNames.contains(seq.classNameOpt.get)
     }
 
     val classifier = new HmmClassifier(hmms, showRanked)
 
-    namedSequences foreach { seq_ ⇒
+    namedSequences foreach { seq_ =>
 
       val seq = if (seq_.T > Config.hmm.trickMaxT) {
         seq_.copy(symbols = seq_.symbols.take(Config.hmm.trickMaxT))

@@ -14,14 +14,14 @@ package object hmm {
     val sup = math.min(from + len, size)
     var acum = BigDecimal(0)
 
-    for (i ← from until sup) {
+    for (i <- from until sup) {
       val r = 1D + random.nextDouble()
       d(i) = r
       acum += r
     }
 
     // normalize:
-    for (i ← from until sup) {
+    for (i <- from until sup) {
       d(i) /= acum
     }
 
@@ -36,7 +36,7 @@ package object hmm {
       acum += r
       r
     }
-    for (i ← d.indices) {
+    for (i <- d.indices) {
       d(i) /= acum
     }
     d
@@ -48,10 +48,10 @@ package object hmm {
   }
 
   private val random = sys.env.get("RANDOM_SEED") match {
-    case Some(seed) ⇒
+    case Some(seed) =>
       println(rpt.lightYellow(s"\n****NOTE**** Using RANDOM_SEED=$seed\n"))
       new Random(seed.toInt)
-    case None ⇒ new Random()
+    case None => new Random()
   }
 
   @inline def zero(a: Array[BigDecimal]): Unit = {

@@ -25,7 +25,7 @@ case class Codebook(
   val raas: Array[Array[Float]] = {
     val vectors = Array.ofDim[Float](size, P + 1)
     val lpa = new Lpa()
-    reflections.zipWithIndex foreach { case (rc, index) ⇒
+    reflections.zipWithIndex foreach { case (rc, index) =>
       val a = lpa.lpca_rc(rc)
       updateRaa(a, vectors(index))
     }
@@ -44,9 +44,9 @@ case class Codebook(
   }
 
   private def updateRaa(a: Array[Float], raa: Array[Float]): Unit = {
-    for (n ← 0 to P) {
+    for (n <- 0 to P) {
       var sum = 0F
-      for (k ← 0 to P - n) {
+      for (k <- 0 to P - n) {
         sum += a(k) * a(k + n)
       }
       raa(n) = sum
@@ -58,11 +58,11 @@ case class Codebook(
 
     val symbols = new Array[Int](T)
     var ddprm = 0F
-    for (t ← 0 until T) {
+    for (t <- 0 until T) {
       val rxg = predictor.vectors(t)
       var ddmin = Float.MaxValue
       var i_min = -1
-      for (i ← raas.indices) {
+      for (i <- raas.indices) {
         val dd = distortion(rxg, raas(i))
         if (dd < ddmin) {
           ddmin = dd
@@ -88,7 +88,7 @@ object Codebooks {
       reflections(1)(1) = +.5F
 
       // remaining entries with zero:
-      for (i ← 2 until P) {
+      for (i <- 2 until P) {
         reflections(0)(i) = 0F
         reflections(1)(i) = 0F
     }
@@ -144,9 +144,9 @@ object Codebooks {
   }
 
   def showCodebook(codebook: Codebook): Unit = {
-    val classNameStr = codebook.classNameOpt.map(b ⇒ s""""$b"""").getOrElse("(unknown)")
+    val classNameStr = codebook.classNameOpt.map(b => s""""$b"""").getOrElse("(unknown)")
     println(s""" className=$classNameStr size=${codebook.size}""")
-    codebook.reflections.zipWithIndex foreach { case (vector, index) ⇒
+    codebook.reflections.zipWithIndex foreach { case (vector, index) =>
       println(s" %2d: %s" format (index, vector.mkString("[", ", ", "]")))
     }
   }

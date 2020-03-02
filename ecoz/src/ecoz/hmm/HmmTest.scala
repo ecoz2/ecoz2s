@@ -18,28 +18,28 @@ object HmmTest {
       List(
         List(0, 0, 1, 1, 1, 2),
         List(0, 1, 0, 1, 1, 1),
-      ).map(l ⇒ SymbolSequence(M = M, symbols = l,
+      ).map(l => SymbolSequence(M = M, symbols = l,
         classNameOpt = Some("test1")))
     ),
     Class(className = "test2",
       List(
         List(2, 2, 1, 1, 0, 0),
         List(0, 2, 1, 2, 1, 0),
-      ).map(l ⇒ SymbolSequence(M = M, symbols = l,
+      ).map(l => SymbolSequence(M = M, symbols = l,
         classNameOpt = Some("test2")))
     ),
     Class(className = "test3",
       List(
         List(1, 1, 2, 1, 0, 0),
         List(0, 1, 2, 2, 1, 0),
-      ).map(l ⇒ SymbolSequence(M = M, symbols = l,
+      ).map(l => SymbolSequence(M = M, symbols = l,
         classNameOpt = Some("test3")))
     ),
   )
 
   def run(): Unit = {
 
-    val hmms = classes map { clazz ⇒
+    val hmms = classes map { clazz =>
       val hmm = new HmmLearn(
         clazz.className, N, M, typ, ε,
         clazz.sequences,
@@ -51,7 +51,7 @@ object HmmTest {
 
       println("Probabilities:")
 
-//      clazz.sequences foreach { seq ⇒
+//      clazz.sequences foreach { seq =>
 //        val prob = hmm.probability(seq)
 //        println(s" seq = " + seq.symbols.mkString("<", ",", ">"))
 //        println(s"prob = " + ecoz.rpt.magenta(prob.toString()))
@@ -65,11 +65,11 @@ object HmmTest {
     val cm = new ConfusionMatrix(classNames.toSet)
 
     val allSeqs = classes.flatMap(_.sequences)
-    allSeqs foreach { seq ⇒
+    allSeqs foreach { seq =>
       println(s"     seq = " + seq.symbols.mkString("<", ",", ">"))
       var maxProb = BigDecimal(0)
       var argMax = 0
-      hmms.zipWithIndex foreach { case (hmm, index) ⇒
+      hmms.zipWithIndex foreach { case (hmm, index) =>
         val prob = hmm.probability(seq)
         if (maxProb < prob) {
           maxProb = prob

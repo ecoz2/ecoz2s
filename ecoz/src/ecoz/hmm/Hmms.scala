@@ -13,31 +13,31 @@ object Hmms {
             ): Hmm = {
 
     def createPi(): Array[BigDecimal] = typ match {
-      case HmmType.Uniform ⇒
+      case HmmType.Uniform =>
         uniformDistribution(N)
 
-      case _ ⇒
+      case _ =>
         randomDistribution(N)
     }
 
     def createA(): Array[Array[BigDecimal]] = {
       val A = Array.ofDim[BigDecimal](N, N)
       typ match {
-        case HmmType.Cascade3 | HmmType.Cascade3 ⇒
+        case HmmType.Cascade3 | HmmType.Cascade3 =>
           val len = if (typ == HmmType.Cascade3) 3 else 2
           var from = 0
-          for (i ← A.indices) {
+          for (i <- A.indices) {
             A(i) = cascadeDistribution(N, from, len)
             from += 1
           }
 
-        case HmmType.Random ⇒
-          for (i ← A.indices) {
+        case HmmType.Random =>
+          for (i <- A.indices) {
             A(i) = randomDistribution(N)
           }
 
-        case HmmType.Uniform ⇒
-          for (i ← A.indices) {
+        case HmmType.Uniform =>
+          for (i <- A.indices) {
             A(i) = uniformDistribution(N)
           }
       }
@@ -46,7 +46,7 @@ object Hmms {
 
     def createB(): Array[Array[BigDecimal]] = {
       val B = Array.ofDim[BigDecimal](N, M)
-      for (i ← B.indices) {
+      for (i <- B.indices) {
         B(i) = randomDistribution(M)
       }
       B

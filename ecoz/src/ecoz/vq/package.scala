@@ -16,7 +16,7 @@ package object vq {
 
     val term1 = rx(0) * ra(0)
     var term2 = 0F
-    for (n ← 1 to P) {
+    for (n <- 1 to P) {
       term2 += rx(n) * ra(n)
     }
     term1 + 2F * term2

@@ -31,13 +31,13 @@ class Report(prefix: String,
 
     val emptyCells = cardd.count(_ == 0)
     pw.println(s"cardinalities: (emptyCells=$emptyCells)")
-    for (c ← cardd) {
+    for (c <- cardd) {
 		  pw.print("%8d" format c)
     }
     pw.println()
 
     pw.println("average distortion per cell:")
-    for ((d, i) ← discel.zipWithIndex) {
+    for ((d, i) <- discel.zipWithIndex) {
 		  pw.print(
         if (cardd(i) > 0) "%8.3g" format d / cardd(i)
         else              "%8s" format "∞"

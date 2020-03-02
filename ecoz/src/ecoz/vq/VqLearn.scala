@@ -43,27 +43,27 @@ object VqLearn {
 
     def processArgs(opts: List[String]): Unit = {
       opts match {
-        case "-w" :: className :: rest ⇒
+        case "-w" :: className :: rest =>
           classNameOpt = Some(className)
           processArgs(rest)
 
-        case "-p" :: pref :: rest ⇒
+        case "-p" :: pref :: rest =>
           prefixOpt = Some(pref)
           processArgs(rest)
 
-        case "-e" :: eps :: rest ⇒
+        case "-e" :: eps :: rest =>
           epsilonStr = eps
           processArgs(rest)
 
-        case "-take" :: num :: rest ⇒
+        case "-take" :: num :: rest =>
           takeT = num.toInt
           require(takeT > 0, "-take expects positive number")
           processArgs(rest)
 
-        case opt :: _ if opt.startsWith("-") ⇒
+        case opt :: _ if opt.startsWith("-") =>
           usage(s"unrecognized option: $opt")
 
-        case filenames ⇒
+        case filenames =>
           prdFilenames = filenames
       }
     }
@@ -73,12 +73,12 @@ object VqLearn {
     }
 
     val prefix = prefixOpt getOrElse {
-      val cnStr = classNameOpt.map(cn ⇒ s"${cn}_"). getOrElse("")
+      val cnStr = classNameOpt.map(cn => s"${cn}_"). getOrElse("")
       s"${cnStr}eps_${epsilonStr}_"
     }
 
     println(
-      s"""className   : ${classNameOpt.map(n ⇒ s""""$n"""").getOrElse("(not given)")}
+      s"""className   : ${classNameOpt.map(n => s""""$n"""").getOrElse("(not given)")}
          |prefix      : "$prefix"
          |epsilon     : $epsilonStr
          |predictors  : ${prdFilenames.length}
@@ -92,10 +92,10 @@ object VqLearn {
   }
 
   def loadTrainingSet(prdFilenames: List[String], takeT: Int): Array[Array[Float]] = {
-    val allVectors = collection.mutable.MutableList[Array[Float]]()
-    prdFilenames foreach { prdFilename ⇒
+    val allVectors = collection.mutable.ArrayDeque[Array[Float]]()
+    prdFilenames foreach { prdFilename =>
       val predictor = Predictors.load(new File(prdFilename))
-      predictor.vectors.take(takeT) foreach { vector ⇒
+      predictor.vectors.take(takeT) foreach { vector =>
         allVectors += vector
       }
     }
@@ -154,7 +154,7 @@ class VqLearn(prefix: String,
         val msg = s"reviewCells: there are empty cell(s)"
         warn(msg)
         //println(s"Sum of cardinalities = ${cardd.sum}")
-        //cells.zipWithIndex foreach { case (cell, index) ⇒
+        //cells.zipWithIndex foreach { case (cell, index) =>
         //  println(s"cell $index:  card=${cardd(index)}   distortion=${discel(index)}")
         //  pprint.pprintln(cell)
         //}
@@ -186,7 +186,7 @@ class VqLearn(prefix: String,
 
       var DD = 0F
 
-      trainingSet foreach { rxg ⇒
+      trainingSet foreach { rxg =>
         var ddmin = Float.MaxValue
 
         var raa_min = -1
@@ -296,7 +296,7 @@ class VqLearn(prefix: String,
       )
     }
 
-    for (i ← Cells.cells.indices) {
+    for (i <- Cells.cells.indices) {
       val cardd = Cells.cardd(i)
       val cell = Cells.cells(i)
 
@@ -339,9 +339,9 @@ class VqLearn(prefix: String,
                      avgDistortion: Float
                      ): Float = {
     var dpc = 0F
-    for ((raa, i) ← codebook.raas.zipWithIndex) {
+    for ((raa, i) <- codebook.raas.zipWithIndex) {
       var dis_i = 0F
-      for ((rcc, j) ← cells.zipWithIndex) {
+      for ((rcc, j) <- cells.zipWithIndex) {
         if ( i != j ) {
 				  dis_i += distortion(rcc, raa) - 1
         }

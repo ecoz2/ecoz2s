@@ -26,7 +26,7 @@ object HmmProb {
 
     val hmm = Hmms.load(new File(hmmFilename))
 
-    seqFilenames foreach { seqFilename ⇒
+    seqFilenames foreach { seqFilename =>
       val seq = SymbolSequences.load(new File(seqFilename))
 
       if (seq.M != hmm.M) {

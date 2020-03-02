@@ -24,7 +24,7 @@ class ConfusionMatrix(classNames: Set[String]) {
 
     val colHeaders = sortedNames.indices map formatIndex
 
-    val quotedNames = colHeaders.zipWithIndex map { case (colHeader, i) ⇒
+    val quotedNames = colHeaders.zipWithIndex map { case (colHeader, i) =>
       quoted(sortedNames(i)) + " " + colHeader
     }
 
@@ -36,7 +36,7 @@ class ConfusionMatrix(classNames: Set[String]) {
 
     val cols = collection.mutable.ArrayBuffer[String]()
     cols += w(corner, leftWidth)
-    cols ++= colHeaders.map(n ⇒ w(n, n.length))
+    cols ++= colHeaders.map(n => w(n, n.length))
     cols += w("tests", "tests".length)
     cols += w("correct", "correct".length)
     cols += w("percent", "percent".length)
@@ -46,7 +46,7 @@ class ConfusionMatrix(classNames: Set[String]) {
     def lines(): Unit = {
       cols.clear()
       cols += div(leftWidth)
-      cols ++= colHeaders.map(n ⇒ div(n.length, "="))
+      cols ++= colHeaders.map(n => div(n.length, "="))
       cols += div("tests".length)
       cols += div("correct".length)
       cols += div("percent".length)
@@ -58,8 +58,8 @@ class ConfusionMatrix(classNames: Set[String]) {
     var totalTests = 0
     var totalCorrect = 0
 
-    for (i ← matrix.indices) {
-      val colVals = matrix(i).zipWithIndex map { case (n, j) ⇒
+    for (i <- matrix.indices) {
+      val colVals = matrix(i).zipWithIndex map { case (n, j) =>
         val str = w(n, colHeaders(j).length)
         if (i == j) {
           if (n > 0) green(str).toString()
@@ -94,9 +94,9 @@ class ConfusionMatrix(classNames: Set[String]) {
     // misclassifications:
     cols.clear()
     cols += w("", leftWidth)
-    for (j ← matrix.indices) {
+    for (j <- matrix.indices) {
       var colVal = 0
-      for (i ← matrix.indices) {
+      for (i <- matrix.indices) {
         if (i != j) colVal += matrix(i)(j)
       }
       val x = w(colVal, colHeaders(j).length)

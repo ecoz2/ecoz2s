@@ -53,31 +53,31 @@ object Lpc {
     var wavFilenames: List[String] = List.empty
 
     def processArgs(opts: List[String]): Unit = opts match {
-      case "-split" :: s :: rest ⇒
+      case "-split" :: s :: rest =>
         split = s.toFloat
         require(0F < split && split < 1F)
         processArgs(rest)
 
-      case "-minpc" :: s :: rest ⇒
+      case "-minpc" :: s :: rest =>
         minpc = s.toInt
         require(minpc > 0)
         processArgs(rest)
 
-      case "-take" :: s :: rest ⇒
+      case "-take" :: s :: rest =>
         takeN = s.toInt
         require(takeN > 0)
         processArgs(rest)
 
-      case "-classes" :: c1 :: moreClasses ⇒
+      case "-classes" :: c1 :: moreClasses =>
         classNames = c1 :: moreClasses
 
-      case "-signals" :: s1 :: moreSignals ⇒
+      case "-signals" :: s1 :: moreSignals =>
         wavFilenames = s1 :: moreSignals
 
-      case opt :: _ ⇒
+      case opt :: _ =>
         usage(s"missing argument or unrecognized option: $opt")
 
-      case Nil ⇒
+      case Nil =>
         usage()
     }
     processArgs(args.toList)
@@ -88,7 +88,7 @@ object Lpc {
     val lpa = new Lpa()
 
     val classAndWavFiles: List[(String, List[File])] = if (classNames.nonEmpty) {
-      classNames map { className ⇒
+      classNames map { className =>
         val classDir = new File(className)
         (classDir.getName, classDir.listFiles().toList)
       }
@@ -96,8 +96,8 @@ object Lpc {
     else {
       // get parent's name as className, eg:
       // if fn == ".../.../foo/bar.wav', then className = foo
-      val names = wavFilenames map { fn ⇒ new File(fn) }
-      val groups = names.groupBy { n ⇒
+      val names = wavFilenames map { fn => new File(fn) }
+      val groups = names.groupBy { n =>
         val path = n.getPath
         val slash = path.lastIndexOf('/')
         if (slash >= 0) {
@@ -111,7 +111,7 @@ object Lpc {
       groups.toList
     }
 
-    classAndWavFiles foreach { case (className, wavFiles) ⇒
+    classAndWavFiles foreach { case (className, wavFiles) =>
       if (minpc <= wavFiles.length) {
         processFiles(className, wavFiles.take(takeN))
       }
@@ -178,7 +178,7 @@ object Lpc {
         )))
       }
       catch {
-        case e: LpaException ⇒
+        case e: LpaException =>
           warn(s"problem with lpa.onSignal: ${e.getMessage}")
           None
       }
@@ -195,7 +195,7 @@ object Lpc {
       try {
         val results = lpa.onSignal(signal)
         println(s"LPC predictor vectors ${results.length}: ")
-        results foreach { res ⇒
+        results foreach { res =>
           println("  r = " + res.rc.mkString("[", ", ", "]"))
           println(" rc = " + res.rc.mkString("[", ", ", "]"))
           println("  a = " + res.a.mkString("[", ", ", "]"))
@@ -204,7 +204,7 @@ object Lpc {
         }
       }
       catch {
-        case e: LpaException ⇒
+        case e: LpaException =>
           println(s"problem with lpa.onSignal: ${e.getMessage}")
       }
     }
@@ -223,9 +223,9 @@ object Lpc {
   def showPredictor(predictor: Predictor): Unit = {
     val T = predictor.vectors.length
     val P = predictor.vectors.head.length - 1
-    val classNameStr = predictor.classNameOpt.map(b ⇒ s""""$b"""").getOrElse("(unknown)")
+    val classNameStr = predictor.classNameOpt.map(b => s""""$b"""").getOrElse("(unknown)")
     println(s""" className=$classNameStr T=$T P=$P""")
-    predictor.vectors.zipWithIndex foreach { case (vector, index) ⇒
+    predictor.vectors.zipWithIndex foreach { case (vector, index) =>
       println(s" %2d: %s" format (index, vector.mkString("[", ", ", "]")))
     }
   }

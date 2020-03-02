@@ -26,20 +26,20 @@ object VqClassify {
 
     def processArgs(opts: List[String]): Unit = {
       opts match {
-        case "-cb" :: rest ⇒
+        case "-cb" :: rest =>
           val (cbs, rest2) = rest.span(!_.startsWith("-"))
           cbFilenames = cbs
           processArgs(rest2)
 
-        case "-prd" :: rest ⇒
+        case "-prd" :: rest =>
           val (prds, rest2) = rest.span(!_.startsWith("-"))
           prdFilenames = prds
           processArgs(rest2)
 
-        case opt :: _ ⇒
+        case opt :: _ =>
           usage(s"unrecognized option or missing arguments: $opt")
 
-        case Nil ⇒
+        case Nil =>
       }
     }
     processArgs(args)
@@ -54,13 +54,13 @@ object VqClassify {
 
     var codebooks = List[Codebook]()
 
-    cbFilenames foreach { n ⇒
+    cbFilenames foreach { n =>
       val cb = Codebooks.load(new File(n))
       cb.classNameOpt match {
-        case Some(_) ⇒
+        case Some(_) =>
           codebooks = cb :: codebooks
 
-        case None ⇒
+        case None =>
           warn(s"Unnamed codebook ignored: $n")
       }
     }
@@ -78,14 +78,14 @@ object VqClassify {
 
     val classifier = new VqClassifier(codebooks)
 
-    prdFilenames foreach { prdFilename ⇒
+    prdFilenames foreach { prdFilename =>
       val predictor = Predictors.load(new File(prdFilename))
 
       predictor.classNameOpt match {
-        case Some(className) ⇒
+        case Some(className) =>
           classifier.addPredictor(predictor, className)
 
-        case None ⇒
+        case None =>
           warn(s"Unnamed predictor ignored: $prdFilename")
       }
     }

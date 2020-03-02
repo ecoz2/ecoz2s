@@ -36,58 +36,58 @@ object Ecoz {
 
   def main(args: Array[String]): Unit = {
     args.toList match {
-      case "sig.xtor" :: rest ⇒
+      case "sig.xtor" :: rest =>
         SignalExtractor.main(rest.toArray)
 
-      case "sig.show" :: wavFilenames ⇒
+      case "sig.show" :: wavFilenames =>
         Signals.showSignals(wavFilenames)
 
-      case "lpa" :: wavFilenames ⇒
+      case "lpa" :: wavFilenames =>
         Lpc.lpaOnSignals(wavFilenames)
 
-      case "lpc" :: rest ⇒
+      case "lpc" :: rest =>
         Lpc.main(rest.toArray)
 
-      case "prd.show" :: prdFilenames ⇒
+      case "prd.show" :: prdFilenames =>
         Lpc.showPredictors(prdFilenames)
 
-      case "vq.learn" :: rest ⇒
+      case "vq.learn" :: rest =>
         VqLearn.main(rest)
 
-      case "cb.show" :: rest ⇒
+      case "cb.show" :: rest =>
         Codebooks.showCodebooks(rest)
 
-      case "vq.quantize" :: rest ⇒
+      case "vq.quantize" :: rest =>
         VqQuantize.main(rest)
 
-      case "seq.show" :: rest ⇒
+      case "seq.show" :: rest =>
         SymbolSequences.showSequences(rest)
 
-      case "seq.2cad" :: rest ⇒
+      case "seq.2cad" :: rest =>
         ToEcoz2.convertSequences(rest)
 
-      case "vq.classify" :: rest ⇒
+      case "vq.classify" :: rest =>
         VqClassify.main(rest)
 
-      case "hmm.learn" :: rest ⇒
+      case "hmm.learn" :: rest =>
         HmmLearn.main(rest)
 
-      case "hmm.show" :: rest ⇒
+      case "hmm.show" :: rest =>
         Hmms.showHmms(rest)
 
-      case "hmm.prob" :: rest ⇒
+      case "hmm.prob" :: rest =>
         HmmProb.showProbabilities(rest)
 
-      case "hmm.classify" :: rest ⇒
+      case "hmm.classify" :: rest =>
         HmmClassify.main(rest)
 
-      case "hmm.test" :: _ ⇒
+      case "hmm.test" :: _ =>
         HmmTest.run()
 
-      case other :: _ ⇒
+      case other :: _ =>
         usage(s"unrecognized program or missing arguments: $other")
 
-      case Nil ⇒
+      case Nil =>
         usage()
     }
   }

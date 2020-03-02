@@ -17,7 +17,7 @@ case class Signal(x: Array[Float],
       val mean = x.sum / N
       if (mean != 0) {
         val y = new Array[Float](N)
-        for (n ← x.indices) {
+        for (n <- x.indices) {
           y(n) = x(n) - mean
         }
         this.copy(x = y)
@@ -35,7 +35,7 @@ case class Signal(x: Array[Float],
     val N = x.length
     if (N > 0) {
       val y = new Array[Float](N)
-      for (n ← N - 1 to 1 by -1) {
+      for (n <- N - 1 to 1 by -1) {
         y(n) = x(n) - .95F * x(n - 1)
       }
       y(0) = x(0)

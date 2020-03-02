@@ -32,14 +32,14 @@ object VqQuantize {
 
     def processArgs(opts: List[String]): Unit = {
       opts match {
-        case "-cb" :: cb :: rest ⇒
+        case "-cb" :: cb :: rest =>
           cbFilenameOpt = Some(cb)
           processArgs(rest)
 
-        case opt :: _ if opt.startsWith("-") ⇒
+        case opt :: _ if opt.startsWith("-") =>
           usage(s"unrecognized option: $opt")
 
-        case filenames ⇒
+        case filenames =>
           prdFilenames = filenames
       }
     }
@@ -63,7 +63,7 @@ object VqQuantize {
     var numSeqs = 0
     var totalDist = 0F
 
-    prdFilenames foreach { prdFilename ⇒
+    prdFilenames foreach { prdFilename =>
       val prdFile = new File(prdFilename)
       val predictor = Predictors.load(prdFile)
       val sequence = codebook.quantize(predictor)

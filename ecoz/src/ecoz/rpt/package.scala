@@ -8,7 +8,7 @@ package object rpt {
     println(yellow(s"\nWARN: $msg"))
   }
 
-  def quoted(s: String): String = '"' + s + '"'
+  def quoted(s: String): String = s""""$s""""
 
   def yellow (s: Any): Str = fansi.Color.LightYellow(s.toString)
 

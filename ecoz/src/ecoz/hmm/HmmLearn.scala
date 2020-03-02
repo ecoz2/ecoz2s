@@ -50,36 +50,36 @@ object HmmLearn {
 
     def processArgs(opts: List[String]): Unit = {
       opts match {
-        case "-w" :: name :: rest ⇒
+        case "-w" :: name :: rest =>
           classNameOpt = Some(name)
           processArgs(rest)
 
-        case "-N" :: numStates :: rest ⇒
+        case "-N" :: numStates :: rest =>
           N = numStates.toInt
           require(N > 0)
           processArgs(rest)
 
-        case "-t" :: t :: rest ⇒
+        case "-t" :: t :: rest =>
           typ = HmmType.withName(t)
           processArgs(rest)
 
-        case "-e" :: eps :: rest ⇒
+        case "-e" :: eps :: rest =>
           ε = BigDecimal(eps.toDouble)
           require(ε > 0)
           processArgs(rest)
 
-        case "-R" :: num :: rest ⇒
+        case "-R" :: num :: rest =>
           maxRefinements = num.toInt
           processArgs(rest)
 
-        case "-a" :: a :: rest ⇒
+        case "-a" :: a :: rest =>
           valAuto = BigDecimal(a.toDouble)
           processArgs(rest)
 
-        case opt :: _ if opt.startsWith("-") ⇒
+        case opt :: _ if opt.startsWith("-") =>
           usage(s"unrecognized option: $opt")
 
-        case filenames ⇒
+        case filenames =>
           seqFilenames = filenames
       }
     }
@@ -88,7 +88,7 @@ object HmmLearn {
     if (seqFilenames.isEmpty) {
       usage("Indicate sequence files for training")
     }
-    val sequences = seqFilenames map { filename ⇒
+    val sequences = seqFilenames map { filename =>
       val seq = SymbolSequences.load(new File(filename))
       if (seq.T > Config.hmm.trickMaxT) {
         seq.copy(symbols = seq.symbols.take(Config.hmm.trickMaxT))
@@ -186,7 +186,7 @@ class HmmLearn(className: String,
       zero(f_pi)
 
       // process each sequence:
-      for (seq ← sequences) {
+      for (seq <- sequences) {
 
         val pO = gen_alpha_beta_pO(seq)
         gen_gamma(seq, pO)
@@ -422,7 +422,7 @@ class HmmLearn(className: String,
     println(msg)
 
     val probsFut = Future.sequence {
-      sequences map { seq ⇒
+      sequences map { seq =>
         Future { hmm.probability(seq) }
       }
     }

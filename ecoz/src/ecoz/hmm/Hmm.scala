@@ -104,7 +104,7 @@ case class Hmm(
     val B2 = Array.fill[BigDecimal](N, M)(0)
     val vec_est = Array.fill[Int](N)(0)
 
-    for (seq ← sequences) {
+    for (seq <- sequences) {
       val O = seq.symbols
       val T = seq.T
 
@@ -177,7 +177,7 @@ case class Hmm(
   }
 
   override def toString: String = {
-    val classNameStr = classNameOpt.map(b ⇒ s""""$b"""").getOrElse("(unknown)")
+    val classNameStr = classNameOpt.map(b => s""""$b"""").getOrElse("(unknown)")
 
     def distribution(dist: Array[BigDecimal]): String = {
       dist.mkString("[", ", ", "]")
