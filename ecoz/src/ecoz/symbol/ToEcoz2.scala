@@ -36,7 +36,7 @@ object ToEcoz2 {
     def saveAsCadena(sequence: SymbolSequence, classNumber: Short, file: File): Unit = {
       val s = new DataOutputStream(new FileOutputStream(file))
 
-      s.writeBytes("<cadena>\32      ") // 15 bytes
+      s.writeBytes("<cadena>\u001a      ") // 15 bytes
 
       // "word" as a short
       writeShort(classNumber)

@@ -9,7 +9,7 @@ This project uses [Mill](http://www.lihaoyi.com/mill/) as build tool.
 
 Run the following to generate the executable jar file:
 
-    $ mill ecoz.assembly
+    $ ./mill ecoz.assembly
 
 As a convenience:
 
