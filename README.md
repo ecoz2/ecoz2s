@@ -13,7 +13,7 @@ Run the following to generate the executable jar file:
 
 As a convenience:
 
-    $ alias ecoz='java -jar ./out/ecoz/assembly/dest/out.jar'
+    $ alias ecoz="java -jar $(pwd)/out/ecoz/assembly/dest/out.jar"
 
 A number of possible commands can be run through the main program:
 

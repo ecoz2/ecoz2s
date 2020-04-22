@@ -190,18 +190,18 @@ object Lpc {
     wavFilenames foreach lpcSignal
 
     def lpcSignal(wavFilename: String): Unit = {
+      println(s"\nloading $wavFilename")
       val signal = Signals.load(new File(wavFilename))
-      println(s"\n$wavFilename:")
       try {
         val results = lpa.onSignal(signal)
         println(s"LPC predictor vectors ${results.length}: ")
-        results foreach { res =>
-          println("  r = " + res.rc.mkString("[", ", ", "]"))
-          println(" rc = " + res.rc.mkString("[", ", ", "]"))
-          println("  a = " + res.a.mkString("[", ", ", "]"))
-          println(" pe = " + res.pe)
-          println()
-        }
+        //results foreach { res =>
+        //  println("  r = " + res.rc.mkString("[", ", ", "]"))
+        //  println(" rc = " + res.rc.mkString("[", ", ", "]"))
+        //  println("  a = " + res.a.mkString("[", ", ", "]"))
+        //  println(" pe = " + res.pe)
+        //  println()
+        //}
       }
       catch {
         case e: LpaException =>

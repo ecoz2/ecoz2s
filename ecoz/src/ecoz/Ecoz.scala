@@ -2,7 +2,7 @@ package ecoz
 
 import ecoz.hmm._
 import ecoz.lpc._
-import ecoz.signal.{SignalExtractor, Signals}
+import ecoz.signal.{CsvSelection, SignalExtractor, Signals}
 import ecoz.symbol.{SymbolSequences, ToEcoz2}
 import ecoz.vq.{Codebooks, VqClassify, VqLearn, VqQuantize}
 
@@ -15,6 +15,7 @@ object Ecoz {
        |
        | Usage:
        |
+       |   ecoz sig.raven_selections ...
        |   ecoz sig.xtor ...
        |   ecoz sig.show ...
        |   ecoz lpa ...
@@ -36,6 +37,9 @@ object Ecoz {
 
   def main(args: Array[String]): Unit = {
     args.toList match {
+      case "sig.raven_selections" :: rest =>
+        CsvSelection.main(rest.toArray)
+
       case "sig.xtor" :: rest =>
         SignalExtractor.main(rest.toArray)
 

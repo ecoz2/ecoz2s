@@ -195,7 +195,17 @@ class Lpa(val P: Int = lpa.P,
     a
   }
 
-  def hamming(length: Int): Array[Float] = {
+  private def hamming(length: Int): Array[Float] = {
+    hammOpt match {
+      case Some(hamm) if hamm.length == length => hamm
+      case _ =>
+        val hamm = _hamming(length)
+        hammOpt = Some(hamm)
+        hamm
+    }
+  }
+
+  private def _hamming(length: Int): Array[Float] = {
     val length1 = length - 1
     val x = new Array[Float](length)
     for (n <- 0 until length) {
@@ -203,6 +213,8 @@ class Lpa(val P: Int = lpa.P,
     }
     x
   }
+
+  private var hammOpt: Option[Array[Float]] = None
 
   private val twoPi = 2 * math.Pi
 }
